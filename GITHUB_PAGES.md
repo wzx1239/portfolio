@@ -7,7 +7,7 @@ The current site is build-time data + client interactions. No API routes, server
 Use Node >=22.18 and the existing lockfile/dependencies. For a repository site, set the exact repository subpath before building:
 
 ```powershell
-$env:NEXT_PUBLIC_BASE_PATH='/YOUR-REPOSITORY'
+$env:NEXT_PUBLIC_BASE_PATH='/portfolio'
 npm run build:pages
 ```
 
@@ -20,8 +20,12 @@ The script builds in a fresh ignored .pages-build-* directory with local junctio
 - Static-only output: export, trailingSlash:true, images.unoptimized:true. Development mode remains unchanged.
 - NEXT_PUBLIC_BASE_PATH configures Next basePath and shared publicPath() for native media, downloads, images and software masks. Background SVGs are bundled by the CSS compiler so their URLs also respect the subpath.
 - Route-sensitive navigation/Trace logic normalizes the repository prefix and trailing slash. Existing client language/localStorage, Framer Motion, canvas/Trace, passport and HTML MP4 interactions require no server.
-- .nojekyll is included so Pages can serve _next files when using a branch-based publish method. No deployment workflow, remote repository or Pages setting was created or changed.
+- .nojekyll is included in the export and preserved by the deployment artifact's include-hidden-files setting.
 - Publish only the exported directory contents through the selected Pages publishing method; do not run next start on GitHub Pages. Directory index.html files provide direct route loads and refreshes without an SPA rewrite. Unknown routes use 404.html.
+
+## Deployment workflow
+
+Repository: wzx1239/portfolio. In Settings > Pages > Build and deployment, select GitHub Actions as Source. Commit and push .github/workflows/deploy-pages.yml and these documentation changes through GitHub Desktop. Pushes to main (or a manual workflow run) build with NEXT_PUBLIC_BASE_PATH=/portfolio using the existing build:pages script, then upload only out/ and deploy that artifact. The site URL is https://wzx1239.github.io/portfolio/. No gh-pages branch, source-directory publishing or next start is required. No remote settings were changed and no deployment was triggered from this local session.
 
 ## Verification
 
