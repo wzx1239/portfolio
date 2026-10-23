@@ -1,0 +1,198 @@
+/* Everything is scoped to this temporary route, including its shell override. */
+html:has(.interaction-lab) { scroll-padding-top: 0; }
+body:has(.interaction-lab) > .site-header,
+body:has(.interaction-lab) > .site-footer { display: none; }
+
+.interaction-lab {
+  --lab-bg: var(--paper);
+  --lab-ink: #222329;
+  --lab-muted: #666975;
+  --lab-rule: #ceced6;
+  --lab-accent: #7150d7;
+  --lab-gutter: clamp(22px,4.4vw,80px);
+  --lab-bar: 66px;
+  background-color: var(--lab-bg);
+  background-image: var(--steel-grain);
+  color: var(--lab-ink);
+  overflow-x: clip;
+  min-height: 100svh;
+}
+.interaction-lab a:focus-visible,
+.interaction-lab button:focus-visible,
+.interaction-lab input:focus-visible { outline: 2px solid var(--lab-accent); outline-offset: 7px; }
+.interaction-lab button, .interaction-lab input { font: inherit; }
+.interaction-lab .lab-topbar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 110;
+  height: var(--lab-bar);
+  display: grid;
+  grid-template-columns: 1fr 1fr auto 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 0 var(--lab-gutter);
+  background-color: var(--lab-bg);
+  background-image: var(--steel-grain);
+  border-bottom: 1px solid var(--lab-rule);
+  font-size: 14px;
+}
+.interaction-lab .lab-topbar-title { font-weight: 600; letter-spacing: -.025em; }
+.interaction-lab .lab-home-link { justify-self: start; color: var(--lab-muted); }
+.interaction-lab .lab-topbar nav { display: flex; align-items: center; gap: 8px; }
+.interaction-lab .lab-topbar nav a { display: grid; place-items: center; width: 44px; height: 44px; border-bottom: 2px solid transparent; }
+.interaction-lab .lab-topbar nav a:hover,
+.interaction-lab .lab-topbar nav a[aria-current] { border-color: var(--lab-accent); color: var(--lab-accent); }
+.interaction-lab .lab-language { justify-self: end; display: flex; gap: 7px; align-items: center; font-size: 13px; }
+.interaction-lab .lab-language button { min-height: 44px; padding: 0 3px; color: var(--lab-muted); }
+.interaction-lab .lab-language button[aria-pressed=true] { color: var(--lab-ink); text-decoration: underline; text-underline-offset: 5px; }
+.interaction-lab .lab-intro { padding: 150px var(--lab-gutter) 70px; scroll-margin-top: 0; }
+.interaction-lab .lab-kicker { color: var(--lab-muted); font-size: 13px; max-width: 720px; line-height: 1.7; }
+.interaction-lab .lab-intro h1 { margin: 23px 0 35px; font: 550 clamp(58px,7.6vw,116px)/1.02 var(--display); letter-spacing: -.055em; }
+.interaction-lab .lab-intro-copy { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; max-width: 1120px; }
+.interaction-lab .lab-intro-copy h2 { max-width: 440px; font-size: clamp(24px,2.5vw,37px); line-height: 1.2; letter-spacing: -.03em; }
+.interaction-lab .lab-intro-copy p { max-width: 490px; color: var(--lab-muted); font-size: 16px; line-height: 1.8; }
+.interaction-lab .lab-jump-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; margin-top: 50px; }
+.interaction-lab .lab-jump-list a { display: grid; grid-template-columns: 30px 1fr auto; gap: 12px; padding: 17px 0; border-top: 1px solid var(--lab-rule); font-size: 15px; }
+.interaction-lab .lab-jump-list a:hover { color: var(--lab-accent); }
+.interaction-lab .lab-access-note { max-width: 850px; margin-top: 28px; font-size: 13px; line-height: 1.7; color: var(--lab-muted); }
+.interaction-lab .lab-experiment { min-height: 100svh; padding: 60px var(--lab-gutter) 38px; border-top: 1px solid var(--lab-rule); display: flex; flex-direction: column; scroll-margin-top: var(--lab-bar); }
+.interaction-lab .lab-experiment-header { display: flex; align-items: start; justify-content: space-between; gap: 40px; min-height: 112px; }
+.interaction-lab .lab-experiment-heading { display: grid; grid-template-columns: 55px minmax(0,1fr); gap: 18px; max-width: 770px; }
+.interaction-lab .lab-letter { font: 500 47px/1 var(--display); letter-spacing: -.05em; }
+.interaction-lab .lab-experiment-heading h2 { text-transform: uppercase; font: 500 clamp(27px,3.4vw,49px)/1.05 var(--display); letter-spacing: -.045em; }
+.interaction-lab .lab-experiment-heading p { margin-top: 15px; color: var(--lab-muted); font-size: 15px; line-height: 1.7; max-width: 590px; }
+.interaction-lab .lab-controls { width: 182px; flex-shrink: 0; padding-top: 2px; display: grid; grid-template-columns: 1fr auto; gap: 9px 16px; align-items: center; font-size: 13px; }
+.interaction-lab .lab-controls label { display: flex; justify-content: space-between; gap: 16px; grid-column: 1/-1; }
+.interaction-lab .lab-controls output { font-variant-numeric: tabular-nums; color: var(--lab-muted); }
+.interaction-lab .lab-controls input { min-width: 0; width: 122px; height: 30px; cursor: pointer; accent-color: var(--lab-accent); }
+.interaction-lab .lab-controls button { padding: 8px 0; min-height: 36px; border-bottom: 1px solid var(--lab-rule); color: var(--lab-muted); }
+.interaction-lab .lab-controls button:hover { color: var(--lab-accent); border-color: currentColor; }
+.interaction-lab .lab-stage { display: flex; align-items: center; flex: 1; min-height: 530px; padding: 65px 16px 80px; position: relative; }
+.interaction-lab .lab-gallery { width: 100%; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; align-items: start; }
+.interaction-lab .lab-project { min-width: 0; margin: 0; }
+.interaction-lab .lab-project-link { display: block; position: relative; transform-origin: 50% 42%; --field: 0; }
+.interaction-lab .lab-image { position: relative; width: 100%; aspect-ratio: 4/3; overflow: hidden; background: #d9dbe1; }
+.interaction-lab .lab-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; }
+.interaction-lab .lab-caption { display: grid; grid-template-columns: 32px minmax(0,1fr) 20px; gap: 10px; align-items: start; padding-top: 20px; }
+.interaction-lab .lab-caption h3 { font-size: clamp(16px,1.45vw,21px); font-weight: 500; line-height: 1.25; letter-spacing: -.025em; min-height: 2.5em; transform: translateX(calc(var(--field) * 3px)); }
+.interaction-lab .lab-project-number { font-size: 16px; font-variant-numeric: tabular-nums; transform: translateY(calc(var(--field) * -5px)); }
+.interaction-lab .lab-project-arrow { font-size: 21px; line-height: 1; transform: translate(calc(var(--field) * 4px),calc(var(--field) * -4px)); }
+.interaction-lab .lab-project-subtitle { margin: 8px 0 22px 42px; color: var(--lab-muted); font-size: 14px; line-height: 1.6; min-height: 1.6em; }
+.interaction-lab .lab-project-line { display: block; height: 1px; background: var(--lab-rule); position: relative; }
+.interaction-lab .lab-project-line::after { content: ''; position: absolute; inset: 0; height: 2px; background: var(--lab-accent); transform: scaleX(var(--field)); transform-origin: left; }
+.interaction-lab .lab-project-link:focus-visible .lab-project-line::after { transform: scaleX(1); }
+.interaction-lab .lab-stage[data-motion-active=true] .lab-project-link { will-change: transform; }
+
+/* A: perspective, attraction and typography all follow a distance-based field. */
+.interaction-lab .lab-magnetic .lab-project-link { transform: perspective(1100px) translate3d(var(--magnet-x,0px),var(--magnet-y,0px),0) rotateX(var(--magnet-rx,0deg)) rotateY(var(--magnet-ry,0deg)) scale(calc(1 + var(--field) * .012)); }
+.interaction-lab .lab-magnetic .lab-image img { transform: translate3d(var(--image-parallax-x,0px),var(--image-parallax-y,0px),0) scale(1.065); }
+.interaction-lab .lab-magnetic .lab-caption { transform: translate3d(calc(var(--magnet-x,0px) * .25),calc(var(--magnet-y,0px) * -.16),0); }
+
+/* B: three soft, unequal lobes form one non-circular reveal boundary. */
+.interaction-lab .lab-reveal-base { filter: grayscale(1) blur(var(--resting-blur,3px)) contrast(var(--resting-contrast,.48)); opacity: .72; transform: scale(1.04); }
+.interaction-lab .lab-reveal .lab-project-link {
+  --reveal-x: 50%; --reveal-y: 50%; --reveal-rx: 120px; --reveal-ry: 100px;
+  --reveal-tail-x: 0px; --reveal-tail-y: 0px;
+}
+.interaction-lab .lab-reveal-layer {
+  position: absolute; inset: 0; opacity: var(--field); overflow: hidden;
+  --reveal-mask:
+    radial-gradient(ellipse var(--reveal-rx) var(--reveal-ry) at var(--reveal-x) var(--reveal-y),#000 35%,rgba(0,0,0,.94) 56%,transparent 100%),
+    radial-gradient(ellipse calc(var(--reveal-rx) * .72) calc(var(--reveal-ry) * 1.03) at calc(var(--reveal-x) - var(--reveal-tail-x) - var(--reveal-rx) * .28) calc(var(--reveal-y) - var(--reveal-tail-y) + var(--reveal-ry) * .19),#000 25%,rgba(0,0,0,.8) 54%,transparent 100%),
+    radial-gradient(ellipse calc(var(--reveal-rx) * .62) calc(var(--reveal-ry) * .72) at calc(var(--reveal-x) + var(--reveal-tail-x) + var(--reveal-rx) * .37) calc(var(--reveal-y) + var(--reveal-tail-y) - var(--reveal-ry) * .31),#000 20%,rgba(0,0,0,.8) 48%,transparent 100%);
+  mask-image: var(--reveal-mask); -webkit-mask-image: var(--reveal-mask);
+  mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+}
+.interaction-lab .lab-reveal-layer img { transform: translate3d(var(--reveal-shift-x,0px),var(--reveal-shift-y,0px),0) scale(1.04); }
+.interaction-lab .lab-reveal .lab-project-link:focus-visible .lab-reveal-layer { mask-image: none; -webkit-mask-image: none; opacity: 1; }
+
+/* C: the outer composition settles to aligned positions; crops retain depth. */
+.interaction-lab .lab-spatial { min-height: 190svh; display: block; padding: 0; }
+.interaction-lab .lab-spatial-sticky { position: sticky; top: var(--lab-bar); min-height: calc(100svh - var(--lab-bar)); padding: 60px var(--lab-gutter) 20px; display: flex; flex-direction: column; }
+.interaction-lab .lab-spatial .lab-image { transform: perspective(1100px) translate3d(var(--scroll-x,0px),var(--scroll-y,0px),0) rotateX(var(--scroll-rx,0deg)) skewY(var(--scroll-skew,0deg)) scale(var(--scroll-scale-x,1),var(--scroll-scale-y,1)); }
+.interaction-lab .lab-spatial .lab-image img { transform: translateY(clamp(-6%,var(--crop-y,0px),6%)) scale(1.16); }
+.interaction-lab .lab-spatial .lab-caption { transform: translate3d(var(--title-x,0px),calc(var(--scroll-y,0px) * .24),0); }
+.interaction-lab .lab-footer { padding: 55px var(--lab-gutter) 45px; border-top: 1px solid var(--lab-rule); display: grid; grid-template-columns: 1fr auto; gap: 30px; font-size: 15px; }
+.interaction-lab .lab-footer > p { font-size: 23px; letter-spacing: -.025em; max-width: 620px; }
+.interaction-lab .lab-footer > div { display: flex; gap: 30px; align-items: center; }
+.interaction-lab .lab-footer > a { justify-self: start; color: var(--lab-muted); }
+.interaction-lab .lab-footer a:hover { color: var(--lab-accent); }
+
+/* Zero intensity and reduced-motion states are clean, sharp static galleries. */
+.interaction-lab .lab-experiment[data-still=true] .lab-project-link,
+.interaction-lab .lab-experiment[data-still=true] .lab-image,
+.interaction-lab .lab-experiment[data-still=true] .lab-caption,
+.interaction-lab .lab-experiment[data-still=true] .lab-project-number,
+.interaction-lab .lab-experiment[data-still=true] .lab-project-arrow,
+.interaction-lab .lab-experiment[data-still=true] .lab-caption h3 { transform: none; }
+.interaction-lab .lab-experiment[data-still=true] .lab-reveal-base { filter: none; opacity: 1; }
+.interaction-lab .lab-experiment[data-still=true] .lab-reveal-layer { display: none; }
+
+@media (min-width:1800px) {
+  .interaction-lab .lab-intro, .interaction-lab .lab-experiment-header, .interaction-lab .lab-stage { max-width: 1700px; margin-left: auto; margin-right: auto; width: 100%; }
+}
+@media (max-width:1050px) {
+  .interaction-lab .lab-topbar { grid-template-columns: 1fr auto auto auto; gap: 22px; }
+  .interaction-lab .lab-experiment-heading { grid-template-columns: 43px minmax(0,1fr); gap: 13px; }
+  .interaction-lab .lab-letter { font-size: 39px; }
+  .interaction-lab .lab-controls { width: 145px; }
+  .interaction-lab .lab-controls input { width: 85px; }
+  .interaction-lab .lab-gallery { gap: 22px; }
+  .interaction-lab .lab-stage { padding-left: 0; padding-right: 0; }
+  .interaction-lab .lab-caption { grid-template-columns: 25px minmax(0,1fr) 17px; gap: 8px; }
+  .interaction-lab .lab-project-subtitle { margin-left: 33px; }
+}
+@media (max-width:760px) {
+  .interaction-lab { --lab-bar: 62px; }
+  .interaction-lab .lab-topbar { grid-template-columns: 1fr auto auto; gap: 14px; font-size: 13px; padding: 0 18px; }
+  .interaction-lab .lab-topbar-title { display: none; }
+  .interaction-lab .lab-topbar nav { gap: 0; }
+  .interaction-lab .lab-topbar nav a { width: 34px; }
+  .interaction-lab .lab-language { gap: 4px; font-size: 12px; }
+  .interaction-lab .lab-intro { padding-top: 110px; padding-bottom: 45px; }
+  .interaction-lab .lab-intro h1 { font-size: clamp(44px,10.5vw,76px); margin-top: 20px; margin-bottom: 30px; }
+  .interaction-lab .lab-kicker { font-size: 12px; }
+  .interaction-lab .lab-intro-copy { grid-template-columns: 1fr; gap: 22px; }
+  .interaction-lab .lab-intro-copy h2 { font-size: 27px; }
+  .interaction-lab .lab-intro-copy p { font-size: 15px; }
+  .interaction-lab .lab-jump-list { grid-template-columns: 1fr; gap: 0; margin-top: 30px; }
+  .interaction-lab .lab-access-note { margin-top: 23px; }
+  .interaction-lab .lab-experiment { padding-top: 36px; padding-bottom: 25px; }
+  .interaction-lab .lab-experiment-header { flex-direction: column; gap: 24px; min-height: auto; }
+  .interaction-lab .lab-experiment-heading { grid-template-columns: 38px minmax(0,1fr); gap: 12px; }
+  .interaction-lab .lab-experiment-heading h2 { font-size: clamp(25px,6.6vw,40px); }
+  .interaction-lab .lab-experiment-heading p { font-size: 14px; margin-top: 12px; }
+  .interaction-lab .lab-letter { font-size: 33px; }
+  .interaction-lab .lab-controls { width: 100%; max-width: 340px; grid-template-columns: 1fr auto; gap: 4px 20px; }
+  .interaction-lab .lab-controls input { width: 100%; }
+  .interaction-lab .lab-controls label { grid-column: 1/-1; }
+  .interaction-lab .lab-stage { min-height: auto; padding-top: 44px; padding-bottom: 45px; }
+  .interaction-lab .lab-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px 18px; }
+  .interaction-lab .lab-project:first-child { grid-column: 1/-1; }
+  .interaction-lab .lab-project:first-child .lab-image { aspect-ratio: 1.65; }
+  .interaction-lab .lab-project:first-child .lab-caption h3 { font-size: 20px; min-height: 0; }
+  .interaction-lab .lab-caption { padding-top: 14px; grid-template-columns: 23px minmax(0,1fr); gap: 7px; }
+  .interaction-lab .lab-caption h3 { font-size: 16px; min-height: 2.5em; }
+  .interaction-lab .lab-project-arrow { display: none; }
+  .interaction-lab .lab-project-number { font-size: 14px; }
+  .interaction-lab .lab-project-subtitle { margin: 9px 0 15px 30px; font-size: 13px; }
+  .interaction-lab .lab-spatial { min-height: 135svh; padding: 0; }
+  .interaction-lab .lab-spatial-sticky { position: static; padding-top: 36px; padding-bottom: 45px; min-height: auto; }
+  .interaction-lab .lab-footer { grid-template-columns: 1fr; gap: 22px; padding-top: 35px; padding-bottom: 35px; }
+  .interaction-lab .lab-footer > p { font-size: 23px; }
+}
+@media (hover:none) {
+  .interaction-lab .lab-magnetic .lab-project-link,
+  .interaction-lab .lab-magnetic .lab-caption { transform: none; }
+  .interaction-lab .lab-reveal-base { filter: none; opacity: 1; }
+  .interaction-lab .lab-reveal-layer { display: none; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .interaction-lab .lab-spatial { min-height: 100svh; }
+  .interaction-lab .lab-spatial-sticky { position: static; }
+  .interaction-lab .lab-project-link, .interaction-lab .lab-image, .interaction-lab .lab-image img,
+  .interaction-lab .lab-caption, .interaction-lab .lab-caption h3,
+  .interaction-lab .lab-project-number, .interaction-lab .lab-project-arrow { transform: none !important; }
+  .interaction-lab .lab-reveal-base { filter: none; opacity: 1; }
+  .interaction-lab .lab-reveal-layer { display: none; }
+}

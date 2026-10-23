@@ -1,0 +1,23 @@
+.home-passport { --passport-open:1; --passport-arrive:1; --reel-recede:0; position:relative; }
+.passport-explore-anchor { position:absolute; top:calc(100svh - 12px); scroll-margin-top:80px; }
+.passport-stage { perspective:var(--passport-perspective,2400px); }
+.home-passport .about-record { padding-top:15px; padding-bottom:20px; width:100%; }
+.passport-cover-leaf { display:none; }
+.home-passport[data-animated=true] { height:calc(100svh + var(--sequence-distance)); }
+.home-passport[data-animated=true] .passport-explore-anchor { top:var(--explore-position); scroll-margin-top:-130px; }
+.home-passport[data-animated=true] .sequence-stage { position:sticky; top:0; height:100svh; overflow:clip; perspective:var(--passport-perspective); }
+.home-passport[data-animated=true] .sequence-reel { position:absolute; inset:0; transform-origin:50% 28%; transform:translateY(calc(var(--reel-recede) * -105svh)) translateZ(calc(var(--reel-recede) * -420px)) scale(calc(1 - var(--reel-recede) * .25)); will-change:transform; }
+.home-passport[data-animated=true] .passport-stage { position:absolute; inset:0; display:flex; align-items:center; padding-top:65px; transform:translateY(calc((1 - var(--passport-arrive)) * 105svh)) translateZ(calc((1 - var(--passport-arrive)) * -160px)); will-change:transform; }
+.home-passport[data-animated=true] .record-heading { visibility:hidden; height:0; padding:0; }
+.home-passport[data-animated=true] .record-spread { transform-style:preserve-3d; background:transparent; border-color:transparent; box-shadow:none; overflow:visible; transform:translateX(calc((var(--passport-open) - 1) * 25%)) translateY(calc((1 - var(--passport-open)) * -8px)) rotateX(calc((1 - var(--passport-open)) * var(--passport-lift))) rotateZ(calc((1 - var(--passport-arrive)) * -2deg)); }
+.home-passport[data-animated=true] .record-information { transform-origin:100% 50%; backface-visibility:hidden; background-color:var(--book-paper); transform:rotateY(calc((1 - var(--passport-open)) * var(--passport-angle-max))); box-shadow:calc((1 - var(--passport-open)) * 12px) 3px 18px rgba(57,38,28,.19); }
+.home-passport[data-animated=true] .record-projects { background-color:var(--book-paper); box-shadow:2px 3px 0 #826759,0 16px 25px -14px rgba(42,31,24,.5); }
+.home-passport[data-animated=true] .record-spread::before,.home-passport[data-animated=true] .record-spread::after { opacity:var(--passport-open); }
+.home-passport[data-animated=true] .passport-cover-leaf { display:block; position:absolute; z-index:6; left:0; top:0; bottom:0; width:50%; transform-style:preserve-3d; transform-origin:100% 50%; transform:rotateY(calc((1 - var(--passport-open)) * var(--passport-angle-max))); pointer-events:none; }
+.passport-cover-face { position:absolute; inset:0; border-radius:var(--passport-radius) 2px 2px var(--passport-radius); overflow:hidden; backface-visibility:hidden; transform:rotateY(180deg) translateZ(1px); background:linear-gradient(105deg,rgba(255,255,255,.1),transparent 45%,rgba(69,36,21,.14)),#bc8d79; color:#3b302a; border:2px solid #826759; box-shadow:inset 0 0 0 11px #c89b85,inset 0 0 0 12px rgba(74,48,33,.35),3px 9px 18px rgba(47,31,24,.22); padding:35px; display:flex; flex-direction:column; justify-content:space-between; }
+.passport-cover-face > span { text-transform:uppercase; font-size:15px; letter-spacing:.08em; }
+.passport-cover-face > p { font-size:24px; }
+.home-passport[data-open=false] .record-spread { pointer-events:none; }
+.home-passport[data-simplified=true] .passport-stage { transform:translateY(clamp(0px,calc((1 - var(--passport-arrive)) * 24px),24px)); }
+@media(prefers-reduced-motion:reduce) { .home-passport .passport-stage { transform:none; } }
+.home-passport[data-animated=true] .record-information::after { content:''; position:absolute; inset:0; pointer-events:none; border-radius:inherit; background:linear-gradient(90deg,rgba(255,244,227,.32),transparent 45%,rgba(73,40,25,.28)); opacity:calc((1 - var(--passport-open)) * .65); }

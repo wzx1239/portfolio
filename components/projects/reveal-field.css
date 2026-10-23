@@ -1,0 +1,47 @@
+/* Production only. Independent of the lab and the project-page template. */
+.project-directory .project-row { grid-template-columns: 1.45fr 1fr 1fr; gap: clamp(20px,2.2vw,40px); align-items: start; }
+.project-directory .project-item:nth-child(2) { padding-top: clamp(22px,3.8vw,64px); }
+.project-directory .project-item:nth-child(3) { padding-top: clamp(60px,7vw,108px); }
+.project-directory .project-featured .project-thumbnail { aspect-ratio: 1.28; }
+.reveal-project { --rf-field:0; --rf-full:0; --rf-scroll:0px; --rf-x:50%; --rf-y:50%; --rf-r:120px; --rf-tail-x:0px; --rf-tail-y:0px; }
+.reveal-project .rf-surface { position:relative; aspect-ratio:.98; overflow:hidden; background:var(--media-neutral); filter:none; transform:translateY(var(--rf-scroll)) scale(1.025); }
+.reveal-project .rf-rest,.reveal-project .rf-original { position:absolute; inset:0; }
+.reveal-project .rf-rest { filter:saturate(calc(var(--rf-saturation) + (1 - var(--rf-saturation)) * var(--rf-full))) contrast(var(--rf-contrast)) brightness(var(--rf-brightness)); }
+.reveal-project .rf-surface img { position:absolute; inset:0; height:100%; width:100%; object-fit:cover; transform:scale(1.025); transition:none; }
+/* Preview-only exception: the designed thumbnail frame owns geometry, not metadata. */
+.reveal-project .rf-surface .rf-video { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transform:none; }
+.reveal-project .rf-original {
+  opacity:1;
+  /* Same harmonic organic boundary as the global Trace; never a circular spotlight. */
+  mask-image:var(--rf-mask,linear-gradient(transparent,transparent)); -webkit-mask-image:var(--rf-mask,linear-gradient(transparent,transparent));
+  mask-repeat:no-repeat; -webkit-mask-repeat:no-repeat;
+  mask-size:100% 100%; -webkit-mask-size:100% 100%;
+  mask-position:0 0; -webkit-mask-position:0 0;
+}
+.reveal-project .rf-original img { transform:translate(var(--rf-shift-x,0px),var(--rf-shift-y,0px)) scale(1.025); }
+.reveal-project .rf-surface .rf-video { opacity:0; transition:opacity var(--rf-video-speed) ease-out; }
+.reveal-project .rf-surface .rf-video.is-playing { opacity:1; }
+.reveal-project .rf-fallback { position:absolute; inset:0; background:var(--media-neutral); }
+.reveal-project .thumbnail-number { transform:translateY(calc(var(--rf-field) * -3px)); color:color-mix(in srgb,var(--ink),var(--accent) calc(var(--rf-field) * 100%)); background:var(--paper); font-size:22px; }
+.reveal-project .thumbnail-arrow { background:var(--paper); color:var(--ink); transform:translate(calc(var(--rf-field) * 2px),calc(var(--rf-field) * -2px)); }
+.reveal-project .thumbnail-arrow > span:first-child { transform:translate(calc(var(--rf-full) * 100%),calc(var(--rf-full) * -100%)); }
+.reveal-project .thumbnail-arrow > span:nth-child(2) { transform:translate(calc(-100% + var(--rf-full) * 100%),calc(100% - var(--rf-full) * 100%)); }
+.reveal-project .activation-line { height:2px; transform:scaleX(var(--rf-field)); transition:none; }
+.reveal-project .project-caption { padding-top:19px; }
+.reveal-project .project-caption h3 { transform:translateX(calc(var(--rf-field) * 3px)); color:var(--ink); transition:none; }
+.reveal-project .project-subtitle { max-width:42ch; }
+.reveal-project .project-link:focus-visible .rf-original { mask-image:none; -webkit-mask-image:none; opacity:1; }
+.reveal-project .project-link:focus-visible .activation-line { transform:scaleX(1); }
+.category-heading .category-title { overflow:hidden; }
+@media (max-width:700px) {
+  .project-directory .project-row { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px 16px; }
+  .project-directory .project-item:nth-child(2),.project-directory .project-item:nth-child(3) { padding-top:0; }
+  .project-directory .project-featured .project-thumbnail { aspect-ratio:1.7; }
+  .project-directory .project-item:not(.project-featured) .project-thumbnail { aspect-ratio:1.16; }
+  .reveal-project .rf-surface { transform:scale(1.015); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .reveal-project .rf-rest { filter:none; }
+  .reveal-project .rf-original { display:none; }
+  .reveal-project .rf-surface,.reveal-project .rf-surface img,.reveal-project .project-caption h3,.reveal-project .thumbnail-number,.reveal-project .thumbnail-arrow { transform:none !important; }
+}

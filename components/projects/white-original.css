@@ -1,0 +1,6 @@
+/* 05/06: local white project surfaces within the global dark environment. */
+.white-original { --paper:#fff; --paper-alt:#fff; --ink:#171717; --architecture:#202126; --rule:#d5d5d5; --muted:#666; color-scheme:light; background:#fff; color:#171717; }
+.project-detail.white-original .project-hero-caption { background:#fff; background-image:none; }
+.project-detail.white-original .project-hero-index { background:#fff; color:#171717; }
+.white-original .refuge-source-sequence,.white-original .refuge-source-page,.white-original .refuge-source-composition.section-media { background:#fff; }
+.white-original .refuge-page-zoom { background:#fff; color:#171717; border-color:#aaa; }

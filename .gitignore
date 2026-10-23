@@ -1,0 +1,19 @@
+node_modules/
+.pnpm-store/
+.next/
+.next-pages/
+.next*/
+out/
+out-*/
+# Retired GIF copies: not referenced by the site; original source folder is external.
+public/media/projects/01-perfect-city/trace-reveal.gif
+public/media/projects/01-perfect-city/trace-manipulate.gif
+public/media/projects/01-perfect-city/trace-echo.gif
+public/media/projects/01-perfect-city/npc.gif
+public/media/projects/01-perfect-city/inventory.gif
+.next-v2/
+*.tsbuildinfo
+.env*
+!.env.example
+
+.pages-build-*/

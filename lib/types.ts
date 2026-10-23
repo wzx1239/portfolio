@@ -1,0 +1,55 @@
+export type Language = 'en' | 'zh';
+export type Localized = Record<Language, string>;
+export const l = (en: string, zh: string): Localized => ({ en, zh });
+export type Category = 'game' | 'architecture' | 'video';
+export type MediaAsset = {
+  image?: string;
+  video?: string;
+  controls?: boolean;
+  alt: Localized;
+  variant: number;
+  placeholder?: boolean;
+};
+export type MetadataField = { label: Localized; value: Localized };
+export type Section = {
+  id: string;
+  kind: 'text' | 'media' | 'split' | 'technical';
+  eyebrow?: Localized;
+  title: Localized;
+  body?: Localized;
+  media?: MediaAsset;
+  fullWidth?: boolean;
+  youtube?: string;
+  steps?: { id: string; number: string; selector: Localized; thumbnail: string; branch?: Localized; title: Localized; body: Localized; video: string; width: number; height: number; implementation?: { heading: Localized; body: Localized }[] }[];
+  deepDiveSlug?: string;
+};
+export type DeepDive = { slug: string; title: Localized; summary: Localized; sections: Section[] };
+export type ArchitectureVisual = { src: string; width: number; height: number; caption: Localized };
+export type ArchitectureSection = {
+  id: string;
+  title: Localized;
+  paragraphs?: Localized[];
+  layout: 'wide' | 'pair' | 'offset' | 'sequence' | 'detail';
+  visuals: ArchitectureVisual[];
+  facts?: { label: Localized; value: Localized }[];
+};
+export type Project = {
+  id: string;
+  number: string;
+  slug: string;
+  category: Category;
+  title: Localized;
+  subtitle: Localized;
+  summary: Localized;
+  tags: Localized[];
+  metadata: MetadataField[];
+  thumbnail: MediaAsset;
+  hero: MediaAsset;
+  previewVideo?: string;
+  software?: string[];
+  originalPdf?: { src: string; filename: string };
+  architecture?: { sections: ArchitectureSection[]; original?: boolean };
+  sections: Section[];
+  deepDives: DeepDive[];
+  nextProject: string;
+};

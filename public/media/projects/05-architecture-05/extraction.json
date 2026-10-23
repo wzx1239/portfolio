@@ -1,0 +1,197 @@
+[
+  {
+    "name": "hero",
+    "page": 1,
+    "box": [
+      34,
+      32.84,
+      1156.54,
+      596.47
+    ],
+    "width": 3368,
+    "height": 1690,
+    "src": "/media/projects/05-architecture-05/hero.webp"
+  },
+  {
+    "name": "cairo-context",
+    "page": 2,
+    "box": [
+      34,
+      103,
+      434,
+      536
+    ],
+    "width": 1200,
+    "height": 1299,
+    "src": "/media/projects/05-architecture-05/cairo-context.webp"
+  },
+  {
+    "name": "mokattam-research",
+    "page": 2,
+    "box": [
+      459,
+      103,
+      1157,
+      536
+    ],
+    "width": 2094,
+    "height": 1299,
+    "src": "/media/projects/05-architecture-05/mokattam-research.webp"
+  },
+  {
+    "name": "timeline",
+    "page": 2,
+    "box": [
+      34,
+      559,
+      1157,
+      798
+    ],
+    "width": 3369,
+    "height": 717,
+    "src": "/media/projects/05-architecture-05/timeline.webp"
+  },
+  {
+    "name": "macro-strategy",
+    "page": 3,
+    "box": [
+      34,
+      134,
+      566,
+      800
+    ],
+    "width": 1596,
+    "height": 1998,
+    "src": "/media/projects/05-architecture-05/macro-strategy.webp"
+  },
+  {
+    "name": "urban-system",
+    "page": 3,
+    "box": [
+      576,
+      103,
+      1157,
+      800
+    ],
+    "width": 1743,
+    "height": 2091,
+    "src": "/media/projects/05-architecture-05/urban-system.webp"
+  },
+  {
+    "name": "residential",
+    "page": 4,
+    "box": [
+      34,
+      110,
+      577,
+      453
+    ],
+    "width": 1629,
+    "height": 1029,
+    "src": "/media/projects/05-architecture-05/residential.webp"
+  },
+  {
+    "name": "school",
+    "page": 4,
+    "box": [
+      597,
+      110,
+      1157,
+      453
+    ],
+    "width": 1680,
+    "height": 1029,
+    "src": "/media/projects/05-architecture-05/school.webp"
+  },
+  {
+    "name": "shop",
+    "page": 4,
+    "box": [
+      34,
+      470,
+      577,
+      800
+    ],
+    "width": 1629,
+    "height": 990,
+    "src": "/media/projects/05-architecture-05/shop.webp"
+  },
+  {
+    "name": "hospital",
+    "page": 4,
+    "box": [
+      597,
+      470,
+      1157,
+      800
+    ],
+    "width": 1680,
+    "height": 990,
+    "src": "/media/projects/05-architecture-05/hospital.webp"
+  },
+  {
+    "name": "paper-factory",
+    "page": 5,
+    "box": [
+      34,
+      110,
+      577,
+      453
+    ],
+    "width": 1629,
+    "height": 1029,
+    "src": "/media/projects/05-architecture-05/paper-factory.webp"
+  },
+  {
+    "name": "plastic-factory",
+    "page": 5,
+    "box": [
+      597,
+      110,
+      1157,
+      453
+    ],
+    "width": 1680,
+    "height": 1029,
+    "src": "/media/projects/05-architecture-05/plastic-factory.webp"
+  },
+  {
+    "name": "metal-factory",
+    "page": 5,
+    "box": [
+      34,
+      467,
+      577,
+      800
+    ],
+    "width": 1629,
+    "height": 999,
+    "src": "/media/projects/05-architecture-05/metal-factory.webp"
+  },
+  {
+    "name": "glass-factory",
+    "page": 5,
+    "box": [
+      597,
+      467,
+      1157,
+      800
+    ],
+    "width": 1680,
+    "height": 999,
+    "src": "/media/projects/05-architecture-05/glass-factory.webp"
+  },
+  {
+    "name": "final-urban",
+    "page": 6,
+    "box": [
+      34,
+      116,
+      1157,
+      800
+    ],
+    "width": 3369,
+    "height": 2052,
+    "src": "/media/projects/05-architecture-05/final-urban.webp"
+  }
+]

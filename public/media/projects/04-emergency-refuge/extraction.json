@@ -1,0 +1,301 @@
+[
+  {
+    "name": "hero",
+    "page": 1,
+    "box": [
+      34,
+      34.13,
+      1156.54,
+      595.28
+    ],
+    "width": 3368,
+    "height": 1684,
+    "src": "/media/projects/04-emergency-refuge/hero.webp"
+  },
+  {
+    "name": "climate-context",
+    "page": 2,
+    "box": [
+      34,
+      55,
+      1157,
+      458
+    ],
+    "width": 3369,
+    "height": 1209,
+    "src": "/media/projects/04-emergency-refuge/climate-context.webp"
+  },
+  {
+    "name": "dryas-wfc",
+    "page": 2,
+    "box": [
+      34,
+      535,
+      795,
+      808
+    ],
+    "width": 2283,
+    "height": 819,
+    "src": "/media/projects/04-emergency-refuge/dryas-wfc.webp"
+  },
+  {
+    "name": "concept",
+    "page": 2,
+    "box": [
+      800,
+      472,
+      1157,
+      805
+    ],
+    "width": 1071,
+    "height": 999,
+    "src": "/media/projects/04-emergency-refuge/concept.webp"
+  },
+  {
+    "name": "dryas",
+    "page": 3,
+    "box": [
+      33,
+      87,
+      423,
+      810
+    ],
+    "width": 1170,
+    "height": 2169,
+    "src": "/media/projects/04-emergency-refuge/dryas.webp"
+  },
+  {
+    "name": "energy-system",
+    "page": 3,
+    "box": [
+      439,
+      85,
+      778,
+      810
+    ],
+    "width": 1017,
+    "height": 2175,
+    "src": "/media/projects/04-emergency-refuge/energy-system.webp"
+  },
+  {
+    "name": "megastructure",
+    "page": 3,
+    "box": [
+      778,
+      85,
+      1157,
+      810
+    ],
+    "width": 1137,
+    "height": 2175,
+    "src": "/media/projects/04-emergency-refuge/megastructure.webp"
+  },
+  {
+    "name": "slots-modules",
+    "page": 4,
+    "box": [
+      266,
+      61,
+      1157,
+      240
+    ],
+    "width": 2673,
+    "height": 537,
+    "src": "/media/projects/04-emergency-refuge/slots-modules.webp"
+  },
+  {
+    "name": "typed-rules",
+    "page": 4,
+    "box": [
+      266,
+      250,
+      1157,
+      606
+    ],
+    "width": 2673,
+    "height": 1068,
+    "src": "/media/projects/04-emergency-refuge/typed-rules.webp"
+  },
+  {
+    "name": "explicit-rules",
+    "page": 4,
+    "box": [
+      266,
+      626,
+      1157,
+      724
+    ],
+    "width": 2673,
+    "height": 294,
+    "src": "/media/projects/04-emergency-refuge/explicit-rules.webp"
+  },
+  {
+    "name": "experiment-matrix",
+    "page": 5,
+    "box": [
+      34,
+      63,
+      340,
+      807
+    ],
+    "width": 918,
+    "height": 2232,
+    "src": "/media/projects/04-emergency-refuge/experiment-matrix.webp"
+  },
+  {
+    "name": "module-decomposition",
+    "page": 5,
+    "box": [
+      370,
+      63,
+      540,
+      807
+    ],
+    "width": 510,
+    "height": 2232,
+    "src": "/media/projects/04-emergency-refuge/module-decomposition.webp"
+  },
+  {
+    "name": "solver-studies",
+    "page": 5,
+    "box": [
+      562,
+      56,
+      1157,
+      807
+    ],
+    "width": 1785,
+    "height": 2253,
+    "src": "/media/projects/04-emergency-refuge/solver-studies.webp"
+  },
+  {
+    "name": "aggregation",
+    "page": 6,
+    "box": [
+      34,
+      34,
+      526,
+      808
+    ],
+    "width": 1476,
+    "height": 2322,
+    "src": "/media/projects/04-emergency-refuge/aggregation.webp"
+  },
+  {
+    "name": "developed-modules",
+    "page": 6,
+    "box": [
+      559,
+      65,
+      1157,
+      807
+    ],
+    "width": 1794,
+    "height": 2226,
+    "src": "/media/projects/04-emergency-refuge/developed-modules.webp"
+  },
+  {
+    "name": "section",
+    "page": 7,
+    "box": [
+      34,
+      34,
+      534,
+      807
+    ],
+    "width": 1500,
+    "height": 2319,
+    "src": "/media/projects/04-emergency-refuge/section.webp"
+  },
+  {
+    "name": "construction",
+    "page": 7,
+    "box": [
+      550,
+      58,
+      939,
+      807
+    ],
+    "width": 1167,
+    "height": 2247,
+    "src": "/media/projects/04-emergency-refuge/construction.webp"
+  },
+  {
+    "name": "slot-plans",
+    "page": 7,
+    "box": [
+      950,
+      74,
+      1157,
+      602
+    ],
+    "width": 621,
+    "height": 1584,
+    "src": "/media/projects/04-emergency-refuge/slot-plans.webp"
+  },
+  {
+    "name": "environment-response",
+    "page": 7,
+    "box": [
+      790,
+      660,
+      1157,
+      807
+    ],
+    "width": 1101,
+    "height": 441,
+    "src": "/media/projects/04-emergency-refuge/environment-response.webp"
+  },
+  {
+    "name": "final-aerial",
+    "page": 8,
+    "box": [
+      34,
+      50,
+      1157,
+      595
+    ],
+    "width": 3369,
+    "height": 1635,
+    "src": "/media/projects/04-emergency-refuge/final-aerial.webp"
+  },
+  {
+    "name": "energy-zone",
+    "page": 8,
+    "box": [
+      34,
+      628,
+      394,
+      805
+    ],
+    "width": 1080,
+    "height": 531,
+    "src": "/media/projects/04-emergency-refuge/energy-zone.webp"
+  },
+  {
+    "name": "elevator",
+    "page": 8,
+    "box": [
+      409,
+      628,
+      777,
+      805
+    ],
+    "width": 1104,
+    "height": 531,
+    "src": "/media/projects/04-emergency-refuge/elevator.webp"
+  },
+  {
+    "name": "residential",
+    "page": 8,
+    "box": [
+      792,
+      628,
+      1157,
+      805
+    ],
+    "width": 1095,
+    "height": 531,
+    "src": "/media/projects/04-emergency-refuge/residential.webp"
+  }
+]

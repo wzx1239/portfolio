@@ -1,0 +1,3927 @@
+[
+  {
+    "page": 2,
+    "width": 1190.55,
+    "height": 841.89,
+    "src": "/media/projects/06-architecture-06/original/page-2.webp",
+    "text": [
+      {
+        "en": "DESIGN DEVELOPMENT",
+        "x": 628.9724,
+        "y": 587.8018999999999,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 136.136,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "设计深化"
+      },
+      {
+        "en": "As architecture students, we are all well aware of the importance of an ideal workspace. Especially during the Covid pandemic, many people are often faced with",
+        "x": 34.0157,
+        "y": 756.6693,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 523.832,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "作为建筑学生，我们深知理想工作空间的重要性。尤其在新冠疫情期间，许多人常常面临"
+      },
+      {
+        "en": "the challenge of managing work, rest, and socializing in the same room, a limitation that not only affects productivity but can also exacerbate emotional isolation.",
+        "x": 34.01569999999998,
+        "y": 766.2692999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 525.072,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "在同一房间内安排工作、休息与社交的挑战，这一限制不仅影响生产力，也可能加剧情感孤立。"
+      },
+      {
+        "en": "For those in the creative industries, it is particularly important to have a meeting of inspirations, an exchange of ideas, and the opportunity to show their work",
+        "x": 34.01569999999998,
+        "y": 775.8693,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 524.024,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "对于创意行业工作者，灵感的相遇、想法的交流，以及定期向他人展示作品的机会"
+      },
+      {
+        "en": "to others on a regular basis. Therefore, the goal of this project is to design a building that provides studios for artists and small businesses, creating a shared",
+        "x": 34.01570000000001,
+        "y": 785.4693,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 514.7760000000001,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "尤其重要。因此，本项目旨在设计一栋为艺术家和小型企业提供工作室的建筑，创造共享"
+      },
+      {
+        "en": "space that not only inspires creativity but also fosters community interaction.",
+        "x": 34.0077,
+        "y": 795.0693,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 257.408,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "空间，既激发创造力，也促进社区互动。"
+      },
+      {
+        "en": "The site is located between Tithebarn Street, Moorefields, and Hackins Hey in Liverpool, England.",
+        "x": 34.0077,
+        "y": 804.6693,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 317.232,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "场地位于英国利物浦 Tithebarn Street、Moorefields 与 Hackins Hey 之间。"
+      },
+      {
+        "en": "0",
+        "x": 516.189,
+        "y": 735.9615,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "0"
+      },
+      {
+        "en": "5",
+        "x": 527.367,
+        "y": 735.9615,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "5"
+      },
+      {
+        "en": "10",
+        "x": 534.477,
+        "y": 735.9615,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "10"
+      },
+      {
+        "en": "20m",
+        "x": 551.409,
+        "y": 735.9615,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 10.830000000000002,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "20m"
+      },
+      {
+        "en": "Train Station",
+        "x": 531.7795,
+        "y": 174.54629999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 30.660000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "火车站"
+      },
+      {
+        "en": "Bus Station",
+        "x": 531.7795,
+        "y": 189.54629999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.072000000000003,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "公交车站"
+      },
+      {
+        "en": "Hotel",
+        "x": 531.7795,
+        "y": 207.54629999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 13.104000000000001,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "酒店"
+      },
+      {
+        "en": "Bar",
+        "x": 531.7795,
+        "y": 224.54430000000002,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 8.106,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "酒吧"
+      },
+      {
+        "en": "Court",
+        "x": 531.7795,
+        "y": 241.54230000000007,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 13.5,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "法院"
+      },
+      {
+        "en": "SITE ANALYSIS",
+        "x": 34.0157,
+        "y": 45.438800000000015,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 83.664,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "场地分析"
+      },
+      {
+        "en": "USERS ANALYSIS",
+        "x": 629.2957000000001,
+        "y": 45.438800000000015,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 96.64200000000001,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "使用者分析"
+      },
+      {
+        "en": "Offices",
+        "x": 639.4421000000001,
+        "y": 354.6948,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 28.130000000000003,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "办公室"
+      },
+      {
+        "en": "Studios",
+        "x": 714.9421000000001,
+        "y": 354.6948,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 29.91,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "工作室"
+      },
+      {
+        "en": "Auditorium",
+        "x": 790.0521000000002,
+        "y": 354.6948,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 46.22,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "礼堂"
+      },
+      {
+        "en": "Exhibition",
+        "x": 861.0971000000001,
+        "y": 354.6948,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 40.45,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "展览"
+      },
+      {
+        "en": "Cafe&Kitchen",
+        "x": 924.1470999999999,
+        "y": 354.6948,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 55.52,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "咖啡厅与厨房"
+      },
+      {
+        "en": "Library",
+        "x": 1006.4140999999998,
+        "y": 354.6948,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 28.040000000000003,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "图书馆"
+      },
+      {
+        "en": "Shop",
+        "x": 1093.0740999999996,
+        "y": 354.6948,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 20.36,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "商店"
+      },
+      {
+        "en": "MASSING OPTIONS",
+        "x": 629.2913,
+        "y": 428.8874,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 111.902,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "体量方案"
+      },
+      {
+        "en": "Option 1: closed courtyard",
+        "x": 638.3312999999999,
+        "y": 558.9637,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 108.14,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "方案 1：封闭庭院"
+      },
+      {
+        "en": "Option 2: public ground floor",
+        "x": 766.4143,
+        "y": 558.9637,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 117.97,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "方案 2：公共底层"
+      },
+      {
+        "en": "Option 3: semi-public courtyard",
+        "x": 895.5162999999999,
+        "y": 558.9637,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 129.0,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "方案 3：半公共庭院"
+      },
+      {
+        "en": "Option 4: expand in site",
+        "x": 1044.5002999999997,
+        "y": 558.9637,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 96.74,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "方案 4：在场地内扩展"
+      },
+      {
+        "en": "Sunlight exposure",
+        "x": 647.7212999999999,
+        "y": 692.9336999999999,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 72.7,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "日照"
+      },
+      {
+        "en": "Consider site integrity",
+        "x": 744.9343,
+        "y": 692.9336999999999,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 89.06,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "考虑场地完整性"
+      },
+      {
+        "en": "Ground floor public space",
+        "x": 842.7533,
+        "y": 692.9336999999999,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 104.69000000000001,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "底层公共空间"
+      },
+      {
+        "en": "Connection",
+        "x": 974.3892999999997,
+        "y": 692.9336999999999,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 46.47,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "连接"
+      },
+      {
+        "en": "Leave pathway",
+        "x": 1075.0992999999994,
+        "y": 692.9336999999999,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 60.84,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "保留通道"
+      },
+      {
+        "en": "Bridge two parts",
+        "x": 647.7212999999999,
+        "y": 797.6037,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 67.24000000000001,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "桥接两部分"
+      },
+      {
+        "en": "Ground floor enclosed",
+        "x": 741.9013,
+        "y": 797.6037,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 90.87,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "底层围合"
+      },
+      {
+        "en": "Ground and roof garden",
+        "x": 843.9192999999999,
+        "y": 797.6037,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 98.44000000000001,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "地面与屋顶花园"
+      },
+      {
+        "en": "office worker",
+        "x": 680.1732,
+        "y": 154.99029999999993,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 32.436,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "办公人员"
+      },
+      {
+        "en": "artist",
+        "x": 712.4892,
+        "y": 235.35429999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 12.708000000000002,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "艺术家"
+      },
+      {
+        "en": "performers",
+        "x": 691.7352,
+        "y": 306.68229999999994,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.54,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "表演者"
+      },
+      {
+        "en": "exhibition installers",
+        "x": 811.9992,
+        "y": 53.830299999999966,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 47.616,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "布展人员"
+      },
+      {
+        "en": "exhibition visitors",
+        "x": 1033.2251999999999,
+        "y": 152.8483,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 43.104,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "展览观众"
+      },
+      {
+        "en": "library visitors",
+        "x": 982.3211999999999,
+        "y": 285.90430000000003,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 34.452,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "图书馆访客"
+      },
+      {
+        "en": "Timeline",
+        "x": 1151.6399,
+        "y": 337.3231,
+        "size": 6.0,
+        "matrix": [
+          0.0,
+          1.0,
+          -1.0,
+          0.0
+        ],
+        "width": 20.669999999999998,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "时间线"
+      },
+      {
+        "en": "store staff",
+        "x": 826.5827,
+        "y": 149.53359999999998,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 24.846,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "商店员工"
+      },
+      {
+        "en": "café staff",
+        "x": 826.7327,
+        "y": 216.60759999999993,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 22.476,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "咖啡厅员工"
+      },
+      {
+        "en": "stage crew",
+        "x": 826.0967,
+        "y": 295.83759999999995,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 26.31,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "舞台工作人员"
+      },
+      {
+        "en": "customers",
+        "x": 894.0407,
+        "y": 233.46759999999995,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 25.428000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "顾客"
+      },
+      {
+        "en": "audiences",
+        "x": 979.9127,
+        "y": 226.06359999999995,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 24.558,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "观众"
+      },
+      {
+        "en": "customers",
+        "x": 922.9607,
+        "y": 289.0695999999999,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 25.428000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "顾客"
+      },
+      {
+        "en": "Main circulation",
+        "x": 964.063,
+        "y": 797.7308,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 65.87,
+        "bold": false,
+        "color": [
+          0.827,
+          0.706,
+          0.588
+        ],
+        "sans": true,
+        "zh": "主要流线"
+      },
+      {
+        "en": "studios",
+        "x": 1068.913,
+        "y": 747.0734,
+        "size": 9.214558982935646,
+        "matrix": [
+          0.440281516186843,
+          0.47972995866500845,
+          0.03345792246497503,
+          0.9994401269832665
+        ],
+        "width": 26.934155907120893,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "工作室"
+      },
+      {
+        "en": "offices",
+        "x": 1122.7712,
+        "y": 725.8136,
+        "size": 9.214558982935646,
+        "matrix": [
+          0.440281516186843,
+          0.47972995866500845,
+          0.03345792246497503,
+          0.9994401269832665
+        ],
+        "width": 24.67658895630166,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "办公室"
+      },
+      {
+        "en": "exhibition space",
+        "x": 1082.8477,
+        "y": 805.5187,
+        "size": 7.958515883002308,
+        "matrix": [
+          0.8213968654585273,
+          -0.3840163222551822,
+          0.0019978599318949664,
+          0.9999980042758547
+        ],
+        "width": 52.50232928016623,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "展览空间"
+      },
+      {
+        "en": "auditorium",
+        "x": 1098.1570948,
+        "y": 775.1884097,
+        "size": 7.958515883002308,
+        "matrix": [
+          0.8213968654585273,
+          -0.3840163222551822,
+          0.0019978599318949664,
+          0.9999980042758547
+        ],
+        "width": 35.988408822936435,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "礼堂"
+      },
+      {
+        "en": "There is an existing parking lot adjacent to the site.",
+        "zh": "场地旁有一个现有停车场。",
+        "x": 332,
+        "y": 324.51,
+        "size": 5.5,
+        "width": 73,
+        "matrix": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bold": false,
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "sans": true,
+        "blockHeight": 20,
+        "raster": true
+      },
+      {
+        "en": "There is a derelict existing building on the site.",
+        "zh": "场地内有一栋现有废弃建筑。",
+        "x": 227,
+        "y": 374.51,
+        "size": 5.5,
+        "width": 70,
+        "matrix": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bold": false,
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "sans": true,
+        "blockHeight": 20,
+        "raster": true
+      },
+      {
+        "en": "There are two streets adjacent to the site that will influence the design of the building’s entrance.",
+        "zh": "场地旁有两条街道，将影响建筑入口的设计。",
+        "x": 130,
+        "y": 475.51,
+        "size": 5.5,
+        "width": 85,
+        "matrix": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bold": false,
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "sans": true,
+        "blockHeight": 26,
+        "raster": true
+      },
+      {
+        "en": "The site is next to a pub, and the design should consider the relationship between the building and itself.",
+        "zh": "场地旁是一家酒吧，设计应考虑建筑与其自身的关系。",
+        "x": 353,
+        "y": 554.51,
+        "size": 5.5,
+        "width": 72,
+        "matrix": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bold": false,
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "sans": true,
+        "blockHeight": 30,
+        "raster": true
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "width": 1190.55,
+    "height": 841.89,
+    "src": "/media/projects/06-architecture-06/original/page-3.webp",
+    "text": [
+      {
+        "en": "1 exhibition space",
+        "x": 561.5006,
+        "y": 374.39459999999997,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 58.64,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "1 展览空间"
+      },
+      {
+        "en": "2 cafe",
+        "x": 561.5006,
+        "y": 383.9946,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 19.504,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "2 咖啡厅"
+      },
+      {
+        "en": "3 kitchen",
+        "x": 561.5006,
+        "y": 393.5946,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 29.784,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "3 厨房"
+      },
+      {
+        "en": "4 library",
+        "x": 561.5006,
+        "y": 403.19460000000004,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 26.768,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "4 图书馆"
+      },
+      {
+        "en": "5 shop",
+        "x": 561.5006,
+        "y": 412.79460000000006,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 21.608,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "5 商店"
+      },
+      {
+        "en": "6 studios",
+        "x": 561.5006,
+        "y": 422.3946000000001,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 29.248,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6 工作室"
+      },
+      {
+        "en": "7 auditorium",
+        "x": 561.5006,
+        "y": 431.9946000000001,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 42.04,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "7 礼堂"
+      },
+      {
+        "en": "8 offices",
+        "x": 561.5006,
+        "y": 441.5946000000001,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.288,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "8 办公室"
+      },
+      {
+        "en": "9 outdoor garden",
+        "x": 561.5006,
+        "y": 451.19460000000015,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 56.968,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "9 室外花园"
+      },
+      {
+        "en": "PLANS",
+        "x": 34.0157,
+        "y": 45.438800000000015,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 37.702,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "平面图"
+      },
+      {
+        "en": "INTERIOR PERSPECTIVE 1 — Auditorium",
+        "x": 663.5957,
+        "y": 45.438800000000015,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 231.028,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "室内透视 1 — 礼堂"
+      },
+      {
+        "en": "INTERIOR PERSPECTIVE 2",
+        "x": 663.5938,
+        "y": 439.6645,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 145.36200000000002,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "室内透视 2"
+      },
+      {
+        "en": "— Studio",
+        "x": 811.8258,
+        "y": 439.6645,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 53.326,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "— 工作室"
+      },
+      {
+        "en": "Ground Floor",
+        "x": 99.5572,
+        "y": 645.9747,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 53.99,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "底层"
+      },
+      {
+        "en": "Second floor",
+        "x": 306.08719999999994,
+        "y": 645.9747,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 51.2,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "二层"
+      },
+      {
+        "en": "Third floor",
+        "x": 508.7471999999999,
+        "y": 645.9747,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 42.78,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "三层"
+      },
+      {
+        "en": "Roof plan",
+        "x": 510.7371999999999,
+        "y": 805.3347,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 38.86,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "屋顶平面"
+      },
+      {
+        "en": "Fourth floor",
+        "x": 102.12719999999996,
+        "y": 805.3747,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 48.83,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "四层"
+      },
+      {
+        "en": "Fifth floor",
+        "x": 311.56719999999996,
+        "y": 805.3347,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 40.16,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "五层"
+      },
+      {
+        "en": "1",
+        "x": 62.3622,
+        "y": 608.5753,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "1"
+      },
+      {
+        "en": "1",
+        "x": 62.3622,
+        "y": 773.9353,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "1"
+      },
+      {
+        "en": "1",
+        "x": 258.2382,
+        "y": 773.9353,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "1"
+      },
+      {
+        "en": "1",
+        "x": 161.2962,
+        "y": 620.5153,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "1"
+      },
+      {
+        "en": "1",
+        "x": 196.4442,
+        "y": 531.1693,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "1"
+      },
+      {
+        "en": "2",
+        "x": 117.4602,
+        "y": 585.9973,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "2"
+      },
+      {
+        "en": "3",
+        "x": 148.3782,
+        "y": 585.9493,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "3"
+      },
+      {
+        "en": "4",
+        "x": 196.4442,
+        "y": 586.6093,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "4"
+      },
+      {
+        "en": "5",
+        "x": 196.4442,
+        "y": 605.2873,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "5"
+      },
+      {
+        "en": "6",
+        "x": 177.8802,
+        "y": 376.2373,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "6",
+        "x": 454.11420000000004,
+        "y": 171.0073,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "6",
+        "x": 454.11420000000004,
+        "y": 410.4253,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "6",
+        "x": 394.3002,
+        "y": 538.6273,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "6",
+        "x": 593.2902,
+        "y": 520.8193,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "6",
+        "x": 257.66820000000007,
+        "y": 607.6573000000001,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "6",
+        "x": 455.59620000000007,
+        "y": 607.6813,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "7",
+        "x": 367.9362000000001,
+        "y": 410.42530000000005,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "7"
+      },
+      {
+        "en": "8",
+        "x": 394.3002000000001,
+        "y": 608.2213,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "8"
+      },
+      {
+        "en": "8",
+        "x": 593.2902000000001,
+        "y": 608.2213,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "8"
+      },
+      {
+        "en": "9",
+        "x": 527.2422000000001,
+        "y": 586.0033000000001,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "9"
+      },
+      {
+        "en": "9",
+        "x": 125.0082000000001,
+        "y": 773.9413000000001,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "9"
+      },
+      {
+        "en": "9",
+        "x": 306.37020000000007,
+        "y": 773.9413000000001,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "9"
+      },
+      {
+        "en": "9",
+        "x": 593.2962,
+        "y": 562.5253,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "9"
+      },
+      {
+        "en": "N",
+        "x": 77.3858,
+        "y": 122.3469,
+        "size": 5.4,
+        "matrix": [
+          1.111111111111111,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 4.077,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "N"
+      },
+      {
+        "en": "First floor",
+        "x": 77.3858,
+        "y": 108.38710000000003,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 39.260000000000005,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "一层"
+      },
+      {
+        "en": "0",
+        "x": 73.7008,
+        "y": 158.45069999999998,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "0"
+      },
+      {
+        "en": "1",
+        "x": 79.4548,
+        "y": 158.45069999999998,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "1"
+      },
+      {
+        "en": "5",
+        "x": 93.34479999999999,
+        "y": 158.45069999999998,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "5"
+      },
+      {
+        "en": "10m",
+        "x": 105.87880000000001,
+        "y": 158.45069999999998,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 10.830000000000002,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "10m"
+      },
+      {
+        "en": "A",
+        "x": 116.2488,
+        "y": 399.1005,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.4739999999999998,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "A"
+      },
+      {
+        "en": "'A",
+        "x": 524.4094,
+        "y": 399.1005,
+        "size": 6.0,
+        "matrix": [
+          -1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 4.8,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "'A"
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "width": 1190.55,
+    "height": 841.89,
+    "src": "/media/projects/06-architecture-06/original/page-4.webp",
+    "text": [
+      {
+        "en": "SECTION PERSPECTIVE A-A'",
+        "x": 34.0157,
+        "y": 45.438800000000015,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 157.304,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "A-A' 剖透视"
+      },
+      {
+        "en": "4.000",
+        "x": 66.3307,
+        "y": 571.12,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 22.73,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "4.000"
+      },
+      {
+        "en": "4.000",
+        "x": 1104.7307,
+        "y": 571.12,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 22.73,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "4.000"
+      },
+      {
+        "en": "8.000",
+        "x": 66.33069999999998,
+        "y": 498.27,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 22.73,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "8.000"
+      },
+      {
+        "en": "8.000",
+        "x": 1104.7307,
+        "y": 498.27,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 22.73,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "8.000"
+      },
+      {
+        "en": "12.000",
+        "x": 66.33069999999998,
+        "y": 425.41999999999996,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.800000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "12.000"
+      },
+      {
+        "en": "12.000",
+        "x": 1099.6607,
+        "y": 425.41999999999996,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.800000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "12.000"
+      },
+      {
+        "en": "16.000",
+        "x": 66.33069999999998,
+        "y": 352.28999999999996,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.800000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "16.000"
+      },
+      {
+        "en": "16.300",
+        "x": 1099.2907,
+        "y": 348.17999999999995,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.800000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "16.300"
+      },
+      {
+        "en": "20.000",
+        "x": 66.33069999999998,
+        "y": 279.15999999999997,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.800000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "20.000"
+      },
+      {
+        "en": "24.300",
+        "x": 66.33069999999998,
+        "y": 201.35000000000002,
+        "size": 10.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 27.800000000000004,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "24.300"
+      },
+      {
+        "en": "Studios",
+        "x": 149.2913,
+        "y": 241.80309999999997,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 23.928,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "工作室"
+      },
+      {
+        "en": "Exhibition space",
+        "x": 292.9153,
+        "y": 596.1311,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 52.696,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "展览空间"
+      },
+      {
+        "en": "Cafe",
+        "x": 519.1233,
+        "y": 596.1311,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 14.52,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "咖啡厅"
+      },
+      {
+        "en": "Kitchen",
+        "x": 703.7073,
+        "y": 596.1311,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 24.44,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "厨房"
+      },
+      {
+        "en": "Auditorium",
+        "x": 609.4593,
+        "y": 526.6831,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 36.976,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "礼堂"
+      },
+      {
+        "en": "Shop",
+        "x": 992.2992999999999,
+        "y": 596.1311,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 16.288,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "商店"
+      },
+      {
+        "en": "Offices",
+        "x": 1027.8833,
+        "y": 379.28309999999993,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 22.504,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "办公室"
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "width": 1190.55,
+    "height": 841.89,
+    "src": "/media/projects/06-architecture-06/original/page-5.webp",
+    "text": [
+      {
+        "en": "CONSTRUCTION DETAILS",
+        "x": 34.0157,
+        "y": 45.438800000000015,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 143.948,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "构造详图"
+      },
+      {
+        "en": "COURTYARD HUMAN PERSPECTIVE",
+        "x": 629.2957000000001,
+        "y": 412.5188,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 203.78400000000002,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "庭院人视透视"
+      },
+      {
+        "en": "FACADE STRATEGY",
+        "x": 629.2957000000001,
+        "y": 45.438800000000015,
+        "size": 14.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 109.494,
+        "bold": true,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "立面策略"
+      },
+      {
+        "en": "Southwest-facing facade (Artificial lighting)",
+        "x": 650.0763,
+        "y": 203.2196,
+        "size": 12.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 209.29199999999997,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "西南向立面（人工照明）"
+      },
+      {
+        "en": "Install polycarbonate boards on the sides exposed to direct sunlight to reduce glare.",
+        "x": 629.2923,
+        "y": 66.4796,
+        "size": 12.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 408.86400000000003,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "在受到阳光直射的立面安装聚碳酸酯板，以减少眩光。"
+      },
+      {
+        "en": "Southeast-facing facade (Artificial lighting)",
+        "x": 929.1963,
+        "y": 203.2196,
+        "size": 12.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 206.46000000000004,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "东南向立面（人工照明）"
+      },
+      {
+        "en": "1",
+        "x": 159.3071,
+        "y": 124.80129999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "1"
+      },
+      {
+        "en": "2",
+        "x": 168.09709999999998,
+        "y": 124.80129999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "2"
+      },
+      {
+        "en": "3",
+        "x": 177.02509999999998,
+        "y": 124.80129999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "3"
+      },
+      {
+        "en": "4",
+        "x": 185.95309999999998,
+        "y": 124.80129999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "4"
+      },
+      {
+        "en": "5",
+        "x": 194.88109999999998,
+        "y": 124.80129999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "5"
+      },
+      {
+        "en": "6",
+        "x": 203.38309999999998,
+        "y": 124.80129999999997,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "6"
+      },
+      {
+        "en": "7",
+        "x": 269.7131,
+        "y": 377.5093,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "7"
+      },
+      {
+        "en": "8",
+        "x": 278.2511,
+        "y": 377.5093,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "8"
+      },
+      {
+        "en": "9",
+        "x": 286.0451,
+        "y": 377.5093,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 3.042,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "9"
+      },
+      {
+        "en": "101112",
+        "x": 292.81309999999996,
+        "y": 377.2993,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 18.252,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "101112"
+      },
+      {
+        "en": "13",
+        "x": 398.2631,
+        "y": 183.93130000000008,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "13"
+      },
+      {
+        "en": "14",
+        "x": 412.1051,
+        "y": 243.71530000000007,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "14"
+      },
+      {
+        "en": "15",
+        "x": 412.0091,
+        "y": 251.50930000000005,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "15"
+      },
+      {
+        "en": "16",
+        "x": 325.83709999999996,
+        "y": 601.7293,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "16"
+      },
+      {
+        "en": "17",
+        "x": 325.83709999999996,
+        "y": 609.2413,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "17"
+      },
+      {
+        "en": "18",
+        "x": 325.83709999999996,
+        "y": 617.0353,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "18"
+      },
+      {
+        "en": "19",
+        "x": 325.83709999999996,
+        "y": 624.8293000000001,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "19"
+      },
+      {
+        "en": "20",
+        "x": 325.83709999999996,
+        "y": 632.9053,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "20"
+      },
+      {
+        "en": "21",
+        "x": 325.83709999999996,
+        "y": 640.6273000000001,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 6.084,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "21"
+      },
+      {
+        "en": "Roof construction",
+        "x": 42.8031,
+        "y": 731.304,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 59.184000000000005,
+        "bold": true,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "屋顶构造"
+      },
+      {
+        "en": "1 bituminous seal",
+        "x": 46.4191,
+        "y": 740.904,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 57.328,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "1 沥青防水层"
+      },
+      {
+        "en": "2 vapour barrier",
+        "x": 46.4191,
+        "y": 750.504,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 52.752,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "2 隔汽层"
+      },
+      {
+        "en": "3 soundproofing layer",
+        "x": 46.4191,
+        "y": 760.1039999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 71.34400000000001,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "3 隔音层"
+      },
+      {
+        "en": "4 oriented strand board",
+        "x": 46.4191,
+        "y": 769.704,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 77.44,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "4 定向刨花板"
+      },
+      {
+        "en": "5 thermal insulation",
+        "x": 46.4191,
+        "y": 779.304,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 65.336,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "5 保温层"
+      },
+      {
+        "en": "6 oriented strand board",
+        "x": 46.4191,
+        "y": 788.904,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 77.44,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "6 定向刨花板"
+      },
+      {
+        "en": "Floor construction",
+        "x": 150.3871,
+        "y": 731.4639999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 60.632000000000005,
+        "bold": true,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "楼板构造"
+      },
+      {
+        "en": "7 chipboard",
+        "x": 154.00310000000002,
+        "y": 741.064,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 38.72,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "7 刨花板"
+      },
+      {
+        "en": "8 vapour barrier",
+        "x": 154.00310000000002,
+        "y": 750.664,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 52.752,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "8 隔汽层"
+      },
+      {
+        "en": "9 soundproofing layer",
+        "x": 154.00310000000002,
+        "y": 760.2639999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 71.34400000000001,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "9 隔音层"
+      },
+      {
+        "en": "10 oriented strand board",
+        "x": 150.3871,
+        "y": 769.8639999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 81.49600000000001,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "10 定向刨花板"
+      },
+      {
+        "en": "11 thermal insulation",
+        "x": 150.3871,
+        "y": 779.4639999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 69.392,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "11 保温层"
+      },
+      {
+        "en": "12 oriented strand board",
+        "x": 150.3871,
+        "y": 789.064,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 81.49600000000001,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "12 定向刨花板"
+      },
+      {
+        "en": "Main structure",
+        "x": 370.4751,
+        "y": 777.2239999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 49.4,
+        "bold": true,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "主体结构"
+      },
+      {
+        "en": "13 prefabricated steel",
+        "x": 370.4751,
+        "y": 786.824,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 71.488,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "13 预制钢"
+      },
+      {
+        "en": "Facade construction",
+        "x": 257.9711,
+        "y": 769.0559999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 66.784,
+        "bold": true,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "立面构造"
+      },
+      {
+        "en": "14 double glazing",
+        "x": 257.9711,
+        "y": 778.656,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 56.752,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "14 双层玻璃"
+      },
+      {
+        "en": "15 polycarbonate board",
+        "x": 257.9711,
+        "y": 788.256,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 77.96000000000001,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "15 聚碳酸酯板"
+      },
+      {
+        "en": "Wall construction",
+        "x": 467.17109999999997,
+        "y": 731.304,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 58.68,
+        "bold": true,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "墙体构造"
+      },
+      {
+        "en": "16 corrugated metal sheet",
+        "x": 467.17109999999997,
+        "y": 740.904,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 86.08,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "16 压型金属板"
+      },
+      {
+        "en": "17 soundproofing layer",
+        "x": 467.17109999999997,
+        "y": 750.5039999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 75.4,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "17 隔音层"
+      },
+      {
+        "en": "18 steel studs",
+        "x": 467.17109999999997,
+        "y": 760.1039999999999,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 44.672000000000004,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "18 钢龙骨"
+      },
+      {
+        "en": "19 thermal insulation",
+        "x": 467.17109999999997,
+        "y": 769.704,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 69.392,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "19 保温层"
+      },
+      {
+        "en": "20 gypsum board",
+        "x": 467.17109999999997,
+        "y": 779.304,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 56.28,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "20 石膏板"
+      },
+      {
+        "en": "21 plaster",
+        "x": 467.17109999999997,
+        "y": 788.904,
+        "size": 8.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 32.368,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "21 抹灰"
+      },
+      {
+        "en": "0 0.1",
+        "x": 467.1664,
+        "y": 702.7396,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 11.952,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "0 0.1"
+      },
+      {
+        "en": "0.5",
+        "x": 489.9664,
+        "y": 702.7396,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 7.553999999999999,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "0.5"
+      },
+      {
+        "en": "1m",
+        "x": 515.1484,
+        "y": 702.7396,
+        "size": 6.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 7.788,
+        "bold": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sans": true,
+        "zh": "1m"
+      },
+      {
+        "en": "Northwest-facing facade (Natural lighting)",
+        "x": 629.2913,
+        "y": 244.0747,
+        "size": 12.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 205.296,
+        "bold": false,
+        "color": [
+          0.483,
+          0.093,
+          0.112
+        ],
+        "sans": true,
+        "zh": "西北向立面（自然采光）"
+      },
+      {
+        "en": "For sides not exposed to direct sunlight, use adjustable",
+        "x": 629.2913,
+        "y": 263.9172,
+        "size": 12.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 267.612,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "在没有阳光直射的立面，使用可调节的"
+      },
+      {
+        "en": "polycarbonate boards that users can control as required.",
+        "x": 629.2913,
+        "y": 278.31719999999996,
+        "size": 12.0,
+        "matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0
+        ],
+        "width": 276.504,
+        "bold": false,
+        "color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sans": true,
+        "zh": "聚碳酸酯板，让使用者按需控制。"
+      }
+    ]
+  }
+]

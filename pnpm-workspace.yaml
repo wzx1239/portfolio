@@ -1,0 +1,7 @@
+storeDir: .pnpm-store
+nodeLinker: hoisted
+packageImportMethod: copy
+enableGlobalVirtualStore: false
+onlyBuiltDependencies:
+  - sharp
+  - '@tailwindcss/oxide'

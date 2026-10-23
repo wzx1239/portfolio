@@ -1,0 +1,267 @@
+/* Physical portrait leaves. Size responds to viewport height without changing the scroll timeline. */
+.about-record { --passport-ratio:1.408; --passport-radius:11px; width:100%; max-width:1060px; padding:112px 44px 80px; margin:0 auto; }
+.record-heading { padding:0 0 17px; }
+.record-heading > h1,.record-heading > h2 { font:500 24px/1.1 var(--display); letter-spacing:-.035em; }
+.record-spread { --book-paper:#dfbdad; --book-rule:#a58474; --ink:#342d29; --muted:#6c554a; --architecture:#202126; --media-neutral:#e6e7eb; position:relative; isolation:isolate; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); aspect-ratio:var(--passport-ratio); border:2px solid #826759; border-radius:var(--passport-radius); background:var(--book-paper); color:#342d29; box-shadow:2px 3px 0 #826759,0 18px 38px -14px rgba(0,0,0,.56); }
+.record-spread::before { content:''; position:absolute; inset:-2px; z-index:4; pointer-events:none; border-radius:inherit; background:radial-gradient(ellipse 7px 2px at 4% 0%,var(--paper) 90%,transparent),radial-gradient(ellipse 12px 2px at 21% 0%,var(--paper) 90%,transparent),radial-gradient(ellipse 8px 2px at 72% 0%,var(--paper) 90%,transparent),radial-gradient(ellipse 10px 2px at 89% 100%,var(--paper) 90%,transparent),radial-gradient(ellipse 7px 2px at 32% 100%,var(--paper) 90%,transparent),radial-gradient(ellipse 3px 13px at 0% 23%,var(--paper) 90%,transparent),radial-gradient(ellipse 2px 8px at 0% 74%,var(--paper) 90%,transparent),radial-gradient(ellipse 3px 11px at 100% 58%,var(--paper) 90%,transparent); }
+.record-spread::after { content:''; position:absolute; z-index:3; top:0; bottom:0; left:calc(50% - 12px); width:24px; background:linear-gradient(90deg,transparent,rgba(72,63,46,.09) 38%,rgba(72,63,46,.19) 49%,rgba(255,255,255,.26) 56%,transparent); pointer-events:none; }
+.record-information,.record-projects { position:relative; min-width:0; padding:24px; overflow:hidden; background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.055) 0,rgba(255,255,255,.055) 1px,transparent 1px,transparent 4px); }
+.record-information { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; align-content:start; border-radius:var(--passport-radius) 2px 2px var(--passport-radius); }
+.record-projects { display:grid; grid-template-rows:auto minmax(0,1fr); border-left:1px dashed var(--book-rule); border-radius:2px var(--passport-radius) var(--passport-radius) 2px; }
+.record-information::before,.record-projects::before { content:''; position:absolute; inset:12px; border:1px dashed var(--book-rule); border-radius:5px; pointer-events:none; }
+.record-information > .record-panel-heading,.record-information > .record-education,.record-information > .record-tools,.record-information > .record-resume { grid-column:1/-1; }
+.record-panel-heading { display:flex; align-items:baseline; justify-content:space-between; gap:12px; min-height:25px; padding-bottom:8px; border-bottom:1px dashed var(--book-rule); }
+.record-panel-heading h2,.record-section-heading { font-size:11px; font-weight:600; line-height:1.4; letter-spacing:.025em; text-transform:uppercase; }
+.record-panel-heading > span { font-size:11px; font-variant-numeric:tabular-nums; }
+.record-identity { display:grid; grid-template-columns:56px minmax(0,1fr); gap:12px; align-items:start; }
+.record-portrait { width:56px; border:1px solid var(--book-rule); overflow:hidden; }
+.record-portrait .portrait { aspect-ratio:4/5; }
+.record-portrait .media-surface > img { object-position:56% 26%; transform:scale(1.52); transform-origin:56% 28%; }
+.record-label,.record-birth dt,.record-contact dt { color:#6c554a; font-size:10px; line-height:1.4; text-transform:uppercase; letter-spacing:.015em; }
+.record-name { font:550 21px/1.2 var(--display); letter-spacing:-.035em; margin:4px 0 10px; }
+.record-birth { display:grid; gap:3px; font-size:12px; line-height:1.4; font-variant-numeric:tabular-nums; }
+.record-contact { display:grid; gap:8px; align-content:start; scroll-margin-top:110px; }
+.record-contact > div { display:grid; gap:2px; }
+.record-contact dd { font-size:11px; line-height:1.4; overflow-wrap:anywhere; }
+.record-contact a:hover { text-decoration:underline; text-underline-offset:4px; }
+.record-section-heading { grid-column:1/-1; padding-top:10px; margin-bottom:10px; border-top:1px dashed var(--book-rule); }
+.record-education { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:16px; }
+.record-education-entry { display:grid; grid-template-rows:16px 44px 44px auto; row-gap:5px; align-content:start; }
+.record-education-entry h3,.record-tool-group h3 { color:#6c554a; font-size:10px; line-height:1.4; font-weight:550; letter-spacing:.015em; text-transform:uppercase; }
+.record-school { display:flex; flex-direction:column; justify-content:space-between; font-size:12px; line-height:1.35; }
+.record-school span { font-size:10px; line-height:1.4; font-variant-numeric:tabular-nums; }
+.record-school-detail { font-size:12px; line-height:1.35; }
+.record-major { display:grid; align-content:start; gap:3px; font-size:12px; line-height:1.35; }
+.record-major > span { font-size:10px; line-height:1.4; color:#6c554a; text-transform:uppercase; }
+.record-tools { display:grid; grid-template-columns:3fr 4fr 2fr; column-gap:12px; }
+.record-tool-group { min-width:0; }
+.record-tool-group h3 { min-height:2.8em; margin-bottom:7px; font-size:9px; }
+.record-tool-group ul { display:grid; grid-template-columns:repeat(var(--tool-count),minmax(0,1fr)); align-items:start; gap:4px; }
+.record-tool-group li { display:grid; justify-items:center; grid-template-rows:30px auto; gap:5px; text-align:center; min-width:0; }
+.record-tool-group li > span:last-child { font-size:9px; line-height:1.3; }
+.tool-logo { --tool-size:30px; display:block; width:var(--tool-size); height:var(--tool-size); background-color:#202020; mask:var(--tool-mark) center/82% 82% no-repeat; -webkit-mask:var(--tool-mark) center/82% 82% no-repeat; }
+.record-resume { display:grid; grid-template-columns:auto minmax(0,1fr); gap:12px; align-items:start; padding-top:10px; border-top:1px dashed var(--book-rule); }
+.record-resume .text-link { font-size:11px; line-height:1.4; white-space:nowrap; }
+.record-resume > div p { font-size:10px; line-height:1.4; }
+.record-resume > div span { display:block; color:#6c554a; font-size:10px; line-height:1.4; margin-top:3px; }
+.about-stamps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(3,minmax(0,1fr)); gap:16px 12px; padding-top:16px; align-content:start; }
+.about-stamps .project-stamp { min-width:0; border:0; margin:0; padding:0; filter:drop-shadow(0 2px 1px rgba(36,36,28,.16)); }
+.about-stamps .project-link { display:grid; grid-template-rows:minmax(0,1fr) 34px; height:100%; padding:7px; background:#f6f2e8; mask:linear-gradient(#000 0 0) center / calc(100% - 9px) calc(100% - 9px) no-repeat,radial-gradient(circle at 4px 4px,transparent 2px,#000 2.5px) -4px -4px / 8px 8px; -webkit-mask:linear-gradient(#000 0 0) center / calc(100% - 9px) calc(100% - 9px) no-repeat,radial-gradient(circle at 4px 4px,transparent 2px,#000 2.5px) -4px -4px / 8px 8px; }
+.about-stamps .project-link:focus-visible { outline:none; background:#e6dcff; }
+.about-stamps .project-stamp:focus-within { filter:drop-shadow(0 0 2px var(--accent)); }
+.about-stamps .thumbnail-wrap { border:1px solid rgba(38,41,37,.2); min-height:0; }
+.about-stamps .rf-surface { aspect-ratio:auto; height:100%; }
+.about-stamps .thumbnail-number { left:5px; top:5px; padding:2px 3px; font:500 13px/18px var(--sans); font-variant-numeric:tabular-nums; letter-spacing:0; background:#f6f2e8; }
+.about-stamps .thumbnail-arrow { right:5px; top:5px; width:22px; height:22px; background:#f6f2e8; }
+.about-stamps .thumbnail-arrow > span { font-size:16px; }
+.about-stamps .project-caption { padding:6px 0 0; }
+.about-stamps .project-caption h3 { font-size:11px; line-height:1.25; letter-spacing:0; }
+@media(min-width:1001px) { .about-record { width:min(100%,calc((100svh - 165px) * 1.408 + 88px)); } }
+@media(min-width:1001px) and (max-height:820px) {
+ .record-information,.record-projects { padding:20px; }
+ .record-information { gap:10px 14px; }
+ .record-name { font-size:19px; margin-bottom:7px; }
+ .record-section-heading { padding-top:8px; margin-bottom:8px; }
+ .record-education-entry { grid-template-rows:16px 42px 42px auto; row-gap:4px; }
+ .record-school,.record-school-detail,.record-major { font-size:11px; }
+ .record-tool-group h3 { margin-bottom:4px; }
+ .about-stamps { gap:12px 10px; padding-top:12px; }
+ .record-resume { padding-top:8px; }
+}
+@media(max-width:1000px) {
+ .about-record { max-width:680px; padding:96px 24px 50px; }
+ .record-spread { grid-template-columns:1fr; aspect-ratio:auto; }
+ .record-spread::after { display:none; }
+ .record-information { border-radius:var(--passport-radius) var(--passport-radius) 2px 2px; }
+ .record-projects { min-height:650px; border-left:0; border-top:1px dashed var(--book-rule); border-radius:2px 2px var(--passport-radius) var(--passport-radius); }
+}
+@media(max-width:480px) {
+ .about-record { padding-left:18px; padding-right:18px; }
+ .record-information,.record-projects { padding:26px 24px; }
+ .record-information { grid-template-columns:1fr; gap:18px; }
+ .record-information > * { grid-column:1; }
+ .record-contact > div { grid-template-columns:60px minmax(0,1fr); gap:12px; align-items:baseline; }
+ .record-education { grid-template-columns:1fr; gap:16px; }
+ .record-education-entry { grid-template-rows:auto; gap:8px; }
+ .record-school { gap:3px; }
+ .record-tools { grid-template-columns:1fr; row-gap:14px; }
+ .record-tool-group h3 { min-height:0; margin-bottom:8px; font-size:10px; }
+ .record-tool-group ul { grid-template-columns:repeat(4,minmax(0,1fr)); }
+ .record-tool-group li > span:last-child { font-size:10px; }
+ .record-resume { grid-template-columns:1fr; gap:8px; }
+ .record-projects { min-height:800px; }
+ .about-stamps { grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px 8px; }
+ .about-stamps .project-caption h3 { font-size:10px; }
+ .about-stamps .project-link { padding:6px; grid-template-rows:minmax(0,1fr) 48px; }
+ .about-stamps .thumbnail-number { left:3px; top:3px; font-size:11px; }
+ .about-stamps .thumbnail-arrow { display:none; }
+}
+/* Keep the corrected physical book inside the existing homepage animation stage. */
+@media(min-width:1351px) {
+ .home-passport .about-record { max-width:min(1060px,calc((100svh - 165px) * 1.408 + 88px)); }
+ .home-passport .record-heading { visibility:hidden; height:0; padding:0; }
+}
+@media(min-width:1001px) and (max-height:820px) { .record-information { column-gap:16px; } }
+
+/* Identity, school/year pairs and tools share explicit alignment tracks. */
+.record-information { grid-template-rows:auto auto auto minmax(0,1fr) auto; }
+.record-identity { grid-template-columns:64px minmax(0,1fr); gap:12px; }
+.record-portrait { width:64px; }
+.record-identity-facts { height:80px; display:flex; flex-direction:column; justify-content:space-between; }
+.record-name { margin:3px 0 0; font-size:20px; }
+.record-birth { gap:2px; }
+.record-education-entry { grid-template-rows:auto; align-content:start; gap:10px; }
+.record-education-entry h3 { margin-bottom:0; }
+.record-school { justify-content:flex-start; gap:3px; }
+.record-school-detail { min-height:0; }
+.record-major { margin-top:0; }
+.record-education { align-items:start; }
+.record-tools { grid-template-columns:1fr; grid-template-rows:auto repeat(3,minmax(0,1fr)); row-gap:10px; }
+.record-tools > .record-section-heading { margin-bottom:0; }
+.record-tool-group { display:grid; grid-template-columns:104px minmax(0,1fr); gap:12px; align-items:start; }
+.record-tool-group h3 { min-height:0; margin:0; padding-top:8px; }
+.record-tool-group ul { grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
+.record-tool-group li { grid-template-rows:30px auto; gap:4px; }
+.record-resume { align-self:end; }
+@media(min-width:1001px) and (max-height:820px) {
+ .record-information { row-gap:9px; }
+ .record-tools { row-gap:6px; }
+ .record-tool-group { grid-template-columns:90px minmax(0,1fr); gap:8px; }
+ .record-tool-group li { grid-template-rows:24px auto; gap:3px; }
+ .record-tool-group h3 { padding-top:4px; font-size:8px; }
+ .tool-logo { --tool-size:24px; }
+ .record-education-entry { gap:7px; }
+}
+@media(max-width:1000px) {
+ .record-information { grid-template-rows:auto; }
+ .record-tools { grid-template-rows:auto; }
+ .record-education-entry { gap:10px; }
+}
+@media(max-width:480px) {
+ .record-identity { grid-template-columns:64px minmax(0,1fr); }
+ .record-tool-group { grid-template-columns:1fr; gap:8px; }
+ .record-tool-group h3 { padding-top:0; }
+}
+.record-education { row-gap:10px; }
+.record-education > .record-section-heading { margin-bottom:0; }
+.record-education-entry { grid-row:2 / span 4; grid-template-rows:subgrid; row-gap:10px; }
+.record-education-entry:first-of-type { grid-column:1; }
+.record-education-entry:last-of-type { grid-column:2; }
+.record-identity-facts { height:84px; }
+@media(min-width:1001px) and (max-height:820px) { .record-education,.record-education-entry { row-gap:7px; } }
+@media(max-width:480px) {
+ .record-education-entry { grid-row:auto; grid-template-rows:auto; }
+ .record-education-entry:first-of-type,.record-education-entry:last-of-type { grid-column:1; }
+}
+.record-tools { grid-template-rows:repeat(4,auto); align-content:space-between; }
+@media(min-width:1001px) and (max-height:820px) {
+ .record-information { row-gap:6px; }
+ .record-contact { gap:6px; }
+ .record-education,.record-education-entry { row-gap:4px; }
+}
+
+/* The identification photo uses the same paper and perforation as project stamps. */
+.record-identity { grid-template-columns:72px minmax(0,1fr); }
+.record-portrait { width:72px; padding:7px; border:0; background:#f6f2e8; mask:linear-gradient(#000 0 0) center / calc(100% - 9px) calc(100% - 9px) no-repeat,radial-gradient(circle at 4px 4px,transparent 2px,#000 2.5px) -4px -4px / 8px 8px; -webkit-mask:linear-gradient(#000 0 0) center / calc(100% - 9px) calc(100% - 9px) no-repeat,radial-gradient(circle at 4px 4px,transparent 2px,#000 2.5px) -4px -4px / 8px 8px; }
+.record-portrait .portrait { border:1px solid rgba(38,41,37,.2); }
+.record-identity-facts { height:87px; }
+
+/* Collected stamps and an aligned portrait/name + four-field identity record. */
+.record-information { grid-template-columns:108px minmax(0,1fr); row-gap:12px; }
+.record-identity { display:flex; flex-direction:column; align-items:center; gap:7px; }
+.record-identity .record-name { width:100%; margin:0; text-align:center; font-size:18px; line-height:1.2; }
+.record-contact { gap:9px; }
+.record-contact > div { grid-template-columns:66px minmax(0,1fr); gap:10px; align-items:baseline; }
+.record-contact dt { font-size:10px; }
+.record-contact dd { font-size:11px; font-variant-numeric:tabular-nums; }
+.record-education { display:grid; grid-template-columns:1fr; row-gap:10px; }
+.record-education-entry,.record-education-entry:first-of-type,.record-education-entry:last-of-type { grid-column:1; grid-row:auto; grid-template-rows:auto; gap:5px; }
+.record-school { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px; align-items:baseline; }
+.record-school span { white-space:nowrap; }
+.record-major { grid-template-columns:45px minmax(0,1fr); gap:8px; align-items:baseline; }
+.record-major > .record-major-value { font-size:12px; line-height:1.35; color:inherit; text-transform:none; }
+.record-resume { align-items:baseline; column-gap:14px; }
+.record-resume .text-link { line-height:1.4; padding-bottom:0; }
+.record-resume > div p { font-size:11px; line-height:1.4; }
+.about-stamps { padding:20px 7px 7px; gap:20px 16px; }
+.about-stamps .project-stamp { --stamp-rotation:-2deg; --stamp-scale:.97; transform:rotate(var(--stamp-rotation)) scale(var(--stamp-scale)); transform-origin:center; }
+.about-stamps .project-stamp:nth-child(2) { --stamp-rotation:2.2deg; --stamp-scale:.93; }
+.about-stamps .project-stamp:nth-child(3) { --stamp-rotation:-1.2deg; --stamp-scale:.98; }
+.about-stamps .project-stamp:nth-child(4) { --stamp-rotation:1.6deg; --stamp-scale:.94; }
+.about-stamps .project-stamp:nth-child(5) { --stamp-rotation:-2.6deg; --stamp-scale:.99; }
+.about-stamps .project-stamp:nth-child(6) { --stamp-rotation:2.8deg; --stamp-scale:.95; }
+.about-stamps .project-stamp:nth-child(7) { --stamp-rotation:-2.8deg; --stamp-scale:.93; }
+.about-stamps .project-stamp:nth-child(8) { --stamp-rotation:1.1deg; --stamp-scale:1; }
+.about-stamps .project-stamp:nth-child(9) { --stamp-rotation:-1.7deg; --stamp-scale:.96; }
+.about-stamps .project-stamp:nth-child(3n+2) .project-link { position:relative; clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%); }
+.about-stamps .project-stamp:nth-child(3n+2) .project-link::after { content:''; position:absolute; z-index:8; top:0; right:0; width:14px; height:14px; background:linear-gradient(45deg,#c8bda7 48%,#fff9eb 52%); clip-path:polygon(0 0,100% 100%,0 100%); box-shadow:-1px 1px 2px #0003; pointer-events:none; }
+@media(min-width:1001px) and (max-height:820px) {
+ .record-information { row-gap:8px; grid-template-columns:94px minmax(0,1fr); }
+ .record-contact { gap:7px; }
+ .record-contact > div { grid-template-columns:62px minmax(0,1fr); gap:7px; }
+ .record-education { row-gap:7px; }
+ .record-education-entry { gap:4px; }
+ .record-major > .record-major-value { font-size:11px; }
+ .record-tools { row-gap:5px; }
+ .about-stamps { gap:16px 12px; padding-top:16px; }
+ .record-resume > div p { font-size:10px; }
+}
+@media(max-width:480px) {
+ .record-information { grid-template-columns:86px minmax(0,1fr); gap:16px 12px; }
+ .record-information > .record-identity { grid-column:1; }
+ .record-information > .record-contact { grid-column:2; }
+ .record-contact > div { grid-template-columns:1fr; gap:2px; }
+ .record-contact dd { font-size:10px; }
+ .record-contact dt { font-size:9px; }
+ .record-identity .record-name { font-size:16px; }
+ .record-education,.record-tools,.record-resume { grid-column:1/-1; }
+ .record-school { font-size:11px; }
+ .record-school span { font-size:9px; }
+ .record-major { grid-template-columns:1fr; gap:3px; }
+ .record-resume { grid-template-columns:1fr; gap:8px; }
+ .about-stamps { gap:12px 10px; padding-left:2px; padding-right:2px; }
+}
+
+/* Identity columns share their top and bottom edges, including the Chinese name. */
+.record-identity { align-self:start; }
+.record-contact { align-self:stretch; align-content:space-between; gap:0; }
+.record-contact > div { align-items:baseline; }
+.record-major { grid-template-columns:max-content minmax(0,1fr); column-gap:7px; }
+@media(max-width:480px) {
+ .record-contact { gap:6px; }
+ .record-major { grid-template-columns:max-content minmax(0,1fr); column-gap:7px; }
+}
+
+/* Passport uses readable labels/body sizes; give its grid room instead of reducing type. */
+.about-record { --record-body:clamp(15px,1.1vw,17px); --record-label:var(--type-label); }
+.record-panel-heading h2,.record-section-heading,.record-label,.record-birth dt,.record-contact dt,.record-education-entry h3,.record-tool-group h3,.record-school span,.record-major > span,.record-tool-group li > span:last-child,.record-resume .text-link,.record-resume > div p,.record-resume > div span { font-size:var(--record-label); line-height:1.5; }
+.record-contact dd,.record-birth,.record-school,.record-school-detail,.record-major,.record-major > .record-major-value { font-size:var(--record-body); line-height:1.5; }
+.record-identity .record-name { font-size:clamp(22px,1.8vw,28px); line-height:1.25; overflow-wrap:anywhere; }
+.record-information { row-gap:18px; }
+.record-contact { gap:10px; }
+.record-contact > div { grid-template-columns:82px minmax(0,1fr); gap:12px; }
+.record-education-entry { gap:8px; }
+.record-tool-group { grid-template-columns:128px minmax(0,1fr); gap:14px; }
+.record-tool-group li { grid-template-rows:36px auto; gap:8px; }
+.record-tools { row-gap:16px; }
+.record-resume { gap:14px 20px; grid-template-columns:1fr; }
+.about-stamps .project-link { grid-template-rows:minmax(0,1fr) minmax(60px,auto); }
+.about-stamps .project-caption h3 { font-size:var(--record-label); line-height:1.4; overflow-wrap:anywhere; }
+.about-stamps .thumbnail-number { font-size:var(--record-label); }
+@media(min-width:1001px) {
+ .about-record,.home-passport .about-record { width:100%; max-width:1480px; }
+ .record-information,.record-projects { padding:28px; }
+ .home-passport .about-record { max-width:min(1480px,calc((100svh - 165px) * 1.408 + 88px)); }
+}
+@media(max-width:1000px) {
+ .record-projects { min-height:900px; }
+ .record-contact > div { grid-template-columns:76px minmax(0,1fr); }
+}
+@media(max-width:480px) {
+ .record-information,.record-projects { padding:24px 18px; }
+ .record-contact > div { grid-template-columns:1fr; gap:3px; }
+ .record-tool-group { grid-template-columns:1fr; gap:8px; }
+ .record-school { grid-template-columns:minmax(0,1fr) auto; gap:10px; }
+ .record-projects { min-height:1050px; }
+ .about-stamps { column-gap:8px; }
+}

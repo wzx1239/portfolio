@@ -1,0 +1,63 @@
+/* Architecture-only reading structure; original PDF drawings keep their colors. */
+.project-detail.has-architecture .project-hero { padding-top:var(--header); height:auto; min-height:0; }
+.project-detail.has-architecture .project-hero-media { position:relative; inset:auto; height:auto; min-height:0; aspect-ratio:2/1; }
+.project-detail.has-architecture .project-hero-media .media-surface > img { object-fit:contain; }
+.project-detail.has-architecture .project-hero-index { top:calc(var(--header) + 22px); background:var(--paper); padding:6px 10px; }
+.project-detail.has-architecture .project-hero-caption { position:relative; padding-top:34px; padding-bottom:44px; }
+.project-detail.has-architecture .project-hero-caption h1 { max-width:1200px; }
+.project-detail.has-architecture .project-hero-caption p { max-width:850px; }
+.project-detail.has-architecture .project-overview { padding-top:35px; padding-bottom:100px; }
+.project-detail.has-architecture .overview-grid { grid-template-columns:1fr 3fr; }
+.project-detail.has-architecture .overview-summary { font-size:clamp(18px,1.6vw,25px); white-space:pre-line; line-height:1.65; letter-spacing:-.015em; }
+.project-detail.has-architecture .project-metadata { grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px 40px; }
+@media(max-width:900px) { .project-detail.has-architecture .project-metadata { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+.project-detail.has-architecture .project-metadata dd { margin-top:5px; font-size:15px; }
+.architecture-section { margin-bottom:clamp(80px,10vw,160px); scroll-margin-top:100px; }
+.architecture-heading { display:grid; grid-template-columns:1fr 3fr; gap:50px; border-top:1px solid var(--rule); padding-top:22px; margin-bottom:40px; }
+.architecture-chapter { color:var(--muted); font-size:13px; }
+.architecture-heading h2 { font:500 clamp(29px,3.3vw,52px)/1.12 var(--display); letter-spacing:-.035em; text-wrap:balance; max-width:1000px; }
+.architecture-heading p { max-width:850px; font-size:17px; line-height:1.8; margin-top:22px; color:var(--ink); }
+.architecture-visuals { display:grid; gap:clamp(24px,3vw,52px); align-items:start; }
+.architecture-figure.section-media { aspect-ratio:auto; margin:0; min-width:0; }
+.architecture-inspect { display:block; width:100%; position:relative; border:0; padding:0; background:transparent; cursor:zoom-in; color:inherit; }
+.architecture-inspect > img { width:100%; height:auto; display:block; }
+.architecture-enlarge { position:absolute; right:12px; bottom:12px; background:var(--paper); color:var(--ink); width:32px; height:32px; display:grid; place-items:center; opacity:0; transition:opacity .2s; }
+.architecture-inspect:hover .architecture-enlarge,.architecture-inspect:focus-visible .architecture-enlarge { opacity:1; }
+.architecture-inspect:focus-visible { outline:2px solid var(--ink); outline-offset:5px; }
+.architecture-figure figcaption { display:flex; gap:18px; align-items:baseline; font-size:13px; line-height:1.6; color:var(--muted); padding-top:12px; }
+.architecture-figure figcaption .mono { flex:none; font-size:11px; }
+.architecture-pair .architecture-visuals { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.architecture-offset .architecture-visuals { grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:6vw; }
+.architecture-offset .architecture-figure:nth-child(even) { margin-top:clamp(30px,7vw,120px); }
+.architecture-sequence .architecture-visuals { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.architecture-detail .architecture-visuals { max-width:900px; margin-left:auto; margin-right:auto; }
+.architecture-detail .architecture-heading > div { max-width:850px; }
+.architecture-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin:0 0 35px; padding-left:calc(25% + 12px); gap:24px; }
+.architecture-facts dt { font-size:12px; color:var(--muted); line-height:1.5; }
+.architecture-facts dd { font-size:clamp(17px,1.7vw,25px); line-height:1.4; margin-top:8px; }
+.architecture-lightbox { position:fixed; inset:0; width:96vw; height:94dvh; max-width:none; max-height:none; margin:auto; border:1px solid var(--rule); padding:0; background:var(--paper); color:var(--ink); }
+.architecture-lightbox::backdrop { background:rgb(18 23 27 / .7); }
+.architecture-lightbox-toolbar { min-height:64px; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:14px 24px; border-bottom:1px solid var(--rule); }
+.architecture-lightbox-toolbar p { font-size:14px; line-height:1.5; }
+.architecture-lightbox-toolbar p { margin-right:auto; }
+.architecture-lightbox-toolbar button { flex:none; cursor:pointer; border:0; background:none; font:inherit; color:inherit; padding:8px; }
+.architecture-lightbox-scroll { overflow:auto; height:calc(100% - 70px); overscroll-behavior:contain; }
+.architecture-lightbox-scroll img { display:block; width:auto; height:auto; max-width:100%; margin:auto; }
+.architecture-lightbox-scroll.is-actual img { max-width:none; }
+@media(max-width:800px) {
+  .project-detail.has-architecture .project-hero { padding-top:var(--header); }
+  .project-detail.has-architecture .project-hero-media { aspect-ratio:2/1; }
+  .project-detail.has-architecture .project-hero-index { top:76px; font-size:10px; }
+  .project-detail.has-architecture .project-hero-caption { padding-top:26px; padding-bottom:30px; }
+  .project-detail.has-architecture .overview-grid,.architecture-heading { grid-template-columns:1fr; gap:18px; }
+  .project-detail.has-architecture .project-overview { padding-bottom:65px; }
+  .project-detail.has-architecture .project-metadata { gap:24px; }
+  .architecture-heading { margin-bottom:26px; }
+  .architecture-heading p { font-size:16px; }
+  .architecture-pair .architecture-visuals,.architecture-offset .architecture-visuals,.architecture-sequence .architecture-visuals { grid-template-columns:1fr; gap:34px; }
+  .architecture-offset .architecture-figure:nth-child(even) { margin-top:0; }
+  .architecture-facts { padding-left:0; gap:16px; }
+  .architecture-facts dd { font-size:16px; overflow-wrap:anywhere; }
+  .architecture-enlarge { opacity:1; width:27px; height:27px; right:7px; bottom:7px; }
+  .architecture-lightbox-toolbar { padding:12px; }
+}

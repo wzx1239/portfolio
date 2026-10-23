@@ -1,0 +1,158 @@
+[
+  {
+    "name": "hero",
+    "page": 1,
+    "box": [
+      34.48,
+      32.93,
+      1157,
+      596.34
+    ],
+    "width": 3368,
+    "height": 1690,
+    "src": "/media/projects/06-architecture-06/hero.webp"
+  },
+  {
+    "name": "site",
+    "page": 2,
+    "box": [
+      34,
+      65,
+      562,
+      716
+    ],
+    "width": 1584,
+    "height": 1953,
+    "src": "/media/projects/06-architecture-06/site.webp"
+  },
+  {
+    "name": "users",
+    "page": 2,
+    "box": [
+      629,
+      65,
+      1157,
+      393
+    ],
+    "width": 1584,
+    "height": 984,
+    "src": "/media/projects/06-architecture-06/users.webp"
+  },
+  {
+    "name": "massing",
+    "page": 2,
+    "box": [
+      629,
+      441,
+      1157,
+      567
+    ],
+    "width": 1584,
+    "height": 378,
+    "src": "/media/projects/06-architecture-06/massing.webp"
+  },
+  {
+    "name": "development",
+    "page": 2,
+    "box": [
+      629,
+      606,
+      1157,
+      805
+    ],
+    "width": 1584,
+    "height": 597,
+    "src": "/media/projects/06-architecture-06/development.webp"
+  },
+  {
+    "name": "plans",
+    "page": 3,
+    "box": [
+      34,
+      64,
+      630,
+      805
+    ],
+    "width": 1788,
+    "height": 2223,
+    "src": "/media/projects/06-architecture-06/plans.webp"
+  },
+  {
+    "name": "auditorium",
+    "page": 3,
+    "box": [
+      665,
+      65,
+      1157,
+      422
+    ],
+    "width": 1476,
+    "height": 1071,
+    "src": "/media/projects/06-architecture-06/auditorium.webp"
+  },
+  {
+    "name": "studio",
+    "page": 3,
+    "box": [
+      665,
+      461,
+      1157,
+      805
+    ],
+    "width": 1476,
+    "height": 1032,
+    "src": "/media/projects/06-architecture-06/studio.webp"
+  },
+  {
+    "name": "section",
+    "page": 4,
+    "box": [
+      34,
+      70,
+      1157,
+      805
+    ],
+    "width": 3369,
+    "height": 2205,
+    "src": "/media/projects/06-architecture-06/section.webp"
+  },
+  {
+    "name": "construction",
+    "page": 5,
+    "box": [
+      34,
+      64,
+      563,
+      805
+    ],
+    "width": 1587,
+    "height": 2223,
+    "src": "/media/projects/06-architecture-06/construction.webp"
+  },
+  {
+    "name": "facade",
+    "page": 5,
+    "box": [
+      629,
+      90,
+      1157,
+      382
+    ],
+    "width": 1584,
+    "height": 876,
+    "src": "/media/projects/06-architecture-06/facade.webp"
+  },
+  {
+    "name": "courtyard",
+    "page": 5,
+    "box": [
+      629,
+      424,
+      1157,
+      805
+    ],
+    "width": 1584,
+    "height": 1143,
+    "src": "/media/projects/06-architecture-06/courtyard.webp"
+  }
+]
