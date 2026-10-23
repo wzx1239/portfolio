@@ -30,6 +30,14 @@ export function TransitionLink({ transitionName, onClick, children, ...props }: 
   const router = useRouter();
   function navigate(event: MouseEvent<HTMLAnchorElement>) {
     onClick?.(event);
+    if (process.env.NEXT_PUBLIC_STATIC_EXPORT === '1') {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || props.target) return;
+      // Pages serves exported HTML, without the App Router's runtime transport.
+      // Use the rendered anchor URL: Next already added basePath/trailingSlash.
+      event.preventDefault();
+      window.location.assign(event.currentTarget.href);
+      return;
+    }
     const href = props.href.toString();
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || props.target || !document.startViewTransition || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     event.preventDefault();
@@ -42,5 +50,5 @@ export function TransitionLink({ transitionName, onClick, children, ...props }: 
     }));
     void transition.finished.catch(() => {}).finally(() => { if (image) image.style.viewTransitionName = ''; });
   }
-  return <Link {...props} onClick={navigate}>{children}</Link>;
+  return <Link {...props} prefetch={process.env.NEXT_PUBLIC_STATIC_EXPORT === '1' ? false : props.prefetch} onClick={navigate}>{children}</Link>;
 }

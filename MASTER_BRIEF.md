@@ -1,3 +1,9 @@
+# GitHub Pages project-entry navigation — 2026-10-23
+
+- Static exports use full-document navigation for shared project-entry links (directory, passport and Next Project). The existing shared handler prevented the anchor default and depended on App Router navigation/view-transition completion, which stalled in a plain static production reproduction despite valid exported HTML routes. No covering overlay, nested interactive control or incorrect project href was found.
+- Expose NEXT_PUBLIC_STATIC_EXPORT from the existing export configuration. In that mode, use the rendered anchor's complete href (including /portfolio and trailing slash) with location.assign, and disable project-link prefetch. Preserve modified clicks, target handling, keyboard activation, original anchor markup and all hover/Reveal/layout styles. Normal Next development/server mode retains its existing client view transition.
+- Build and test the actual /portfolio export through an ordinary static server, without a Next runtime or route-rewrite fallback. Check all nine project destinations with mouse and Tab/Enter. No source content/design changes or remote deployment from this repair session.
+
 # GitHub Pages static-export readiness — 2026-10-23
 
 - Prepare only; no remote repository, deployment workflow, push, publishing or Pages setting change. Preserve content and visual design.

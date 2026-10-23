@@ -5,6 +5,7 @@ if (basePath && (!basePath.startsWith('/') || basePath.endsWith('/') || !/^\/[A-
 const nextConfig: NextConfig = {
   ...(staticExport ? { output: 'export' as const, trailingSlash: true, images: { unoptimized: true } } : {}),
   basePath,
+  env: { NEXT_PUBLIC_STATIC_EXPORT: staticExport ? '1' : '0' },
   // Keep build verification isolated from a running local preview.
   distDir: process.env.PORTFOLIO_BUILD_DIR || '.next',
   poweredByHeader: false,
