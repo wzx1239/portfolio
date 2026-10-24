@@ -3,6 +3,7 @@ import { publicPath } from '@/lib/public-path';
 import { useEffect, useId, useRef, useState, type CSSProperties } from 'react';
 import { useLanguage } from '@/components/layout/language-provider';
 import type { Localized, Section } from '@/lib/types';
+import { useNearViewport } from '@/components/media/use-near-viewport';
 
 export function TraceShowcase({ steps, label }: { steps: NonNullable<Section['steps']>; label: Localized }) {
   const { t } = useLanguage();
@@ -11,6 +12,11 @@ export function TraceShowcase({ steps, label }: { steps: NonNullable<Section['st
   const [technicalOpen, setTechnicalOpen] = useState(false);
   const technicalId = useId();
   const root = useRef<HTMLDivElement>(null);
+  const near = useNearViewport(root);
+  const [requested, setRequested] = useState<number[]>([]);
+  useEffect(() => {
+    if (near) setRequested(previous => previous.includes(active) ? previous : [...previous, active]);
+  }, [near, active]);
   const videos = useRef<(HTMLVideoElement | null)[]>([]);
   const [visible, setVisible] = useState(false);
   const [documentVisible, setDocumentVisible] = useState(true);
@@ -30,7 +36,7 @@ export function TraceShowcase({ steps, label }: { steps: NonNullable<Section['st
       if (index === active && visible && documentVisible) void video.play().catch(() => { /* Poster remains if autoplay is blocked. */ });
       else video.pause();
     });
-  }, [active, visible, documentVisible]);
+  }, [active, visible, documentVisible, requested]);
   function select(index: number) {
     setTechnicalOpen(false);
     if (index !== active && videos.current[index]?.readyState) videos.current[index]!.currentTime = 0;
@@ -39,7 +45,7 @@ export function TraceShowcase({ steps, label }: { steps: NonNullable<Section['st
   return <div ref={root} className="trace-showcase" onPointerLeave={() => { if (Boolean(root.current && getComputedStyle(root.current).getPropertyValue('--showcase-side-by-side').trim() === '1')) setTechnicalOpen(false); }} onBlur={event => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setTechnicalOpen(false); }} onKeyDown={event => { if (event.key === 'Escape') setTechnicalOpen(false); }}>
     <div className="trace-showcase-main">
     <div className="trace-showcase-viewer">
-      {steps.map((item, index) => <video ref={node => { videos.current[index] = node; }} key={item.id} src={publicPath(item.video)} poster={publicPath(item.thumbnail)} width={item.width} height={item.height} autoPlay={index === active && visible && documentVisible} muted loop playsInline controls={false} preload="metadata" aria-label={index === active ? t(item.title) : undefined} aria-hidden={index !== active} className={index === active ? 'is-active' : ''} />)}
+      {steps.map((item, index) => <video ref={node => { videos.current[index] = node; }} key={item.id} src={requested.includes(index) ? publicPath(item.video) : undefined} poster={requested.includes(index) ? publicPath(item.thumbnail) : undefined} width={item.width} height={item.height} autoPlay={index === active && visible && documentVisible} muted loop playsInline controls={false} preload={requested.includes(index) ? 'metadata' : 'none'} aria-label={index === active ? t(item.title) : undefined} aria-hidden={index !== active} className={index === active ? 'is-active' : ''} />)}
     </div>
     <div className="trace-showcase-selectors" role="group" aria-label={t(label)}>
       {steps.map((item, index) => <button key={item.id} type="button" aria-pressed={index === active} aria-controls={descriptionId} onClick={() => select(index)}>

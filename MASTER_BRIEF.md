@@ -1,3 +1,8 @@
+# Media request deferral — 2026-10-24
+
+- Keep all existing media, copy and visual design. Attach non-priority shared video URLs/posters within 400px of the viewport, and attach only the selected Trace/Narrative demonstration at that distance. Existing visibility/interaction rules still control playback. Hero loading remains immediate; project preview URLs remain gated by Reveal engagement with preload:none.
+- Reserve local MP4 geometry using data/video-dimensions.json and native width/height attributes, preserving original ratios before loading. Keep existing image/YouTube lazy loading and /portfolio public paths; no deployment configuration changes. See MEDIA_LOADING_AUDIT.md for loading audit, verification and separate compression candidates.
+
 # GitHub Pages project-entry navigation — 2026-10-23
 
 - Static exports use full-document navigation for shared project-entry links (directory, passport and Next Project). The existing shared handler prevented the anchor default and depended on App Router navigation/view-transition completion, which stalled in a plain static production reproduction despite valid exported HTML routes. No covering overlay, nested interactive control or incorrect project href was found.

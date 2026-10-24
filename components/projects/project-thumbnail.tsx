@@ -35,7 +35,7 @@ export function ProjectThumbnail({ project, featured = false, variant = 'directo
         <div className="rf-surface project-thumbnail" data-transition-media="">
           <div className="rf-rest">{still()}</div>
           <div className="rf-original" aria-hidden="true">{still(true)}
-            {loadVideo && !videoFailed && !field.reduced && <video ref={video} src={publicPath(previewSource)} poster={publicPath(project.thumbnail.image)} muted playsInline loop preload="metadata" className={playing && field.engaged ? 'rf-video is-playing' : 'rf-video'} aria-hidden="true" onPlaying={() => setPlaying(true)} onError={() => { setVideoFailed(true); setPlaying(false); }} />}
+            {loadVideo && !videoFailed && !field.reduced && <video ref={video} src={publicPath(previewSource)} poster={publicPath(project.thumbnail.image)} muted playsInline loop preload="none" className={playing && field.engaged ? 'rf-video is-playing' : 'rf-video'} aria-hidden="true" onPlaying={() => setPlaying(true)} onError={() => { setVideoFailed(true); setPlaying(false); }} />}
           </div>
         </div>
         <span className="thumbnail-number">{project.number}</span><span className="thumbnail-arrow" aria-hidden="true"><span>↗</span><span>↗</span></span>
