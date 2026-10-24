@@ -219,6 +219,14 @@ img, video { display: block; }
   .project-metadata > [data-metadata-group="team-time"] { grid-column:3; }
 }
 .content-section { margin-bottom: 95px; }
+.section-compact-list > .section-heading { margin-bottom:24px; }
+.section-compact-list > .section-heading h2 { font-size:var(--type-mechanic); }
+.implementation-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px clamp(24px,4vw,64px); list-style:none; margin:0; padding:0; }
+.implementation-list > li { display:grid; grid-template-columns:2ch minmax(0,1fr); align-items:baseline; gap:16px; min-width:0; }
+.implementation-number { color:var(--muted); font-size:var(--type-label); }
+.implementation-list h3 { font-size:var(--type-body); font-weight:500; line-height:1.4; }
+.implementation-list p { margin-top:8px; color:var(--muted); font-size:var(--type-technical); line-height:1.7; }
+@media (max-width:700px) { .implementation-list { grid-template-columns:minmax(0,1fr); gap:20px; } }
 .section-full-width > .section-heading { margin-left:var(--gutter); margin-right:var(--gutter); }
 .content-section.section-full-width { padding-left:0; padding-right:0; }
 /* Trace showcase: shared edges for chapter, viewer, filmstrip and description. */

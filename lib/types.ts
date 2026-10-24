@@ -4,6 +4,7 @@ export const l = (en: string, zh: string): Localized => ({ en, zh });
 export type Category = 'game' | 'architecture' | 'video';
 export type MediaAsset = {
   image?: string;
+  imageAspectRatio?: number;
   video?: string;
   controls?: boolean;
   alt: Localized;
@@ -17,6 +18,7 @@ export type Section = {
   eyebrow?: Localized;
   title: Localized;
   body?: Localized;
+  items?: { number: string; title: Localized; body: Localized }[];
   media?: MediaAsset;
   fullWidth?: boolean;
   youtube?: string;
