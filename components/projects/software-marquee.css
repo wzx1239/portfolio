@@ -1,9 +1,11 @@
 .software-marquee { width:100%; overflow:hidden; padding:44px 0; }
 .software-marquee-track { display:flex; width:max-content; animation:software-loop 32s linear infinite; }
 .software-marquee-group { display:flex; flex:none; align-items:center; justify-content:space-around; min-width:100vw; gap:clamp(48px,6vw,96px); padding-right:clamp(48px,6vw,96px); }
-.software-marquee-item { display:grid; place-items:center; width:72px; height:72px; flex:none; }
+.software-marquee-heading { max-width:2000px; margin:0 auto 18px; color:var(--muted); }
+.software-marquee-item { position:relative; display:grid; place-items:center; width:72px; height:72px; flex:none; }
+.software-marquee-name { position:absolute; top:calc(50% + 30px); left:50%; width:160px; text-align:center; font:var(--type-label)/1.35 var(--sans); color:var(--ink); opacity:0; transform:translate(-50%,3px); transition:opacity 160ms,transform 160ms; pointer-events:none; }
 .software-marquee-logo { display:block; width:calc(48px * var(--software-scale)); height:calc(48px * var(--software-scale)); background-color:var(--ink); opacity:.72; mask:var(--software-mask) center/contain no-repeat; -webkit-mask:var(--software-mask) center/contain no-repeat; transition:opacity 160ms,transform 160ms; }
-@media(hover:hover) { .software-marquee-item:hover .software-marquee-logo { opacity:1; transform:scale(1.07); } }
+@media(hover:hover) and (pointer:fine) { .software-marquee-item:hover .software-marquee-logo { background-color:#fff; opacity:1; transform:scale(1.07); } .software-marquee-item:hover .software-marquee-name { opacity:1; transform:translate(-50%,0); } }
 @keyframes software-loop { to { transform:translateX(-50%); } }
 @media(max-width:700px) { .software-marquee { padding:30px 0; } .software-marquee-group { gap:40px; padding-right:40px; } .software-marquee-item { width:56px; height:56px; } .software-marquee-logo { width:calc(40px * var(--software-scale)); height:calc(40px * var(--software-scale)); } }
-@media(prefers-reduced-motion:reduce) { .software-marquee-track { animation:none; } .software-marquee-logo { transition:none; } }
+@media(prefers-reduced-motion:reduce) { .software-marquee-track { animation:none; } .software-marquee-logo,.software-marquee-name { transition:none; } }
