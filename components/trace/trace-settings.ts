@@ -8,6 +8,8 @@ export const traceSettings = {
   stretch: .65,
   refraction: 13,             // CSS px of background/grain displacement
   tonalStrength: .016,       // signed material tonal disturbance; never a light/glow
+  darkPageColour: [.65, .65, .65], // restrained light grey
+  lightPageColour: [.38, .38, .38], // restrained dark grey
   diffusion: .32,            // soft widening during recovery
   inertia: 12,               // maximum drift in CSS px after passage
   maxTraces: 40,              // connected segments, bounded; ~2s of motion history

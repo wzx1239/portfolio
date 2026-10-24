@@ -11,6 +11,7 @@ uniform vec2 uEnvironment; // material visibility, darkness
 uniform float uStrength;
 uniform float uRefraction;
 uniform float uTraceTone;
+uniform vec3 uTraceColour;
 uniform vec4 uTraces[${settings.maxTraces}]; // connected segment endpoints
 uniform vec4 uMotion[${settings.maxTraces}]; // radius, strength, age, seed
 float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
@@ -42,6 +43,6 @@ void main(){
  }
  vec3 base=surface(pixel+displacement*uStrength);
  // Small signed tonal changes read as refraction, never a luminous brush/outline.
- base+=vec3(residue/(1.+abs(residue))*uTraceTone*uStrength);
+ base+=uTraceColour*(residue/(1.+abs(residue))*uTraceTone*uStrength);
  gl_FragColor=vec4(base,1.);
 }`;

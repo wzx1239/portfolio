@@ -58,7 +58,7 @@ export function DigitalSurface() {
     const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
     gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
     const attribute=gl.getAttribLocation(program,'aPosition');gl.enableVertexAttribArray(attribute);gl.vertexAttribPointer(attribute,2,gl.FLOAT,false,0,0);
-    const uniforms={viewport:gl.getUniformLocation(program,'uViewport'),base:gl.getUniformLocation(program,'uBase'),surface:gl.getUniformLocation(program,'uSurface'),environment:gl.getUniformLocation(program,'uEnvironment'),strength:gl.getUniformLocation(program,'uStrength'),refraction:gl.getUniformLocation(program,'uRefraction'),tone:gl.getUniformLocation(program,'uTraceTone'),traces:gl.getUniformLocation(program,'uTraces[0]'),motion:gl.getUniformLocation(program,'uMotion[0]')};
+    const uniforms={viewport:gl.getUniformLocation(program,'uViewport'),base:gl.getUniformLocation(program,'uBase'),surface:gl.getUniformLocation(program,'uSurface'),environment:gl.getUniformLocation(program,'uEnvironment'),strength:gl.getUniformLocation(program,'uStrength'),refraction:gl.getUniformLocation(program,'uRefraction'),tone:gl.getUniformLocation(program,'uTraceTone'),colour:gl.getUniformLocation(program,'uTraceColour'),traces:gl.getUniformLocation(program,'uTraces[0]'),motion:gl.getUniformLocation(program,'uMotion[0]')};
     const memory=new TraceMemory();
     const traces=new Float32Array(settings.maxTraces*4),motion=new Float32Array(settings.maxTraces*4);
     let raf=0,lastFrame=0,disposed=false,lost=false,width=innerWidth,height=innerHeight;
@@ -83,8 +83,12 @@ export function DigitalSurface() {
       node!.width=Math.round(width*scale);node!.height=Math.round(height*scale);gl!.viewport(0,0,node!.width,node!.height);
       gl!.uniform2f(uniforms.viewport,width,height);
       const css=getComputedStyle(document.documentElement),number=(key:string,fallback:number)=>{const raw=css.getPropertyValue(key).trim();return raw && Number.isFinite(Number(raw))?Number(raw):fallback;};
-      gl!.uniform3f(uniforms.base,number('--digital-r',23)/255,number('--digital-g',26)/255,number('--digital-b',33)/255);
-      gl!.uniform3f(uniforms.surface,number('--digital-grain',.016),number('--digital-variation',.027),number('--digital-cool',.006));
+      gl!.uniform3f(uniforms.base,number('--digital-r',0)/255,number('--digital-g',0)/255,number('--digital-b',0)/255);
+      gl!.uniform3f(uniforms.surface,number('--digital-grain',.016),number('--digital-variation',.027),number('--digital-cool',0));
+      const lightPage=Boolean(document.querySelector('.white-original'));
+      const colour=lightPage?settings.lightPageColour:settings.darkPageColour;
+      // Signed tint keeps the same disturbance, with reversed contrast on white.
+      gl!.uniform3f(uniforms.colour,...colour.map(value=>lightPage?value-1:value) as [number,number,number]);
       gl!.uniform1f(uniforms.refraction,settings.refraction);gl!.uniform1f(uniforms.tone,settings.tonalStrength);
       wake();
     }
