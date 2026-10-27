@@ -9,7 +9,7 @@ export const site = {
   phoneHref: '+8615033789009',
   showreel: { image: '/media/home/showreel-placeholder.svg', video: undefined as string | undefined, variant: 0, placeholder: true, alt: l('Showreel placeholder', '作品混剪占位') } satisfies MediaAsset,
   portrait: { image: '/media/about/portrait.jpg', variant: 10, alt: l('Portrait of Wang Zixiao', '王紫霄的个人照片') } satisfies MediaAsset,
-  resume: '/resume/zixiao-wang-resume-placeholder.pdf',
+  resume: '/resume/ZixiaoWangResume.pdf',
   languages: [l('English — IELTS 7.0, working proficiency', '英语 — 雅思 7.0，可作为工作语言')],
   education: [
     { level: l('01 Undergraduate', '01 本科'), schools: [
