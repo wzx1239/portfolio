@@ -18,7 +18,8 @@ function media(asset) { localized(asset.alt, 'media.alt'); if (asset.image?.star
 for (const [index, project] of projects.entries()) {
   assert.equal(project.number, String(index + 1).padStart(2, '0'));
   assert.equal(project.nextProject, projects[(index + 1) % projects.length].slug);
-  for (const key of ['title', 'subtitle', 'summary']) localized(project[key], `${project.slug}.${key}`);
+  for (const key of ['title', 'summary']) localized(project[key], `${project.slug}.${key}`);
+  if (project.subtitle.en || project.subtitle.zh) localized(project.subtitle, `${project.slug}.subtitle`);
   media(project.thumbnail); media(project.hero);
   if(project.originalPdf)assert.equal(fs.readFileSync('public'+project.originalPdf.src).subarray(0,5).toString(),'%PDF-',`Invalid original PDF: ${project.slug}`);
   for (const section of project.sections) {

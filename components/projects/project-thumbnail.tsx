@@ -42,7 +42,7 @@ export function ProjectThumbnail({ project, featured = false, variant = 'directo
         <span className="activation-line" aria-hidden="true" />
       </div>
       <div className="project-caption"><h3>{t(project.title)}</h3></div>
-      {variant !== 'stamp' && <p className="project-subtitle">{t(project.subtitle)}</p>}
+      {variant !== 'stamp' && t(project.subtitle).trim() && <p className="project-subtitle">{t(project.subtitle)}</p>}
     </TransitionLink>
   </article>;
 }

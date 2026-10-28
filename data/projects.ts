@@ -12,8 +12,8 @@ type ProjectSeed = Pick<Project, 'slug' | 'title' | 'category' | 'subtitle' | 's
   software?: string[];
   originalPdf?: Project['originalPdf'];
   metadata?: Project['metadata'];
-  thumbnail?: MediaAsset;
-  hero?: MediaAsset;
+  thumbnail: MediaAsset;
+  hero: MediaAsset;
   previewVideo?: string;
   sections?: Project['sections'];
   deepDives?: Project['deepDives'];
@@ -78,7 +78,7 @@ const seeds: ProjectSeed[] = [
     ] },
   { slug: 'vr', title: l('Align', 'Align'), category: 'game' as const,
     software: ['Adobe Photoshop', 'Rhino', 'Blender', 'Unreal Engine', 'SteamVR', '游戏串流助手'],
-    subtitle: l('Virtual reality · Details to come', '虚拟现实 · 内容待补充'), summary: l('ALIGN is a VR puzzle game exploring optical illusion and spatial perception. Players move through the environment to find specific viewpoints, visually aligning fragmented architectural elements to form new paths. Inspired by OMA’s Urban Experiments exhibition, the project explores the relationship between architecture, perspective and player movement.', '《ALIGN》是一款围绕视错觉与空间感知展开的 VR 解谜游戏。玩家通过在空间中移动、寻找特定观察位置，将分散的建筑碎片在视觉上对齐，并由此形成新的通路。项目受到 OMA Urban Experiments 展览启发，探索建筑、视角与玩家移动之间的关系。'), tags: [],
+    subtitle: l('', ''), summary: l('ALIGN is a VR puzzle game exploring optical illusion and spatial perception. Players move through the environment to find specific viewpoints, visually aligning fragmented architectural elements to form new paths. Inspired by OMA’s Urban Experiments exhibition, the project explores the relationship between architecture, perspective and player movement.', '《ALIGN》是一款围绕视错觉与空间感知展开的 VR 解谜游戏。玩家通过在空间中移动、寻找特定观察位置，将分散的建筑碎片在视觉上对齐，并由此形成新的通路。项目受到 OMA Urban Experiments 展览启发，探索建筑、视角与玩家移动之间的关系。'), tags: [],
     discipline: l('VR Game', 'VR 游戏'), role: l('Game Designer · Programmer', '策划 · 程序员'),
     team: l('6-person Project', '6人项目'), time: l('2026.02–2026.03', '2026.02–2026.03'),
     thumbnail: { image: '/media/projects/02-vr/hero-poster.jpg', alt: l('Align — frame from the supplied hero', 'Align——提供的 Hero 视频画面'), variant: 2 },
@@ -102,22 +102,22 @@ const seeds: ProjectSeed[] = [
   { slug: 'emergency-refuge', category: 'architecture' as const, tags: [], ...architectureProjects['emergency-refuge'], software: ['Rhino', 'Grasshopper', 'Unreal Engine', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'] },
   { slug: 'architecture-05', category: 'architecture' as const, tags: [], ...architectureProjects['architecture-05'], software: ['Rhino', 'D5 Render', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'] },
   { slug: 'architecture-06', category: 'architecture' as const, tags: [], ...architectureProjects['architecture-06'], software: ['Rhino', 'D5 Render', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'] },
-  { slug: 'video-07', title: l('Marshgate Doppelgänger', 'Marshgate Doppelgänger'), category: 'video' as const, subtitle: l('Moving image · To be selected', '动态影像 · 待选项目'), summary: l('Marshgate Doppelgänger is a short film combining live-action footage with digital architecture. Based on the real Marshgate building, the project reconstructs the filmed space through camera tracking and introduces a transformed digital “double” that gradually overlaps with reality. It explores how distortion, replacement and digital intervention can alter our perception of existing architecture.', 'Marshgate Doppelgänger 是一个结合实拍影像与数字建筑的短片项目。项目以真实的 Marshgate 空间为基础，通过相机追踪重建拍摄空间，并在其中叠加一个经过重构的数字“分身”，让虚拟建筑与现实影像在同一镜头中逐渐交叠。项目探索数字空间如何通过变形、替换与异化，改变人们对真实建筑的感知。'), tags: [],
+  { slug: 'video-07', title: l('Marshgate Doppelgänger', 'Marshgate Doppelgänger'), category: 'video' as const, subtitle: l('', ''), summary: l('Marshgate Doppelgänger is a short film combining live-action footage with digital architecture. Based on the real Marshgate building, the project reconstructs the filmed space through camera tracking and introduces a transformed digital “double” that gradually overlaps with reality. It explores how distortion, replacement and digital intervention can alter our perception of existing architecture.', 'Marshgate Doppelgänger 是一个结合实拍影像与数字建筑的短片项目。项目以真实的 Marshgate 空间为基础，通过相机追踪重建拍摄空间，并在其中叠加一个经过重构的数字“分身”，让虚拟建筑与现实影像在同一镜头中逐渐交叠。项目探索数字空间如何通过变形、替换与异化，改变人们对真实建筑的感知。'), tags: [],
     software: ['Photoshop', 'Blender', 'Premiere Pro', 'After Effects'],
     thumbnail: { image: '/media/projects/07-video-07/hero-poster.jpg', alt: l('Film 07 — frame from the supplied hero', 'Film 07——提供的 Hero 视频画面'), variant: 7 },
     hero: { image: '/media/projects/07-video-07/hero-poster-v2.jpg', video: '/media/projects/07-video-07/hero-v2.mp4', alt: l('Film 07 — hero video', 'Film 07——Hero 视频'), variant: 7 },
     previewVideo: '/media/projects/07-video-07/preview-v2.mp4',
     sections: [{ id: 'selected-work', kind: 'media', title: l('Full film', '完整影片'), media: { image: '/media/projects/07-video-07/film-poster.jpg', video: '/media/projects/07-video-07/film07.mp4', controls: true, alt: l('Film 07 — full film', 'Film 07——完整影片'), variant: 7 } }],
   },
-  { slug: 'video-08', title: l('Ironic Shaxi', 'Ironic Shaxi'), category: 'video' as const, subtitle: l('Moving image · To be selected', '动态影像 · 待选项目'), summary: l('Ironic Shaxi is a critical film project developed from field research in Shaxi, Yunnan, reflecting on the town’s ongoing commercialisation. Through photography, point-cloud scanning and physical model-making, the stop-motion animation connects Shaxi’s history and present with an imagined future shaped by continued commercial development. This future is deliberately exaggerated to question the impact of over-commercialisation on local space and culture.', 'Ironic Shaxi 是一个基于云南沙溪实地调研，对古镇持续商业化发展的反思性影像项目。项目通过摄影、点云扫描与实体模型制作，将沙溪的历史、现状与商业化持续发展后的想象未来串联成定格动画，并以夸张的未来场景警示过度商业化对当地空间与文化的影响。'), tags: [],
+  { slug: 'video-08', title: l('Ironic Shaxi', 'Ironic Shaxi'), category: 'video' as const, subtitle: l('', ''), summary: l('Ironic Shaxi is a critical film project developed from field research in Shaxi, Yunnan, reflecting on the town’s ongoing commercialisation. Through photography, point-cloud scanning and physical model-making, the stop-motion animation connects Shaxi’s history and present with an imagined future shaped by continued commercial development. This future is deliberately exaggerated to question the impact of over-commercialisation on local space and culture.', 'Ironic Shaxi 是一个基于云南沙溪实地调研，对古镇持续商业化发展的反思性影像项目。项目通过摄影、点云扫描与实体模型制作，将沙溪的历史、现状与商业化持续发展后的想象未来串联成定格动画，并以夸张的未来场景警示过度商业化对当地空间与文化的影响。'), tags: [],
     software: ['Adobe Photoshop', 'Adobe Premiere Pro'],
-    metadata: projectMetadata({role:l('Team Leader','组长'),team:l('4-person Project','4人项目'),time:l('2023.07–2023.08','2023.07–2023.08')}),
+    metadata: projectMetadata({team:l('4-person Project','4人项目'),time:l('2023.07–2023.08','2023.07–2023.08')}),
     thumbnail: { image: '/media/projects/08-video-08/thumbnail.jpg', alt: l('Film 08 — supplied cover', 'Film 08——提供的封面'), variant: 8 },
     hero: { image: '/media/projects/08-video-08/hero-poster-v2.jpg', video: '/media/projects/08-video-08/hero-v2.mp4', alt: l('Film 08 — hero video', 'Film 08——Hero 视频'), variant: 8 },
     previewVideo: '/media/projects/08-video-08/preview-v2.mp4',
     sections: [{ id: 'selected-work', kind: 'media', title: l('Full film', '完整影片'), youtube: 'ku3XhjsHEHE', media: { image: '/media/projects/08-video-08/film-poster.jpg', alt: l('Film 08 — full film', 'Film 08——完整影片'), variant: 8 } }],
   },
-  { slug: 'video-09', title: l('A Renting Story', 'A Renting Story'), category: 'video' as const, subtitle: l('Moving image · To be selected', '动态影像 · 待选项目'), summary: l('A Renting Story is an experimental film centred on Oriel Chambers in Liverpool. The project turns architectural representation into a fictional house-viewing story, allowing the building and its spaces to unfold as the character searches for a place to live. Combining stop-motion animation with silent-film-style performance, the film presents architecture through a playful and theatrical narrative.', 'A Renting Story 是一个以利物浦 Oriel Chambers 为对象的实验影像项目。项目将建筑介绍转化为一段虚构的租房看房故事，让角色在寻找住所的过程中逐渐探索建筑及其空间。影片结合定格动画与默剧式表演，以轻松、戏剧化的叙事方式重新呈现建筑。'), tags: [],
+  { slug: 'video-09', title: l('A Renting Story', 'A Renting Story'), category: 'video' as const, subtitle: l('', ''), summary: l('A Renting Story is an experimental film centred on Oriel Chambers in Liverpool. The project turns architectural representation into a fictional house-viewing story, allowing the building and its spaces to unfold as the character searches for a place to live. Combining stop-motion animation with silent-film-style performance, the film presents architecture through a playful and theatrical narrative.', 'A Renting Story 是一个以利物浦 Oriel Chambers 为对象的实验影像项目。项目将建筑介绍转化为一段虚构的租房看房故事，让角色在寻找住所的过程中逐渐探索建筑及其空间。影片结合定格动画与默剧式表演，以轻松、戏剧化的叙事方式重新呈现建筑。'), tags: [],
     software: ['Adobe Photoshop', 'Adobe Premiere Pro'],
     thumbnail: { image: '/media/projects/09-video-09/thumbnail.jpg', alt: l('Film 09 — supplied cover', 'Film 09——提供的封面'), variant: 9 },
     hero: { image: '/media/projects/09-video-09/hero-poster-v2.jpg', video: '/media/projects/09-video-09/hero-v2.mp4', alt: l('Film 09 — hero video', 'Film 09——Hero 视频'), variant: 9 },
@@ -126,31 +126,18 @@ const seeds: ProjectSeed[] = [
   },
 ];
 
-export const assetFolder = (number: string, slug: string) => `/media/projects/${number}-${slug}`;
-const artwork = (number: string, slug: string, variant: number): MediaAsset => ({
-  image: `${assetFolder(number, slug)}/thumbnail-placeholder.svg`,
-  alt: l(`Neutral media placeholder for project ${number}; final work to come`, `项目 ${number} 的中性媒体占位，最终作品待补充`),
-  variant, placeholder: true,
-});
-
 // Edit individual records here; page components do not need to change.
 export const projects: Project[] = seeds.map((seed, i) => {
   const number = String(i + 1).padStart(2, '0');
-  const media = artwork(number, seed.slug, i + 1);
   return {
     id: `project-${number}`, number, ...seed,
     metadata: seed.metadata ? normalizeProjectMetadata(seed.metadata,seed.discipline??categories.find(c=>c.id===seed.category)!.name) : projectMetadata({
       discipline: seed.discipline ?? categories.find(c => c.id === seed.category)!.name,
       role: seed.role, team: seed.team, time: seed.time,
     }),
-    thumbnail: seed.thumbnail ?? media,
-    hero: seed.hero ?? { ...media, image: `${assetFolder(number, seed.slug)}/hero-placeholder.svg` },
-    // previewVideo: `${assetFolder(number, seed.slug)}/preview.mp4`,
-    sections: seed.sections ?? [
-      { id: 'selected-work', kind: 'media', eyebrow: l('01 / Selected work', '01 / 作品展示'), title: l('Selected work', '作品展示'), body: l('TBD', 'TBD'), media: { ...media, image: `${assetFolder(number, seed.slug)}/detail-placeholder.svg` } },
-      ...(i === 0 ? [{ id: 'experience', kind: 'split' as const, eyebrow: l('02 / Experience', '02 / 体验'), title: l('Experience', '体验'), body: l('TBD', 'TBD'), media },
-        { id: 'technical', kind: 'technical' as const, eyebrow: l('03 / Implementation', '03 / 技术实现'), title: l('Implementation', '技术实现'), body: l('TBD', 'TBD') }] : []),
-    ],
+    thumbnail: seed.thumbnail,
+    hero: seed.hero,
+    sections: seed.sections ?? [],
     deepDives: seed.deepDives ?? [],
     nextProject: seeds[(i + 1) % seeds.length].slug,
   };
