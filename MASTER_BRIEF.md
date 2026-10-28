@@ -1,7 +1,12 @@
+# Unified interactive Trace loading — 2026-10-28
+
+- Every displayed loading screen uses the same 01–09 + Future discovery UI, residual marks, local reveal and click/tap pulse. No separate project-title/micro loader. Reset discoveries for each real loading episode; Future never counts toward nine.
+- Route navigation starts immediately with an invisible, non-modal 180ms observation period. If ready before that threshold, complete directly without LOADING or a READY hold. A genuine wait shows the full discovery UI, then READY for 400ms and the short reveal. Static-document handoffs preserve elapsed wait time. Media readiness and deferral remain unchanged.
+
 # Global Trace loading / route transitions — 2026-10-28
 
-- A persistent CSS/text-only TraceLoading layer lives in the root provider. A small head bootstrap identifies the first tab session before paint; later full-document static navigations carry destination/origin in sessionStorage. No discovery replay on ordinary route changes.
-- First visit supports local pointer/drag reveal and one bounded expanding click/tap pulse; 01–09 count, Future does not. Discovery is optional. Readiness is destination DOM plus already-requested critical still-image load/error completion, never videos, hidden stamps or YouTube. READY lasts 400ms, then the overlay reveals the page and releases focus.
+- A persistent CSS/text-only TraceLoading layer lives in the root provider. A small head bootstrap identifies the first tab session before paint; later full-document static navigations carry destination/origin in sessionStorage. All genuinely visible route-loading screens reuse the full discovery interaction; fast routes skip it.
+- Every displayed loading screen supports local pointer/drag reveal and one bounded expanding click/tap pulse; 01–09 count, Future does not. Discovery is optional. Readiness is destination DOM plus already-requested critical still-image load/error completion, never videos, hidden stamps or YouTube. READY lasts 400ms, then the overlay reveals the page and releases focus.
 - Internal route activation starts navigation immediately. LOADING appears after 180ms of actual route wait; normal hash scrolling, downloads and modified clicks remain native. Static export retains full-document anchor navigation and /portfolio paths. No additional media preloads, new animation library or changes to the ticket/passport timeline.
 
 # Media request deferral — 2026-10-24
