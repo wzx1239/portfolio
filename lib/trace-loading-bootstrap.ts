@@ -1,0 +1,2 @@
+export const traceBootstrap = `(()=>{let mode='first';try{const p=JSON.parse(sessionStorage.getItem('portfolio-trace-navigation')||'null');if(p&&Date.now()-p.at<20000&&new URL(p.href).pathname===location.pathname)mode='route';else if(sessionStorage.getItem('portfolio-trace-seen'))mode='off';sessionStorage.setItem('portfolio-trace-seen','1')}catch{}document.documentElement.dataset.traceEntry=mode})();`;
+

@@ -1,3 +1,9 @@
+# Global Trace loading / route transitions — 2026-10-28
+
+- A persistent CSS/text-only TraceLoading layer lives in the root provider. A small head bootstrap identifies the first tab session before paint; later full-document static navigations carry destination/origin in sessionStorage. No discovery replay on ordinary route changes.
+- First visit supports local pointer/drag reveal and one bounded expanding click/tap pulse; 01–09 count, Future does not. Discovery is optional. Readiness is destination DOM plus already-requested critical still-image load/error completion, never videos, hidden stamps or YouTube. READY lasts 400ms, then the overlay reveals the page and releases focus.
+- Internal route activation starts navigation immediately. LOADING appears after 180ms of actual route wait; normal hash scrolling, downloads and modified clicks remain native. Static export retains full-document anchor navigation and /portfolio paths. No additional media preloads, new animation library or changes to the ticket/passport timeline.
+
 # Media request deferral — 2026-10-24
 
 - Keep all existing media, copy and visual design. Attach non-priority shared video URLs/posters within 400px of the viewport, and attach only the selected Trace/Narrative demonstration at that distance. Existing visibility/interaction rules still control playback. Hero loading remains immediate; project preview URLs remain gated by Reveal engagement with preload:none.

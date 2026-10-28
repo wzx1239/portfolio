@@ -1,4 +1,3 @@
-'use client';
-import { useLanguage } from '@/components/layout/language-provider';
-import { copy } from '@/data/site';
-export default function Loading() { const { t } = useLanguage(); return <main id="main" className="route-loader" role="status"><span className="loading-lines"/><span className="mono">{t(copy.loading)} ↗</span></main>; }
+// The persistent global Trace layer supplies the loading UI. This boundary only
+// signals that destination content has not committed yet.
+export default function Loading() { return <main id="main" data-route-pending="true" aria-busy="true" />; }

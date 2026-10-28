@@ -1,0 +1,19 @@
+
+.trace-loader { --trace-origin-x:50vw; --trace-origin-y:50vh; position:fixed; inset:0; z-index:10000; overflow:clip; background:#000; color:#c6c6c6; touch-action:none; outline:0; clip-path:circle(160vmax at var(--trace-origin-x) var(--trace-origin-y)); font:400 13px/1.5 var(--sans); }
+.trace-loader[hidden],html[data-trace-entry=off] .trace-loader[data-phase=boot] { display:none; }
+.trace-loader[data-cover=true]:not([data-phase=reveal]):not([data-phase=off]) { animation:trace-loading-cover 180ms ease-out both; }
+.trace-loader[data-phase=reveal] { clip-path:circle(0 at var(--trace-origin-x) var(--trace-origin-y)); transition:clip-path 260ms ease-in; pointer-events:none; }
+.trace-discovery-item { position:absolute; transform:translate(-50%,-50%); width:clamp(100px,17vw,230px); opacity:0; transition:opacity 180ms linear; }
+.trace-discovery-item > span { font-size:12px; }
+.trace-discovery-item p { font-size:clamp(14px,1.5vw,21px); line-height:1.2; margin-top:5px; }
+.trace-discovery-item small { display:block; font-size:10px; margin-top:7px; }
+.trace-loading-instructions { position:absolute; left:var(--gutter); bottom:40px; line-height:1.8; }
+.trace-loading-instructions p:last-child { margin-top:12px; }
+.trace-loading-status { position:absolute; bottom:40px; right:var(--gutter); letter-spacing:.05em; }
+.trace-loading-destination { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; max-width:80vw; }
+.trace-loading-destination p { font:500 clamp(22px,4vw,48px)/1.1 var(--display); margin-top:12px; }
+.trace-loader[data-discovery=true] .trace-loading-destination,.trace-loader[data-discovery=false] .trace-discovery,.trace-loader[data-discovery=false] .trace-loading-instructions,html[data-trace-entry=route] .trace-loader[data-phase=boot] .trace-discovery,html[data-trace-entry=route] .trace-loader[data-phase=boot] .trace-loading-instructions { display:none; }
+.trace-loading-pulse { position:absolute; border:1px solid #9c9c9c; border-radius:50%; pointer-events:none; animation:trace-loading-pulse 650ms linear both; }
+@keyframes trace-loading-pulse { from{transform:translate(-50%,-50%) scale(0);opacity:.55;} to{transform:translate(-50%,-50%) scale(1);opacity:0;} }
+@keyframes trace-loading-cover { from{clip-path:circle(0 at var(--trace-origin-x) var(--trace-origin-y));} to{clip-path:circle(160vmax at var(--trace-origin-x) var(--trace-origin-y));} }
+@media(prefers-reduced-motion:reduce) { .trace-loader[data-cover=true],.trace-loading-pulse { animation:none; } .trace-loader[data-phase=reveal] { clip-path:none; transition:opacity 100ms linear; opacity:0; } }
