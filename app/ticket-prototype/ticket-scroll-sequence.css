@@ -1,0 +1,37 @@
+/* The approved viewport stays intact inside a longer normal-flow section. */
+.ticket-scroll-sequence { position:relative; height:calc(100svh + var(--collection-scroll) + var(--collection-hold)); background:#000; }
+.ticket-scroll-stage { position:sticky; top:0; height:100svh; overflow:clip; isolation:isolate; }
+.ticket-scroll-stage > .ticket-prototype-stage { position:relative; z-index:2; background:transparent; clip-path:inset(var(--pocket-clip-top,0px) 0 var(--pocket-clip-bottom,0px) 0); }
+.ticket-scroll-sequence .ticket-preview-shell { transform:translate3d(var(--collection-x,0px),var(--collection-y,0px),0); will-change:transform; }
+.ticket-scroll-sequence[data-collecting=true] .ticket-preview-shell { pointer-events:none; z-index:calc(var(--ticket-count,9) - var(--ticket-index)); }
+.ticket-scroll-sequence[data-collecting=true] .project-ticket { transition:none; transform:translate(-50%,-50%) rotate(calc(-90deg + var(--ticket-current-lean,var(--ticket-lean,0deg)))); }
+@media(prefers-reduced-motion:reduce) { .ticket-scroll-sequence { height:100svh; } .ticket-scroll-sequence .ticket-preview-shell { will-change:auto; } }
+
+/* Reuse the existing book/leaf opening treatment in the shared black stage. */
+.ticket-scroll-sequence .collection-passport.home-passport { position:absolute; z-index:1; left:24%; right:auto; width:100%; top:0; height:100%; visibility:hidden; --passport-arrive:inherit; --passport-open:inherit; }
+.ticket-scroll-sequence .collection-passport.home-passport .passport-stage { position:absolute; inset:0; padding:var(--header) 0 0; display:flex; align-items:center; transform-origin:0 50%; transform:translateY(calc((1 - var(--passport-arrive)) * 110svh)) scale(.75); }
+.ticket-scroll-sequence .collection-passport .about-record { width:100%; }
+@media(max-width:1000px) {
+  /* Narrow screens retain the full-size readable book in ordinary flow. */
+  .ticket-scroll-sequence { height:auto; }
+  .ticket-scroll-stage { position:relative; height:auto; overflow:visible; }
+  .ticket-scroll-sequence .collection-passport.home-passport { position:relative; left:0; right:auto; width:100%; height:auto; }
+  .ticket-scroll-sequence .collection-passport.home-passport .passport-stage { position:relative; padding:0; transform:none; }
+  .ticket-scroll-sequence .collection-passport .record-spread { transform:none; }
+  .ticket-scroll-sequence .collection-passport .record-information { transform:none; }
+  .ticket-scroll-sequence .collection-passport .passport-cover-leaf { display:none; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .ticket-scroll-sequence { height:auto; }
+  .ticket-scroll-stage { position:relative; height:auto; overflow:visible; }
+  .ticket-scroll-sequence .collection-passport.home-passport { position:relative; left:0; width:100%; height:auto; }
+  .ticket-scroll-sequence .collection-passport.home-passport .passport-stage { position:relative; transform:none; padding:0; }
+}
+
+.ticket-scroll-sequence[data-collecting=true] .ticket-prototype-stage { pointer-events:none; }
+
+/* The actual opaque book leaves are the foreground occluder. No opacity trick,
+   duplicate passport or mask that would cover the readable About content. */
+.ticket-scroll-sequence .collection-passport.home-passport { translate:var(--passport-center-x,0px) 0; }
+.ticket-scroll-sequence[data-inserting=true] .collection-passport.home-passport { z-index:3; }

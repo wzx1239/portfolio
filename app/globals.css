@@ -568,3 +568,10 @@ body::after { background:url('../public/media/surfaces/digital-grain.svg') repea
  .trace-showcase-description { min-height:240px; }
  .site-header nav { gap:12px; }
 }
+
+/* Four navigation groups retain room on narrow phones without reducing type. */
+@media(max-width:480px) {
+ .site-header { gap:8px; padding-inline:14px; }
+ .site-header .identity { max-width:82px; flex-wrap:wrap; line-height:1.2; }
+ .site-header nav { gap:8px; flex-shrink:0; }
+}

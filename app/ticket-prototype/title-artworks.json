@@ -1,0 +1,47 @@
+{
+  "01": {
+    "src": "/media/ticket-prototype/the-perfect-city-title-final.png",
+    "width": 1266,
+    "height": 1176
+  },
+  "02": {
+    "src": "/media/ticket-prototype/align-title.png",
+    "width": 2097,
+    "height": 1068
+  },
+  "03": {
+    "src": "/media/ticket-prototype/featherland-title.png",
+    "width": 1908,
+    "height": 824
+  },
+  "04": {
+    "src": "/media/ticket-prototype/emergency-refuge-title.png",
+    "width": 1958,
+    "height": 803
+  },
+  "05": {
+    "src": "/media/ticket-prototype/new-garbage-city-title.png",
+    "width": 1949,
+    "height": 807
+  },
+  "06": {
+    "src": "/media/ticket-prototype/the-ideal-workspace-title.png",
+    "width": 2027,
+    "height": 776
+  },
+  "07": {
+    "src": "/media/ticket-prototype/marshgate-doppelganger-title.png",
+    "width": 2098,
+    "height": 749
+  },
+  "08": {
+    "src": "/media/ticket-prototype/ironic-shaxi-title.png",
+    "width": 1798,
+    "height": 875
+  },
+  "09": {
+    "src": "/media/ticket-prototype/a-renting-story-title.png",
+    "width": 2098,
+    "height": 749
+  }
+}
