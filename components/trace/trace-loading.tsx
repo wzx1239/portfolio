@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState, type PointerEvent } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { routePath } from '@/lib/public-path';
+import { watchInitialViewport } from './initial-viewport-ready';
 import './trace-loading.css';
 
 export type TraceEntry = { number: string; title: string; path: string };
@@ -28,7 +29,7 @@ export function TraceLoading({ entries }: { entries: TraceEntry[] }) {
   useEffect(() => {
     const mode = document.documentElement.dataset.traceEntry;
     target.current = routePath(location.pathname);
-    if (mode === 'off') { setLoader({phase:'off',id:1}); return; }
+    if (mode === 'off') { startedAt.current=Date.now();setLoader({phase:'pending',id:1});return; }
     let pending: { x?:number; y?:number; at?:number } | null = null;
     try { pending=JSON.parse(sessionStorage.getItem(storageKey)||'null'); sessionStorage.removeItem(storageKey); } catch {}
     root.current?.style.setProperty('--trace-origin-x', `${pending?.x ?? innerWidth/2}px`);
@@ -76,44 +77,31 @@ export function TraceLoading({ entries }: { entries: TraceEntry[] }) {
     return ()=>clearTimeout(timer);
   }, [loader.phase,loader.id]);
 
+  const monitoring = ['pending','waiting','ready'].includes(loader.phase);
   useEffect(() => {
-    if(!['pending','waiting'].includes(loader.phase) || routePath(pathname)!==target.current) return;
-    let cancelled=false, checking=false;
-    const cleanImages: (()=>void)[]=[];
-    const observers=new MutationObserver(check);
-    function check() {
-      if(cancelled || checking || document.readyState==='loading') return;
-      const path=target.current;
-      const entry=entries.find(e=>e.path===path);
-      const main=entry ? document.querySelector(`main[data-project-slug="${path!.split('/').pop()}"]`) : path==='/' ? document.querySelector('#main .ticket-scroll-sequence') : path==='/projects' ? document.querySelector('#main #projects') : document.querySelector('main:not([data-route-pending])');
-      if(!main || document.querySelector('main[data-route-pending]')) return;
-      checking=true;
-      // Wait only for already-requested critical stills. This never attaches a
-      // video, hidden Passport stamp URL, YouTube iframe or new image request.
-      const images=Array.from(document.querySelectorAll<HTMLImageElement>('main .ticket-preview-shell:first-child img,main .project-hero img,main img[loading="eager"],main img[fetchpriority="high"]'));
-      Promise.all(images.map(image=>new Promise<void>(resolve=>{
-        if(image.complete) { resolve(); return; }
-        const done=()=>{image.removeEventListener('load',done);image.removeEventListener('error',done);resolve();};
-        cleanImages.push(()=>{image.removeEventListener('load',done);image.removeEventListener('error',done);});
-        image.addEventListener('load',done,{once:true});image.addEventListener('error',done,{once:true});
-      }))).then(()=>{
-        if(!cancelled)setLoader(s=>s.id!==loader.id?s:{...s,phase:s.phase==='pending'?'off':'ready'});
-      });
+    if(!monitoring || routePath(pathname)!==target.current)return;
+    const destination=target.current;
+    function getMain(){
+      const mounted=Array.from(document.querySelectorAll<HTMLElement>('[data-trace-route]')).some(node=>node.dataset.traceRoute===destination&&node.dataset.traceMounted==='true');
+      if(!mounted || document.querySelector('main[data-route-pending]'))return null;
+      const entry=entries.find(e=>e.path===destination);
+      const selector=entry ? `main[data-project-slug="${destination!.split('/').pop()}"]` : destination==='/' ? 'main:has(.ticket-scroll-sequence)' : destination==='/projects' ? 'main:has(#projects)' : 'main:not([data-route-pending])';
+      return Array.from(document.querySelectorAll<HTMLElement>(selector+',main.not-found')).find(main=>{const r=main.getBoundingClientRect();return r.width>0&&r.height>0;})||null;
     }
-    observers.observe(document.body,{childList:true,subtree:true});
-    document.addEventListener('readystatechange',check);
-    check();
-    return ()=>{cancelled=true;observers.disconnect();document.removeEventListener('readystatechange',check);cleanImages.forEach(fn=>fn());};
-  }, [pathname,loader.phase,loader.id,entries]);
+    return watchInitialViewport(getMain,ready=>{
+      root.current?.setAttribute('data-viewport-ready',String(ready));
+      setLoader(s=>{
+        if(s.id!==loader.id)return s;
+        if(!ready)return s.phase==='ready'?{...s,phase:'waiting'}:s;
+        if(s.phase==='pending')return {...s,phase:'off'};
+        return s.phase==='waiting'?{...s,phase:'ready'}:s;
+      });
+    });
+  }, [pathname,monitoring,loader.id,entries]);
 
   useEffect(()=>{
     if(loader.phase!=='ready' && loader.phase!=='reveal')return;
     const timer=setTimeout(()=>setLoader(s=>s.id===loader.id?{...s,phase:s.phase==='ready'?'reveal':'off'}:s),loader.phase==='ready'?400:280);
-    return()=>clearTimeout(timer);
-  },[loader.phase,loader.id]);
-  useEffect(()=>{
-    if(!['pending','waiting'].includes(loader.phase))return;
-    const timer=setTimeout(()=>setLoader(s=>s.id===loader.id?{...s,phase:'off'}:s),15000);
     return()=>clearTimeout(timer);
   },[loader.phase,loader.id]);
 

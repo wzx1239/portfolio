@@ -1,3 +1,9 @@
+# Destination-under-overlay visual readiness — 2026-10-28
+
+- Navigation starts immediately; the destination mounts under the persistent Trace overlay. A route-local template commit marker prevents the previous page or a loading boundary from satisfying readiness.
+- READY observes only the actual initial viewport: current images decode, visible autoplay videos have current-frame data, paused/manual/reduced-motion video can use its decoded poster, applicable styles/fonts are available, and layout remains stable across rendered frames. Re-scan late-mounted content and revalidate throughout the 400ms READY hold. An already-mounted YouTube embed is checked only if it is visible, using its normal frame load/error completion; never wait for film playback. Do not force media loads outside the viewport.
+- Remove the unconditional 15-second dismissal. Repeat-session bootstrap now defers display for fast loads rather than bypassing readiness. Preserve fast-route bypass, optional background interaction and page design. Loading-screen interaction cannot activate covered project-preview videos.
+
 # Minimal Trace loading UI — 2026-10-28
 
 - Remove all discovery instructions, counters and collection/completion feedback. Keep the same optional local reveal, click/tap pulse and subtle residual marks.

@@ -17,6 +17,6 @@ export function YouTubeEmbed({ videoId, title }: { videoId: string; title: strin
     return () => observer.disconnect();
   }, []);
   return <div ref={root} className="youtube-embed section-media">
-    {nearViewport && <iframe src={`https://www.youtube.com/embed/${videoId}?playsinline=1`} title={title} loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />}
+    {nearViewport && <iframe data-trace-frame-ready="false" onLoad={event=>{event.currentTarget.dataset.traceFrameReady='true';}} onError={event=>{event.currentTarget.dataset.traceFrameReady='true';}} src={`https://www.youtube.com/embed/${videoId}?playsinline=1`} title={title} loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />}
   </div>;
 }

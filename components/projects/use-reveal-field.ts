@@ -19,7 +19,8 @@ export function useRevealField() {
     pointer: false, x: 0, y: 0, px: 0, py: 0, field: 0, full: 0, entered: 0, last: 0,
     scrollY: 0, scrollTime: 0, velocity: 0, speed: 0, engaged: false, disposed: false, painted:0, pointerTime:0, fallbackX:0, fallbackY:0, sharedTime:0 });
   const tick = useRef<(time: number) => void>(() => {});
-  const blocked = () => Boolean(root.current?.closest('[inert],[data-stamps-ready="false"]'));
+  // Exploring the loading overlay must not activate media hidden underneath it.
+  const blocked = () => Boolean(root.current?.closest('[inert],[data-stamps-ready="false"]') || document.querySelector('.trace-loader:not([hidden])'));
   function wake() {
     const s = state.current;
     if (!s.visible || s.disposed || s.raf || document.hidden || reduced || blocked()) return;
