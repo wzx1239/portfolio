@@ -19,16 +19,17 @@ export function useRevealField() {
     pointer: false, x: 0, y: 0, px: 0, py: 0, field: 0, full: 0, entered: 0, last: 0,
     scrollY: 0, scrollTime: 0, velocity: 0, speed: 0, engaged: false, disposed: false, painted:0, pointerTime:0, fallbackX:0, fallbackY:0, sharedTime:0 });
   const tick = useRef<(time: number) => void>(() => {});
+  const blocked = () => Boolean(root.current?.closest('[inert],[data-stamps-ready="false"]'));
   function wake() {
     const s = state.current;
-    if (!s.visible || s.disposed || s.raf || document.hidden || reduced) return;
+    if (!s.visible || s.disposed || s.raf || document.hidden || reduced || blocked()) return;
     s.last = performance.now();
     s.raf = requestAnimationFrame(time => tick.current(time));
   }
   tick.current = time => {
     const s = state.current;
     s.raf = 0;
-    if (!s.visible || document.hidden || reduced || !root.current || !image.current) return;
+    if (!s.visible || document.hidden || reduced || !root.current || !image.current || blocked()) return;
     if(time-s.painted<1000/traceSettings.maxFPS){s.raf=requestAnimationFrame(time=>tick.current(time));return;}
     s.painted=time;
     const dt = clamp(time - s.last, 1, 34); s.last = time;
@@ -81,9 +82,15 @@ export function useRevealField() {
       node.style.setProperty('--rf-field', '0'); node.style.setProperty('--rf-full', '0'); node.style.setProperty('--rf-scroll', '0px');
       node.dataset.revealRunning = 'false';
     };
+    const gate = node.closest('[data-stamps-ready]');
+    const gateObserver = new MutationObserver(() => {
+      if (blocked()) { s.focus = false; stop(); } else wake();
+    });
+    if (gate) gateObserver.observe(gate, { attributes: true, attributeFilter: ['data-stamps-ready'] });
     const updateMode = () => { s.coarse = touch.matches; wake(); };
     updateMode(); s.scrollY = window.scrollY;
     const unsubscribe = subscribeTrace(sample => {
+      if (blocked()) { s.focus = false; stop(); return; }
       if (!s.visible || reduced || s.coarse) return;
       const rect=media.getBoundingClientRect();
       const distance=Math.hypot(Math.max(rect.left-sample.x,0,sample.x-rect.right),Math.max(rect.top-sample.y,0,sample.y-rect.bottom));
@@ -119,7 +126,7 @@ export function useRevealField() {
     document.addEventListener('visibilitychange', visibility); touch.addEventListener('change', updateMode);
     if (reduced) stop();
     return () => {
-      s.disposed = true; unsubscribe(); cancelAnimationFrame(s.raf); observer.disconnect(); prominence.disconnect(); resize.disconnect();
+      s.disposed = true; gateObserver.disconnect(); unsubscribe(); cancelAnimationFrame(s.raf); observer.disconnect(); prominence.disconnect(); resize.disconnect();
       window.removeEventListener('scroll', scroll); document.removeEventListener('visibilitychange', visibility); touch.removeEventListener('change', updateMode);
     };
     // The listeners and animation loop share mutable refs, without pointer-triggered React renders.
@@ -127,7 +134,7 @@ export function useRevealField() {
   }, [reduced]);
   function move(event: PointerEvent<HTMLElement>) {
     const s = state.current;
-    if (reduced || s.coarse || event.pointerType === 'touch') return;
+    if (reduced || s.coarse || event.pointerType === 'touch' || blocked()) return;
     const rect = image.current?.getBoundingClientRect(); if (!rect) return;
     const now=performance.now();
     // Local input fallback for desktop layouts where ambient Trace is disabled.
@@ -143,6 +150,6 @@ export function useRevealField() {
     wake();
   }
   function leave() { state.current.inside = false; state.current.pointer = false; state.current.entered = 0; wake(); }
-  function focus(value: boolean) { state.current.focus = value; if (!value) state.current.entered = 0; wake(); }
+  function focus(value: boolean) { state.current.focus = value && !blocked(); if (!value) state.current.entered = 0; wake(); }
   return { root, image, engaged: engaged && !reduced, reduced, move, leave, focus };
 }

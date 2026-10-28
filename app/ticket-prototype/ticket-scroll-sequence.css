@@ -35,3 +35,8 @@
    duplicate passport or mask that would cover the readable About content. */
 .ticket-scroll-sequence .collection-passport.home-passport { translate:var(--passport-center-x,0px) 0; }
 .ticket-scroll-sequence[data-inserting=true] .collection-passport.home-passport { z-index:3; }
+
+/* The book looks settled before its final few degrees finish. Gate only input. */
+.collection-passport[data-stamps-ready=false] .about-stamps { pointer-events:none; cursor:default; }
+.collection-passport[data-stamps-ready=false] .about-stamps .rf-original { visibility:hidden; }
+.collection-passport[data-stamps-ready=true] .about-stamps .project-link { cursor:pointer; }
