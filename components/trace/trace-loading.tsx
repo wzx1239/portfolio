@@ -18,8 +18,7 @@ export function TraceLoading({ entries }: { entries: TraceEntry[] }) {
   const target = useRef<string | null>(null);
   const startedAt = useRef(0);
   const [loader, setLoader] = useState<Loader>({ phase:'boot', id:0 });
-  const [found, setFound] = useState<number[]>([]);
-  const foundRef = useRef(new Set<number>());
+  const residualMarks = useRef(new Set<number>());
   const [pulses, setPulses] = useState<{ id:number; x:number; y:number; radius:number }[]>([]);
   const frames = useRef(new Set<number>());
   const fadeTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -131,16 +130,16 @@ export function TraceLoading({ entries }: { entries: TraceEntry[] }) {
   useEffect(()=>{
     if(!['waiting','off'].includes(loader.phase))return;
     frames.current.forEach(cancelAnimationFrame);frames.current.clear();clearTimeout(fadeTimer.current);setPulses([]);
-    if(loader.phase==='waiting'){foundRef.current.clear();setFound([]);items().forEach(node=>node.style.opacity='0');}
+    if(loader.phase==='waiting'){residualMarks.current.clear();items().forEach(node=>node.style.opacity='0');}
   },[loader.phase,loader.id]);
   useEffect(()=>()=>{frames.current.forEach(cancelAnimationFrame);clearTimeout(fadeTimer.current);},[]);
 
   function items(){return Array.from(root.current?.querySelectorAll<HTMLElement>('.trace-discovery-item')||[]);}
   function discover(node:HTMLElement,index:number,strength:number){
-    node.style.opacity=String(Math.max(strength,foundRef.current.has(index) ? .13 : 0));
-    if(strength>.12 && !foundRef.current.has(index)){foundRef.current.add(index);setFound([...foundRef.current]);}
+    node.style.opacity=String(Math.max(strength,residualMarks.current.has(index) ? .13 : 0));
+    if(strength>.12)residualMarks.current.add(index);
   }
-  function residual(){items().forEach((node,i)=>node.style.opacity=foundRef.current.has(i)?'.13':'0');}
+  function residual(){items().forEach((node,i)=>node.style.opacity=residualMarks.current.has(i)?'.13':'0');}
   function explore(event:PointerEvent){
     if(!active)return;
     const x=event.clientX,y=event.clientY,radius=Math.max(95,Math.min(innerWidth,innerHeight)*.18);
@@ -164,7 +163,6 @@ export function TraceLoading({ entries }: { entries: TraceEntry[] }) {
   return <div ref={root} className="trace-loader" data-phase={loader.phase} tabIndex={-1} role="dialog" aria-modal={active} aria-label="Trace loading" hidden={!active} onKeyDown={e=>{if(['Tab',' ','ArrowDown','ArrowUp','PageDown','PageUp','Home','End'].includes(e.key))e.preventDefault();}} onPointerMove={explore} onPointerLeave={residual} onPointerDown={e=>{down.current={x:e.clientX,y:e.clientY};}} onPointerCancel={()=>{down.current=null;residual();}} onPointerUp={e=>{if(down.current&&Math.hypot(e.clientX-down.current.x,e.clientY-down.current.y)<12)pulse(e.clientX,e.clientY);down.current=null;}}>
     <div className="trace-discovery" aria-hidden="true">{traces.map((entry,i)=><div key={entry.number} className="trace-discovery-item" style={{left:`${positions[i][0]}%`,top:`${positions[i][1]}%`}}><span>{entry.number}</span><p>{entry.title}</p>{i===9&&<small>DESTINATION UNKNOWN</small>}</div>)}</div>
     {pulses.map(p=><div key={p.id} className="trace-loading-pulse" aria-hidden="true" style={{left:p.x,top:p.y,width:p.radius*2,height:p.radius*2}}/>)}
-    <div className="trace-loading-instructions"><p>MOVE TO EXPLORE</p><p>CLICK TO TRACE</p><p>TRACES {String(found.filter(i=>i<9).length).padStart(2,'0')} / 09</p></div>
     <p className="trace-loading-status" role="status" aria-live="polite">{loader.phase==='ready'||loader.phase==='reveal'?'READY':'LOADING'}</p>
   </div>;
 }

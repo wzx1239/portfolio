@@ -1,3 +1,8 @@
+# Minimal Trace loading UI — 2026-10-28
+
+- Remove all discovery instructions, counters and collection/completion feedback. Keep the same optional local reveal, click/tap pulse and subtle residual marks.
+- A single centered LOADING gently pulses opacity .35–1 over 1.4s; READY replaces it at the same position/type, holds for 400ms, then reveals the page. Reduced motion uses steady text. Fast-route bypass and resource readiness logic stay unchanged.
+
 # Unified interactive Trace loading — 2026-10-28
 
 - Every displayed loading screen uses the same 01–09 + Future discovery UI, residual marks, local reveal and click/tap pulse. No separate project-title/micro loader. Reset discoveries for each real loading episode; Future never counts toward nine.
