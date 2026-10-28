@@ -2,7 +2,8 @@ import type { CSSProperties } from 'react';
 import { futureTicket } from '@/data/future-ticket';
 import { projects } from '@/data/projects';
 import { ProjectTicket, type TicketContent } from './project-ticket';
-import titleArtworks from './title-artworks.json';
+import titleArtworks from './title-artworks-web.json';
+import homepagePreviews from '@/data/homepage-previews.json';
 import './ticket-prototype.css';
 const artworks: Record<string, TicketContent['artwork']> = titleArtworks;
 const categoryLabels = { game: 'GAME', architecture: 'ARCHITECTURE', video: 'VIDEO' };
@@ -26,7 +27,7 @@ export function TicketCollection() {
     const date = formatTicketDate(time.split(' · ').find(part => /\d{4}/.test(part)) ?? '');
     return <ProjectTicket key={project.id} priority={index === 0} ticket={{
       number: project.number, title: project.title.en, category: categoryLabels[project.category],
-      description: discipline, date, hero: project.hero, artwork: artworks[project.number],
+      description: discipline, date, hero: { ...project.hero, image: homepagePreviews[project.number as keyof typeof homepagePreviews].ticketImage, video: project.previewVideo || project.hero.video }, artwork: artworks[project.number],
     }} />;
   })}<ProjectTicket ticket={futureTicket} /></div></section>;
 }

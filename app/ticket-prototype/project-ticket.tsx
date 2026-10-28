@@ -31,11 +31,11 @@ export function ProjectTicket({ ticket, priority = false }: { ticket: TicketCont
     <article className="project-ticket" tabIndex={0} data-project-number={number} aria-label={[number, title, category, date].filter(Boolean).join(' — ')} onFocus={engage} onBlur={() => setEngaged(false)}>
       <div className="ticket-information">
         <div className="ticket-information-top"><span className="ticket-project-number">{number}</span><span className="ticket-category">{category}</span></div>
-        <h1 className="ticket-title" aria-label={title}>{artwork && <Image className="ticket-title-artwork" src={publicPath(artwork.src)!} alt={title} width={artwork.width} height={artwork.height} sizes="(max-width: 700px) 18vw, 16vw" priority={priority} />}{!artwork && <span className="ticket-future-title">{title}</span>}</h1>
+        <h1 className="ticket-title" aria-label={title}>{artwork && <Image className="ticket-title-artwork" unoptimized src={publicPath(artwork.src)!} alt={title} width={artwork.width} height={artwork.height} sizes="(max-width: 700px) 18vw, 16vw" priority={priority} />}{!artwork && <span className="ticket-future-title">{title}</span>}</h1>
         <div className="ticket-information-bottom"><span>{description}</span></div>
       </div>
       <div className="ticket-project-media">
-        {hero?.image && <Image src={publicPath(hero?.image)!} alt={title} fill sizes="(max-width: 700px) 32vw, 29vw" priority={priority} />}
+        {hero?.image && <Image unoptimized src={publicPath(hero?.image)!} alt={title} fill sizes="(max-width: 700px) 32vw, 29vw" priority={priority} />}
         {requested && hero?.video && <video ref={video} src={publicPath(hero?.video)} muted loop playsInline controls={false} preload="none" aria-hidden="true" className={playing ? 'is-playing' : ''} onPlaying={() => setPlaying(true)} onError={() => setPlaying(false)} />}
       </div>
       <div className="ticket-detail" aria-hidden="true">

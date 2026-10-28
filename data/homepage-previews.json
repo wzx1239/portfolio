@@ -1,0 +1,38 @@
+{
+  "01": {
+    "ticketImage": "/media/homepage-previews/01-preview.webp",
+    "stampImage": "/media/homepage-previews/01-preview.webp"
+  },
+  "02": {
+    "ticketImage": "/media/homepage-previews/02-preview.webp",
+    "stampImage": "/media/homepage-previews/02-preview.webp"
+  },
+  "03": {
+    "ticketImage": "/media/homepage-previews/03-preview.webp",
+    "stampImage": "/media/homepage-previews/03-preview.webp"
+  },
+  "04": {
+    "ticketImage": "/media/homepage-previews/04-preview.webp",
+    "stampImage": "/media/homepage-previews/04-preview.webp"
+  },
+  "05": {
+    "ticketImage": "/media/homepage-previews/05-preview.webp",
+    "stampImage": "/media/homepage-previews/05-preview.webp"
+  },
+  "06": {
+    "ticketImage": "/media/homepage-previews/06-preview.webp",
+    "stampImage": "/media/homepage-previews/06-preview.webp"
+  },
+  "07": {
+    "ticketImage": "/media/homepage-previews/07-preview.webp",
+    "stampImage": "/media/homepage-previews/07-stamp.webp"
+  },
+  "08": {
+    "ticketImage": "/media/homepage-previews/08-preview.webp",
+    "stampImage": "/media/homepage-previews/08-stamp.webp"
+  },
+  "09": {
+    "ticketImage": "/media/homepage-previews/09-preview.webp",
+    "stampImage": "/media/homepage-previews/09-stamp.webp"
+  }
+}

@@ -2,6 +2,7 @@
 import { publicPath } from '@/lib/public-path';
 import { useEffect, useRef, type CSSProperties } from 'react';
 import { Media } from '@/components/media/media';
+import { usePassportMedia } from '@/components/projects/use-passport-media';
 import { ProjectThumbnail } from '@/components/projects/project-thumbnail';
 import { ToolLogo } from '@/components/tool-logo';
 import { useLanguage } from '@/components/layout/language-provider';
@@ -12,6 +13,7 @@ import './about-record.css';
 export function AboutContent({ embedded = false }: { embedded?: boolean }) {
   const { t } = useLanguage();
   const spread = useRef<HTMLDivElement>(null);
+  const previewReady = usePassportMedia(spread, embedded);
   useEffect(() => {
     const node = spread.current;
     if (!node) return;
@@ -30,7 +32,7 @@ export function AboutContent({ embedded = false }: { embedded?: boolean }) {
       <section className="record-information" aria-labelledby={`${prefix}-information-heading`}>
         <header className="record-panel-heading"><h2 id={`${prefix}-information-heading`}>{t(copy.profile)}</h2></header>
         <div className="record-identity">
-          <div className="record-portrait"><Media asset={site.portrait} className="portrait" priority sizes="100px" /></div>
+          <div className="record-portrait"><Media asset={{ ...site.portrait, image: '/media/homepage-previews/portrait.webp' }} className="portrait" priority sizes="100px" /></div>
           <p className="record-name">{t(site.displayName)}</p>
         </div>
         <dl id="contact" className="record-contact">
@@ -54,7 +56,7 @@ export function AboutContent({ embedded = false }: { embedded?: boolean }) {
       </section>
       <section className="record-projects" aria-labelledby={`${prefix}-projects-heading`}>
         <header className="record-panel-heading"><h2 id={`${prefix}-projects-heading`}>{t(copy.selected)}</h2></header>
-        <div className="about-stamps">{projects.map(project => <ProjectThumbnail key={project.id} project={project} variant="stamp" />)}</div>
+        <div className="about-stamps">{projects.map(project => <ProjectThumbnail key={project.id} project={project} variant="stamp" mediaReady={previewReady} />)}</div>
       </section>
     </div>
   </Container>;
