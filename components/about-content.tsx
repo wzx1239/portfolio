@@ -37,7 +37,6 @@ export function AboutContent({ embedded = false }: { embedded?: boolean }) {
         </div>
         <dl id="contact" className="record-contact">
           <div><dt>{t(copy.birthDate)}</dt><dd>{site.birthDate}</dd></div>
-          <div><dt>{t(copy.phone)}</dt><dd><a href={`tel:${site.phoneHref}`}>{site.phone}</a></dd></div>
           <div><dt>{t(copy.email)}</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
           <div><dt>{t(copy.languages)}</dt><dd>{site.languages.map((language, i) => <p key={i}>{t(language)}</p>)}</dd></div>
         </dl>

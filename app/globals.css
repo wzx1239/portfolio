@@ -72,10 +72,12 @@ img, video { display: block; }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 100; height: var(--header); display: flex; align-items: center; justify-content: space-between; padding: 0 var(--gutter); background: color-mix(in srgb, var(--paper) 96%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--rule); transition: transform var(--move) var(--ease); }
 .site-header.header-hidden { transform: translateY(-101%); pointer-events: none; }
 .identity { display: flex; align-items: center; gap: 12px; font-size: 16px; letter-spacing: -.035em; font-weight: 550; }
-.identity-dot { width: 6px; height: 6px; background: var(--game); transition: transform var(--quick) var(--ease); }
+.identity-dot { width: 6px; height: 6px; background: #fff; transition: transform var(--quick) var(--ease); }
 .identity:hover .identity-dot { transform: rotate(90deg) scale(1.4); }
 .site-header nav { display: flex; align-items: center; gap: 40px; font-size: 14px; }
-.site-header nav > a { position: relative; padding: 12px 0; }
+.site-header nav > a { position: relative; padding: 12px 0; cursor: pointer; }
+.nav-square { display: inline-block; width: 6px; height: 6px; margin-right: 8px; vertical-align: middle; background: #fff; transition: transform var(--quick) var(--ease); }
+.site-header nav > a:hover .nav-square, .site-header nav > a:focus-visible .nav-square { transform: rotate(45deg); }
 .site-header nav > a::after { content: ''; position: absolute; inset: auto 0 4px; height: 2px; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform var(--quick) var(--ease); }
 .site-header nav > a:hover::after, .site-header nav > a[aria-current]::after { transform: scaleX(1); }
 .language-switch { display: flex; align-items: center; gap: 8px; font-size: 13px; }

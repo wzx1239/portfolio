@@ -35,9 +35,9 @@ export function SiteHeader() {
     <header className={`site-header ${hidden ? 'header-hidden' : ''}`} inert={hidden}>
       <Link href="/" onClick={event => scrollHome(event, 'home')} className="identity" aria-label={`${site.name} — ${t(copy.home)}`}>{site.name}<span className="identity-dot" /></Link>
       <nav aria-label={language === 'en' ? 'Main navigation' : '主导航'}>
-        <Link href="/" onClick={event => scrollHome(event, 'home')}>{t(copy.home)}</Link>
-        <Link href="/projects" aria-current={path.startsWith('/projects') ? 'page' : undefined}>{t(copy.projects)}<span className="nav-count">09</span></Link>
-        <Link href="/#about" onClick={event => scrollHome(event, 'about')}>{t(copy.about)}</Link>
+        <Link href="/" onClick={event => scrollHome(event, 'home')}><span className="nav-square" aria-hidden="true" />{t(copy.home)}</Link>
+        <Link href="/#about" onClick={event => scrollHome(event, 'about')}><span className="nav-square" aria-hidden="true" />{t(copy.about)}</Link>
+        <Link href="/projects" aria-current={path.startsWith('/projects') ? 'page' : undefined}><span className="nav-square" aria-hidden="true" />{t(copy.projects)}<span className="nav-count">09</span></Link>
         <div className="language-switch" aria-label={language === 'en' ? 'Language' : '语言'}>
           <button lang="en" aria-pressed={language === 'en'} onClick={() => setLanguage('en')}>EN</button><span aria-hidden="true">/</span><button lang="zh-CN" aria-pressed={language === 'zh'} onClick={() => setLanguage('zh')}>中文</button>
         </div>
