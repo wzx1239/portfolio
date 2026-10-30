@@ -13,7 +13,7 @@ export const softwareLogos: Record<string, { file: string; scale: number }> = {
   'Adobe Photoshop': { file: 'adobephotoshop', scale: .86 },
   'Adobe Illustrator': { file: 'adobeillustrator', scale: .86 },
   'Adobe InDesign': { file: 'adobeindesign', scale: .86 },
-  'D5 Render': { file: 'd5render.png', scale: 1.25 },
+  'D5 Render': { file: 'd5render.png', scale: 1 },
   'Premiere Pro': { file: 'adobepremierepro', scale: .86 },
   'Adobe Premiere Pro': { file: 'adobepremierepro', scale: .86 },
   'Adobe Substance 3D': { file: 'adobesubstance3d', scale: .86 },

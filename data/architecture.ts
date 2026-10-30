@@ -18,7 +18,7 @@ function visual(n: Number, name: string, en: string, zh: string): ArchitectureVi
 type ArchitectureRecord = Pick<Project, 'title'|'subtitle'|'summary'|'metadata'|'hero'|'thumbnail'|'software'|'originalPdf'|'architecture'|'sections'>;
 function record(n: Number, title: ReturnType<typeof l>, subtitle: ReturnType<typeof l>, summary: ReturnType<typeof l>, metadata: Project['metadata'], sections: ArchitectureSection[], software: string[] = []): ArchitectureRecord {
   const hero = visual(n,'hero',`${title.en} — original cover image`,`${title.zh}——原始封面主图`);
-  return { title, subtitle, summary, metadata: [{ label:l('Discipline','领域'), value:subtitle }, ...metadata], software, originalPdf:originalPdfs[n], sections: [], architecture: { sections, original:true }, hero: { image: hero.src, alt:hero.caption, variant: +n }, thumbnail: { image:hero.src, alt:hero.caption, variant:+n } };
+  return { title, subtitle, summary, metadata: [{ label:l('Discipline','领域'), value:subtitle }, ...(n==='04'||n==='06'?[{label:l('Team','团队'),value:l('Individual Project','个人项目')}]:[]), ...metadata], software, originalPdf:originalPdfs[n], sections: [], architecture: { sections, original:true }, hero: { image: hero.src, alt:hero.caption, variant: +n }, thumbnail: { image:hero.src, alt:hero.caption, variant:+n } };
 }
 export const architectureProjects: Record<string, ArchitectureRecord> = {
   'emergency-refuge': record('04',l('Emergency Refuge','应急庇护所'),l('Architectural and urban parametric modularization against hypothetical extreme context','面向假想极端环境的建筑与城市参数化模块化'),

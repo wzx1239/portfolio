@@ -1,3 +1,9 @@
+# Project detail UI corrections — 2026-10-30
+
+- Remove Hero category badges, standalone subtitle/tag lines, Hero downward-arrow control, and the number appended to Next Project headings across 01–09. Preserve Overview Discipline and actual next-project content/navigation.
+- Tools Used uses the shared main section-title typography; marquee interaction stays unchanged. D5 uses only the existing asset’s correct gradient circular icon, without its wordmark or monochrome mask.
+- Team metadata: 04/06/07 Individual Project / 个人项目; 09 4-person Project / 4人项目. Preserve dates and other teams.
+
 # Destination-under-overlay visual readiness — 2026-10-28
 
 - Navigation starts immediately; the destination mounts under the persistent Trace overlay. A route-local template commit marker prevents the previous page or a loading boundary from satisfying readiness.
