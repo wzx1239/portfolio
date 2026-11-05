@@ -19,7 +19,7 @@ jobs:
       contents: read
       pages: read
     env:
-      NEXT_PUBLIC_BASE_PATH: /portfolio
+      NEXT_PUBLIC_BASE_PATH: ''
       PORTFOLIO_PAGES_OUTPUT: out
       NEXT_TELEMETRY_DISABLED: '1'
     steps:
@@ -53,7 +53,11 @@ jobs:
           test -f out/index.html
           test -f out/.nojekyll
           test -d out/_next
-          test -f out/projects/perfect-city/index.html
+          test "$(cat out/CNAME)" = 'zixiaoportfolio.com'
+          for project in perfect-city vr featherland emergency-refuge architecture-05 architecture-06 video-07 video-08 video-09; do
+            test -f "out/projects/$project/index.html"
+          done
+          ! grep -q '/portfolio/_next/' out/index.html
 
       - name: Upload static export only
         uses: actions/upload-pages-artifact@v5

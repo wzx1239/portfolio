@@ -1,3 +1,8 @@
+# Custom-domain static deployment — 2026-11-05
+
+- Production domain: https://zixiaoportfolio.com/ at root /. GitHub Actions explicitly sets NEXT_PUBLIC_BASE_PATH to an empty string; preserve static export, trailingSlash and unoptimized images.
+- Track public/CNAME so every static artifact includes zixiaoportfolio.com. Retain .nojekyll and validate all nine project HTML routes in deployment checks. No design, content, media or interaction changes.
+
 # Project detail UI corrections — 2026-10-30
 
 - Remove Hero category badges, standalone subtitle/tag lines, Hero downward-arrow control, and the number appended to Next Project headings across 01–09. Preserve Overview Discipline and actual next-project content/navigation.

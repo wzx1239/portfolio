@@ -7,7 +7,7 @@ The current site is build-time data + client interactions. No API routes, server
 Use Node >=22.18 and the existing lockfile/dependencies. For a repository site, set the exact repository subpath before building:
 
 ```powershell
-$env:NEXT_PUBLIC_BASE_PATH='/portfolio'
+$env:NEXT_PUBLIC_BASE_PATH=''
 npm run build:pages
 ```
 
@@ -25,7 +25,7 @@ The script builds in a fresh ignored .pages-build-* directory with local junctio
 
 ## Deployment workflow
 
-Repository: wzx1239/portfolio. In Settings > Pages > Build and deployment, select GitHub Actions as Source. Commit and push .github/workflows/deploy-pages.yml and these documentation changes through GitHub Desktop. Pushes to main (or a manual workflow run) build with NEXT_PUBLIC_BASE_PATH=/portfolio using the existing build:pages script, then upload only out/ and deploy that artifact. The site URL is https://wzx1239.github.io/portfolio/. No gh-pages branch, source-directory publishing or next start is required. No remote settings were changed and no deployment was triggered from this local session.
+Repository: wzx1239/portfolio. In Settings > Pages > Build and deployment, select GitHub Actions as Source. Commit and push .github/workflows/deploy-pages.yml and these documentation changes through GitHub Desktop. Pushes to main (or a manual workflow run) build with an empty NEXT_PUBLIC_BASE_PATH using the existing build:pages script, then upload only out/ and deploy that artifact. The site URL is https://zixiaoportfolio.com/. public/CNAME preserves the domain in every export; keep the GitHub Pages custom-domain setting at zixiaoportfolio.com. No gh-pages branch, source-directory publishing or next start is required. No remote settings were changed and no deployment was triggered from this local session.
 
 ## Verification
 
