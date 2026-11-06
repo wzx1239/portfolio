@@ -1,3 +1,8 @@
+# Bilibili long-form embeds — 2026-11-06
+
+- Replace six YouTube players with Bilibili iframe players: 01 walkthrough BV1Pexe6uEcF; 01 Artefact BV1Wvxe6qE5M; 02 BV1kqxe6KEe6; 03 BV1kqxe6KEvJ; 08 BV14uxv65EK2; 09 BV1Tuxv65ExV. IDs resolved from supplied b23.tv redirects.
+- Preserve player wrappers, responsive geometry, 400px viewport deferral, loading readiness signal and native controls; autoplay disabled. Local MP4 media and unrelated content unchanged.
+
 # Custom-domain static deployment — 2026-11-05
 
 - Production domain: https://zixiaoportfolio.com/ at root /. GitHub Actions explicitly sets NEXT_PUBLIC_BASE_PATH to an empty string; preserve static export, trailingSlash and unoptimized images.

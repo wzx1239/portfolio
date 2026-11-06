@@ -33,7 +33,7 @@ const seeds: ProjectSeed[] = [
     hero: { image: '/media/projects/01-perfect-city/hero-poster.jpg', video: '/media/projects/01-perfect-city/hero.mp4', alt: l('The Perfect City — project hero footage', '完美之城——项目 hero 影像'), variant: 1 },
     previewVideo: '/media/projects/01-perfect-city/preview.mp4',
     sections: [
-      { id: 'experience', kind: 'media', title: l('Artefact', 'Artefact'), youtube: 'VUbjO20mz9M', media: { image: '/media/projects/01-perfect-city/artefact-poster.jpg', alt: l('The Perfect City — Artefact', '完美之城——Artefact'), variant: 1 } },
+      { id: 'experience', kind: 'media', title: l('Artefact', 'Artefact'), bilibili: 'BV1Wvxe6qE5M', media: { image: '/media/projects/01-perfect-city/artefact-poster.jpg', alt: l('The Perfect City — Artefact', '完美之城——Artefact'), variant: 1 } },
       { id: 'core-mechanic-trace', kind: 'media', title: l('CORE MECHANIC — TRACE', '核心机制——TRACE'), steps: [
         { id: 'trace-reveal', number: '01', selector: l('REVEAL', '揭示'), thumbnail: '/media/projects/01-perfect-city/trace-reveal-thumb.jpg', branch: l('TRACE → PERCEIVE', 'TRACE → 感知'), title: l('REVEAL — PERCEIVE HIDDEN INFORMATION', '揭示——感知隐藏信息'), body: l("Pressing R sends a scan wave out from the player. As it passes through the environment, traces erased by the System are revealed: hidden objects gradually appear, footprints left by previous residents light up, and concealed surveillance devices become visible. Acquired through the story, Trace becomes the player’s primary way of exploring Diaspar.", "按下 R，角色周围会扩散出一圈扫描波，系统抹去的痕迹在波纹经过时显现出来：隐藏的物件逐渐浮现，前人留下的足迹被点亮，监控装置也无处藏身。这项能力随剧情获得，是玩家在 Diaspar 中探索的主要方式。"), video: '/media/projects/01-perfect-city/trace-reveal.mp4', width: 512, height: 320, implementation: [
           { heading: l('VISUAL & DETECTION SYNC', '视觉与检测同步'), body: l('A single timeline drives both the scanner’s scale and its material opacity. The visible wave and the detection range are always the same shape, so what players see is exactly what gets scanned.', '扫描器的缩放和材质透明度由同一条时间轴驱动。可见的扫描波与实际检测范围始终一致，玩家看到的范围就是被扫描的范围。') },
@@ -74,7 +74,7 @@ const seeds: ProjectSeed[] = [
         { number: '03', title: l('LEVEL FLOW', '关卡流程'), body: l('Level progression coordinates interactions, narrative events, ability unlocks and environmental changes throughout the game.', '通过关卡流程控制交互、叙事事件、能力解锁与环境变化，使游戏按照设计的阶段逐步推进。') },
         { number: '04', title: l('TUTORIAL', '教学系统'), body: l('Contextual tutorials are triggered by gameplay progress to introduce new abilities and controls when they become relevant.', '根据游戏进度触发对应教学，在玩家首次需要使用新能力或操作时提供引导.') },
       ] },
-      { id: 'selected-work', kind: 'media', title: l('Full Walkthrough', '完整过程'), youtube: '3dZkd4wj6pA', media: { image: '/media/projects/01-perfect-city/walkthrough-poster.jpg', alt: l('The Perfect City — full walkthrough', '完美之城——完整过程'), variant: 1 } },
+      { id: 'selected-work', kind: 'media', title: l('Full Walkthrough', '完整过程'), bilibili: 'BV1Pexe6uEcF', media: { image: '/media/projects/01-perfect-city/walkthrough-poster.jpg', alt: l('The Perfect City — full walkthrough', '完美之城——完整过程'), variant: 1 } },
     ] },
   { slug: 'vr', title: l('Align', 'Align'), category: 'game' as const,
     software: ['Adobe Photoshop', 'Rhino', 'Blender', 'Unreal Engine', 'SteamVR', '游戏串流助手'],
@@ -86,7 +86,7 @@ const seeds: ProjectSeed[] = [
     previewVideo: '/media/projects/02-vr/preview.mp4',
     sections: [
       { id: 'concept', kind: 'media', title: l('CONCEPT', '概念'), media: { image: '/media/projects/02-vr/concept.jpg', imageAspectRatio: 1810 / 1242, alt: l('Align — concept', 'Align——概念'), variant: 2 } },
-      { id: 'selected-work', kind: 'media', title: l('Full walkthrough', '完整过程'), youtube: 'N-fd3z5WQHk', media: { image: '/media/projects/02-vr/walkthrough-poster.jpg', alt: l('Align — full walkthrough', 'Align——完整过程'), variant: 2 } },
+      { id: 'selected-work', kind: 'media', title: l('Full walkthrough', '完整过程'), bilibili: 'BV1kqxe6KEe6', media: { image: '/media/projects/02-vr/walkthrough-poster.jpg', alt: l('Align — full walkthrough', 'Align——完整过程'), variant: 2 } },
     ],
   },
   { slug: 'featherland', title: l('Featherland', 'Featherland'), category: 'game' as const,
@@ -97,7 +97,7 @@ const seeds: ProjectSeed[] = [
     thumbnail: { image: '/media/projects/03-featherland/hero-poster.jpg', alt: l('Featherland — frame from the supplied hero', 'Featherland——提供的 Hero 视频画面'), variant: 3 },
     hero: { image: '/media/projects/03-featherland/hero-poster.jpg', video: '/media/projects/03-featherland/hero.mp4', alt: l('Featherland — hero video', 'Featherland——Hero 视频'), variant: 3 },
     previewVideo: '/media/projects/03-featherland/preview.mp4',
-    sections: [{ id: 'selected-work', kind: 'media', title: l('Full walkthrough', '完整过程'), youtube: '0zdtmL9Ovvc', media: { image: '/media/projects/03-featherland/walkthrough-poster.jpg', alt: l('Featherland — full walkthrough', 'Featherland——完整过程'), variant: 3 } }],
+    sections: [{ id: 'selected-work', kind: 'media', title: l('Full walkthrough', '完整过程'), bilibili: 'BV1kqxe6KEvJ', media: { image: '/media/projects/03-featherland/walkthrough-poster.jpg', alt: l('Featherland — full walkthrough', 'Featherland——完整过程'), variant: 3 } }],
   },
   { slug: 'emergency-refuge', category: 'architecture' as const, tags: [], ...architectureProjects['emergency-refuge'], software: ['Rhino', 'Grasshopper', 'Unreal Engine', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'] },
   { slug: 'architecture-05', category: 'architecture' as const, tags: [], ...architectureProjects['architecture-05'], software: ['Rhino', 'D5 Render', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign'] },
@@ -115,14 +115,14 @@ const seeds: ProjectSeed[] = [
     thumbnail: { image: '/media/projects/08-video-08/thumbnail.jpg', alt: l('Film 08 — supplied cover', 'Film 08——提供的封面'), variant: 8 },
     hero: { image: '/media/projects/08-video-08/hero-poster-v2.jpg', video: '/media/projects/08-video-08/hero-v2.mp4', alt: l('Film 08 — hero video', 'Film 08——Hero 视频'), variant: 8 },
     previewVideo: '/media/projects/08-video-08/preview-v2.mp4',
-    sections: [{ id: 'selected-work', kind: 'media', title: l('Full film', '完整影片'), youtube: 'ku3XhjsHEHE', media: { image: '/media/projects/08-video-08/film-poster.jpg', alt: l('Film 08 — full film', 'Film 08——完整影片'), variant: 8 } }],
+    sections: [{ id: 'selected-work', kind: 'media', title: l('Full film', '完整影片'), bilibili: 'BV14uxv65EK2', media: { image: '/media/projects/08-video-08/film-poster.jpg', alt: l('Film 08 — full film', 'Film 08——完整影片'), variant: 8 } }],
   },
   { slug: 'video-09', team: l('4-person Project','4人项目'), title: l('A Renting Story', 'A Renting Story'), category: 'video' as const, subtitle: l('', ''), summary: l('A Renting Story is an experimental film centred on Oriel Chambers in Liverpool. The project turns architectural representation into a fictional house-viewing story, allowing the building and its spaces to unfold as the character searches for a place to live. Combining stop-motion animation with silent-film-style performance, the film presents architecture through a playful and theatrical narrative.', 'A Renting Story 是一个以利物浦 Oriel Chambers 为对象的实验影像项目。项目将建筑介绍转化为一段虚构的租房看房故事，让角色在寻找住所的过程中逐渐探索建筑及其空间。影片结合定格动画与默剧式表演，以轻松、戏剧化的叙事方式重新呈现建筑。'), tags: [],
     software: ['Adobe Photoshop', 'Adobe Premiere Pro'],
     thumbnail: { image: '/media/projects/09-video-09/thumbnail.jpg', alt: l('Film 09 — supplied cover', 'Film 09——提供的封面'), variant: 9 },
     hero: { image: '/media/projects/09-video-09/hero-poster-v2.jpg', video: '/media/projects/09-video-09/hero-v2.mp4', alt: l('Film 09 — hero video', 'Film 09——Hero 视频'), variant: 9 },
     previewVideo: '/media/projects/09-video-09/preview-v2.mp4',
-    sections: [{ id: 'selected-work', kind: 'media', title: l('Full film', '完整影片'), youtube: 'NTZ97Ch854g', media: { image: '/media/projects/09-video-09/film-poster.jpg', alt: l('Film 09 — full film', 'Film 09——完整影片'), variant: 9 } }],
+    sections: [{ id: 'selected-work', kind: 'media', title: l('Full film', '完整影片'), bilibili: 'BV1Tuxv65ExV', media: { image: '/media/projects/09-video-09/film-poster.jpg', alt: l('Film 09 — full film', 'Film 09——完整影片'), variant: 9 } }],
   },
 ];
 

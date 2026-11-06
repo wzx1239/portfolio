@@ -280,8 +280,8 @@ img, video { display: block; }
 .section-heading h2,.project-detail .architecture-heading h2 { font:500 var(--project-section-title-size)/1.2 var(--display); letter-spacing:-.025em; }
 .section-heading > div > p { max-width: 630px; margin-top: 20px; color: var(--muted); font-size: 16px; line-height: 1.75; }
 .section-media { aspect-ratio: 16/9; }
-.youtube-embed { position:relative; display:block; width:100%; aspect-ratio:16/9; margin-inline:auto; padding:0; border:0; background:#000; }
-.youtube-embed > iframe { position:absolute; inset:0; display:block; width:100%; height:100%; border:0; border-radius:0; }
+.bilibili-embed { position:relative; display:block; width:100%; aspect-ratio:16/9; margin-inline:auto; padding:0; border:0; background:#000; }
+.bilibili-embed > iframe { position:absolute; inset:0; display:block; width:100%; height:100%; border:0; border-radius:0; }
 .section-split { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: center; }
 .section-split .section-heading { display: block; border: 0; }
 .section-split .section-heading .eyebrow { margin-bottom: 25px; }

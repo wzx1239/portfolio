@@ -21,7 +21,7 @@ export type Section = {
   items?: { number: string; title: Localized; body: Localized }[];
   media?: MediaAsset;
   fullWidth?: boolean;
-  youtube?: string;
+  bilibili?: string;
   steps?: { id: string; number: string; selector: Localized; thumbnail: string; branch?: Localized; title: Localized; body: Localized; video: string; width: number; height: number; implementation?: { heading: Localized; body: Localized }[] }[];
   deepDiveSlug?: string;
 };
