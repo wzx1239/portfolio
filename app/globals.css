@@ -296,6 +296,7 @@ img, video { display: block; }
 .deep-dive-links { display: flex; gap: 40px; margin-bottom: 100px; }
 .next-project { padding-top: 50px; padding-bottom: 60px; border-top: 1px solid var(--rule); }
 .next-link { display: grid; grid-template-columns: 1fr 25%; gap: 40px; align-items: center; margin: 25px 0 20px; }
+.next-project > .next-link:last-child { margin-bottom:0; }
 .next-link > div:first-child { display: flex; align-items: center; gap: 35px; }
 .next-number { color: var(--accent); font: 500 clamp(60px,10vw,150px)/1 var(--display); letter-spacing: -.07em; }
 .next-link h2 { font: 500 clamp(26px,3.3vw,50px)/1.12 var(--display); letter-spacing: -.04em; max-width: 550px; }
