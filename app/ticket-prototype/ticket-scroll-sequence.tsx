@@ -15,7 +15,7 @@ export const ticketCollectionMotion = {
   rimReveal: 90,
   lowerReveal: 24,
   // This is the existing passport presentation scale, never a ticket scale.
-  passportScale: .75,
+  passportScale: .9,
   stack: [[-5,-38,-.6],[-2,27,.5],[4,-19,-.4],[6,44,.7],[-4,-48,-.7],[2,12,.4],[7,-29,-.3],[-6,53,.6],[0,-5,-.5],[-2,17,.4]],
   // Individual departure, arrival, curve exponent and downward path bend.
   timing: [[.15,.74,.90,36],[.18,.82,1.1,62],[.16,.78,1.05,45],[.21,.88,.9,76],[.17,.85,1.2,58],[.19,.92,.95,86],[.22,.95,1.15,68],[.16,.90,1.1,98],[.20,1,.95,80],[.23,1,1.08,72]],
@@ -80,7 +80,7 @@ export function TicketScrollSequence({ children, passport }: { children: ReactNo
       const phase = (start: number, end: number) => clamp((progress - start) / (end - start));
       const arrival = smooth(phase(ticketCollectionMotion.enterStart, ticketCollectionMotion.enterEnd));
       const opening = smooth(phase(ticketCollectionMotion.openStart, ticketCollectionMotion.openEnd));
-      const center = preference.matches ? 0 : smooth(phase(.20,.90));
+      const center = preference.matches ? 0 : smooth(phase(.20,ticketCollectionMotion.openEnd));
       sequence.dataset.collecting = String(progress > ticketCollectionMotion.collectStart);
       sequence.dataset.inserting = String(progress >= ticketCollectionMotion.occlusionStart);
       sequence.style.setProperty('--collection-progress', String(progress));
@@ -126,5 +126,5 @@ export function TicketScrollSequence({ children, passport }: { children: ReactNo
     }
     return () => { cancelAnimationFrame(frame); resize.disconnect(); window.removeEventListener('scroll', wake); window.removeEventListener('resize', measure); preference.removeEventListener('change', measure); };
   }, []);
-  return <div ref={root} className="ticket-scroll-sequence" data-passport-load-at={Math.max(0, ticketCollectionMotion.enterStart - .04)} data-about-scroll={ticketCollectionMotion.scrollViewports * ticketCollectionMotion.openEnd} style={{ '--collection-scroll': `${ticketCollectionMotion.scrollViewports * ticketCollectionMotion.openEnd * 100}svh`, '--collection-hold': `${ticketCollectionMotion.holdViewports * 100}svh` } as React.CSSProperties}><div className="ticket-scroll-stage">{children}<section id="introduction" className="collection-passport home-passport" data-animated="true" data-stamps-ready="false" style={{ '--passport-angle-max': '178deg', '--passport-lift': '9deg', '--passport-perspective': '2400px' } as React.CSSProperties}><div className="passport-stage">{passport}</div></section></div></div>;
+  return <div ref={root} className="ticket-scroll-sequence" data-passport-load-at={Math.max(0, ticketCollectionMotion.enterStart - .04)} data-about-scroll={ticketCollectionMotion.scrollViewports * ticketCollectionMotion.openEnd} style={{ '--passport-scale': ticketCollectionMotion.passportScale, '--collection-scroll': `${ticketCollectionMotion.scrollViewports * ticketCollectionMotion.openEnd * 100}svh`, '--collection-hold': `${ticketCollectionMotion.holdViewports * 100}svh` } as React.CSSProperties}><div className="ticket-scroll-stage">{children}<section id="introduction" className="collection-passport home-passport" data-animated="true" data-stamps-ready="false" style={{ '--passport-angle-max': '178deg', '--passport-lift': '9deg', '--passport-perspective': '2400px' } as React.CSSProperties}><div className="passport-stage">{passport}</div></section></div></div>;
 }

@@ -1,3 +1,7 @@
+# Homepage passport proportional enlargement — 2026-11-07
+
+- Increase the whole desktop homepage passport presentation scale from .75 to .90 (1.2×). Share the scale between CSS and ticket-pocket geometry so centering, insertion and leaf interactions remain synchronized. Keep responsive width/height constraints and the existing unscaled narrow-screen flow to prevent horizontal overflow. Standalone About and ticket dimensions unchanged.
+
 # Direct sharp architecture images — 2026-11-07
 
 - Supersedes blurred previews/fades: render sharp 960/1600px WebP directly with no opacity gate. Hero is eager/high priority; below-fold compositions attach within 1000px of viewport.

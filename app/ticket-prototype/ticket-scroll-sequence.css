@@ -9,7 +9,7 @@
 
 /* Reuse the existing book/leaf opening treatment in the shared black stage. */
 .ticket-scroll-sequence .collection-passport.home-passport { position:absolute; z-index:1; left:24%; right:auto; width:100%; top:0; height:100%; visibility:hidden; --passport-arrive:inherit; --passport-open:inherit; }
-.ticket-scroll-sequence .collection-passport.home-passport .passport-stage { position:absolute; inset:0; padding:var(--header) 0 0; display:flex; align-items:center; transform-origin:0 50%; transform:translateY(calc((1 - var(--passport-arrive)) * 110svh)) scale(.75); }
+.ticket-scroll-sequence .collection-passport.home-passport .passport-stage { position:absolute; inset:0; padding:var(--header) 0 0; display:flex; align-items:center; transform-origin:0 50%; transform:translateY(calc((1 - var(--passport-arrive)) * 110svh)) scale(var(--passport-scale,.9)); }
 .ticket-scroll-sequence .collection-passport .about-record { width:100%; }
 @media(max-width:1000px) {
   /* Narrow screens retain the full-size readable book in ordinary flow. */
