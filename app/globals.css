@@ -582,8 +582,6 @@ body::after { background:url('../public/media/surfaces/digital-grain.svg') repea
 
 /* Static, responsive derivatives for architecture 04–06 only. */
 .architecture-image { position:absolute; inset:0; display:block; width:100%; height:100%; overflow:hidden; }
-.architecture-image > img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:inherit; transition:opacity 220ms ease; }
+.architecture-image > img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:inherit; }
 .media .architecture-image { object-fit:cover; }
 .refuge-source-composition .architecture-image { object-fit:fill; }
-.architecture-image > .architecture-image-blur { filter:blur(6px); transform:scale(1.01); }
-@media(prefers-reduced-motion:reduce) { .architecture-image > img { transition:none; } }

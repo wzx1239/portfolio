@@ -1,3 +1,8 @@
+# Direct sharp architecture images — 2026-11-07
+
+- Supersedes blurred previews/fades: render sharp 960/1600px WebP directly with no opacity gate. Hero is eager/high priority; below-fold compositions attach within 1000px of viewport.
+- Normal display sizes use 960/1600px candidates, preventing Windows scaling/DPR alone from selecting 3500px originals. Real rendered widths above 1600px and explicit zoom retain original-resolution candidates. Original files, geometry and interactions remain intact. No new derivatives; retain export exclusion of 19 unused duplicates.
+
 # Architecture export deduplication — 2026-11-07
 
 - Keep all original and previously generated local files. Use originals for the largest responsive candidates. Export excludes only the 19 unused full-resolution -web.webp duplicates after checking no generated page/runtime references them; retain 960/1600px variants and embedded blur previews. Preparation script no longer generates redundant full-resolution copies.
