@@ -1,3 +1,4 @@
+import { pruneArchitectureDuplicates } from './prune-architecture-duplicates.mjs';
 import { spawnSync } from 'node:child_process';
 import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, renameSync, symlinkSync, writeFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
@@ -20,6 +21,7 @@ const result = spawnSync(process.execPath, [join(root,'node_modules/next/dist/bi
   cwd: stage, stdio: 'inherit', env: { ...process.env, PORTFOLIO_STATIC_EXPORT: '1', PORTFOLIO_BUILD_DIR: '.next', UV_THREADPOOL_SIZE: '1' },
 });
 if (result.status !== 0) process.exit(result.status ?? 1);
+pruneArchitectureDuplicates(join(stage,'out'), root);
 mkdirSync(resolve(output, '..'), { recursive: true });
 renameSync(join(stage,'out'), output);
 writeFileSync(join(output,'.portfolio-pages-output'),'Generated static portfolio export.\n');

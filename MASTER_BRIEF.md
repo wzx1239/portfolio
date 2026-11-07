@@ -1,6 +1,10 @@
+# Architecture export deduplication — 2026-11-07
+
+- Keep all original and previously generated local files. Use originals for the largest responsive candidates. Export excludes only the 19 unused full-resolution -web.webp duplicates after checking no generated page/runtime references them; retain 960/1600px variants and embedded blur previews. Preparation script no longer generates redundant full-resolution copies.
+
 # Architecture image delivery — 2026-11-07
 
-- Keep original 04–06 image assets and composition geometry. Generate high-quality WebP derivatives at original resolution plus 960/1600px responsive candidates and tiny embedded blur previews.
+- Keep original 04–06 image assets and composition geometry. Use original files as full-resolution candidates, plus high-quality 960/1600px responsive derivatives and tiny embedded blur previews.
 - Hero derivatives load immediately with high fetch priority; source-page full images attach only within 400px of viewport. Preserve zoom geometry with larger responsive sizes, smooth image fade and reduced-motion fallback. Static files only, no optimization server.
 
 # Bilibili long-form embeds — 2026-11-06
