@@ -4,3 +4,11 @@
 .project-detail.white-original .project-hero-index { background:#fff; color:#171717; }
 .white-original .refuge-source-sequence,.white-original .refuge-source-page,.white-original .refuge-source-composition.section-media { background:#fff; }
 .white-original .refuge-page-zoom { background:#fff; color:#171717; border-color:#aaa; }
+
+/* 05/06 only: keep monochrome marks legible against the white surface. */
+.white-original .software-marquee-logo { background-color:#171717; opacity:.85; }
+.white-original .software-marquee-logo-d5 { background-color:transparent; filter:grayscale(1) brightness(.6) contrast(100); }
+@media(hover:hover) and (pointer:fine) {
+ .white-original .software-marquee-item:hover .software-marquee-logo { background-color:#000; opacity:1; }
+ .white-original .software-marquee-item:hover .software-marquee-logo-d5 { background-color:transparent; filter:grayscale(1) brightness(.6) contrast(100); }
+}
