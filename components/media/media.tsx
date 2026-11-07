@@ -1,6 +1,7 @@
 'use client';
 import { publicPath } from '@/lib/public-path';
 import Image from 'next/image';
+import { ArchitectureImage, architectureImages } from './architecture-image';
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { useReducedMotion } from 'framer-motion';
 import { useLanguage } from '@/components/layout/language-provider';
@@ -52,7 +53,7 @@ export function Media({ asset, className = '', priority = false, active = true, 
   return <div ref={root} style={!hasVideo && asset.imageAspectRatio ? { aspectRatio: asset.imageAspectRatio } : undefined} className={`media ${hasVideo ? 'has-native-video' : ''} ${asset.placeholder ? 'is-placeholder' : ''} ${asset.controls ? 'has-playback-controls' : ''} ${className}`}>
     <div className="media-surface" style={transitionName ? { viewTransitionName: transitionName } as CSSProperties : undefined} data-transition-media="" data-transition-target={transitionName}>
     <div className="media-fallback" role={!asset.image || imageFailed ? 'img' : undefined} aria-label={!asset.image || imageFailed ? t(asset.alt) : undefined}/>
-    {asset.image && !imageFailed && <Image src={publicPath(asset.image)!} alt={t(asset.alt)} fill style={asset.imageAspectRatio ? { objectFit: 'contain' } : undefined} sizes={sizes} loading={priority ? 'eager' : 'lazy'} preload={priority} unoptimized={asset.image.endsWith('.svg')} onLoad={onReady} onError={() => { setImageFailed(true); onReady?.(); }} />}
+    {asset.image && architectureImages[asset.image] ? <ArchitectureImage src={asset.image} alt={t(asset.alt)} priority={priority} sizes={sizes} onReady={onReady} /> : asset.image && !imageFailed && <Image src={publicPath(asset.image)!} alt={t(asset.alt)} fill style={asset.imageAspectRatio ? { objectFit: 'contain' } : undefined} sizes={sizes} loading={priority ? 'eager' : 'lazy'} preload={priority} unoptimized={asset.image.endsWith('.svg')} onLoad={onReady} onError={() => { setImageFailed(true); onReady?.(); }} />}
     {hasVideo && <video ref={video} src={loadVideo ? publicPath(asset.video) : undefined} poster={loadVideo ? publicPath(asset.image) : undefined} width={dimensions?.width} height={dimensions?.height} muted={!asset.controls} controls={asset.controls} playsInline loop={asset.controls ? false : loop} preload={loadVideo ? 'metadata' : 'none'} aria-label={t(asset.alt)} onCanPlay={onReady} onEnded={onEnded} onError={() => { setVideoFailed(true); onReady?.(); }} />}
     </div>
     {asset.placeholder && <div className="media-placeholder" aria-hidden="true"><span className="media-placeholder-mark"/><span>{asset.variant === 10 ? t(copy.portrait) : t(label ? copy.placeholder : copy.mediaPending)}</span></div>}

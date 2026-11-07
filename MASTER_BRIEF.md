@@ -1,3 +1,8 @@
+# Architecture image delivery — 2026-11-07
+
+- Keep original 04–06 image assets and composition geometry. Generate high-quality WebP derivatives at original resolution plus 960/1600px responsive candidates and tiny embedded blur previews.
+- Hero derivatives load immediately with high fetch priority; source-page full images attach only within 400px of viewport. Preserve zoom geometry with larger responsive sizes, smooth image fade and reduced-motion fallback. Static files only, no optimization server.
+
 # Bilibili long-form embeds — 2026-11-06
 
 - Replace six YouTube players with Bilibili iframe players: 01 walkthrough BV1Pexe6uEcF; 01 Artefact BV1Wvxe6qE5M; 02 BV1kqxe6KEe6; 03 BV1kqxe6KEvJ; 08 BV14uxv65EK2; 09 BV1Tuxv65ExV. IDs resolved from supplied b23.tv redirects.

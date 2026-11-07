@@ -1,5 +1,5 @@
 'use client';
-import { publicPath } from '@/lib/public-path';
+import { ArchitectureImage } from '@/components/media/architecture-image';
 import { useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import { useLanguage } from '@/components/layout/language-provider';
 import pages from '@/data/refuge-original.json';
@@ -34,7 +34,7 @@ function SourceComposition({ page }: { page: SourcePage }) {
     <button type="button" className="refuge-page-zoom" onClick={() => setZoom(!zoom)} aria-pressed={zoom} aria-label={language === 'zh' ? '缩放图组' : 'Zoom composition'}>{zoom ? '−' : '+'}</button>
     <div className="refuge-source-scroll">
       <div ref={composition} className="refuge-source-composition section-media" style={{aspectRatio:`${page.width}/${page.height}`}}>
-        <img className="refuge-source-drawing" src={publicPath(page.src)} width={Math.round(page.width*3)} height={Math.round(page.height*3)} alt="" loading="lazy" />
+        <ArchitectureImage className="refuge-source-drawing" src={page.src} sizes={zoom ? "200vw" : "(min-width: 1920px) 1920px, 100vw"} />
         {page.text.map((entry,index) => {
           const row = entry as typeof entry & {blockHeight?:number};
           const color = row.color.length === 1 ? Array(3).fill(row.color[0]) : row.color.length === 4 ? row.color.slice(0,3).map(c=>(1-c)*(1-row.color[3])) : row.color.slice(0,3);
